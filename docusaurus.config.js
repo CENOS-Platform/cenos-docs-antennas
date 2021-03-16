@@ -16,7 +16,13 @@ module.exports = {
         alt: 'Cenos Logo',
         src: 'img/logo.svg',
       },
-      items: [],
+      items: [
+        {
+          to: 'https://www.cenos-platform.com/antenna-design',
+          label: 'CENOS Home',
+          position: 'right',
+        },
+      ],
     },
     footer: {
       style: 'dark',
