@@ -6,7 +6,6 @@ module.exports = {
     // Documentation: ['mdx'],
     Results: ['quickstart-results'],
     // Documentation: ['mdx'],
-    Docusaurus: ['doc1', 'doc2', 'doc3'],
-    Features: ['mdx'],
+    Docusaurus: ['doc1'],
   },
 };

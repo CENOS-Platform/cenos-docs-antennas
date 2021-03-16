@@ -58,6 +58,8 @@ To switch between different field visualizations:
 
 </p>
 
+![Dielectric](assets/results/test.png)
+
 3. **Change the field selection** to *Magnetic field*.
 
 <p align="center">

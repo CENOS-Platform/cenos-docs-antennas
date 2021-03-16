@@ -8,11 +8,19 @@ sidebar_label: Physics Definitions
 
 Physics window in *CENOS* is quite straightforward. On the left side you can see the **preview window** with your antenna geometry.
 
-![assets/quickstart/Untitled13.png](assets/physics/1.png)
+<p align="center">
+
+![Preview](assets/physics/1.png)
+
+</p>
 
 On the right you can find the actual **physical definitions** of your antenna. You can **switch between definitions using tabs**.
 
-![assets/quickstart/Untitled13.png](assets/physics/2.png)
+<p align="center">
+
+![Tabs](assets/physics/2.png)
+
+</p>
 
 ---
 
@@ -34,7 +42,11 @@ For volume objects of your antenna you need to **define only the material** it i
 
 You can write the name of your material directly into **search bar**, choose from CENOS **built-in material library** or **create your own material**!
 
-![assets/quickstart/Untitled13.png](assets/physics/4.png)
+<p align="center">
+
+![Material](assets/physics/4.png)
+
+</p>
 
 ---
 
@@ -42,4 +54,8 @@ You can write the name of your material directly into **search bar**, choose fro
 
 **BOUDARIES** is the place where you define boundary surfaces of your antenna, such as *feed*, *ground*, *patch* and other surfaces.
 
-![assets/quickstart/Untitled13.png](assets/physics/5.png)
+<p align="center">
+
+![Boundaries](assets/physics/5.png)
+
+</p>
