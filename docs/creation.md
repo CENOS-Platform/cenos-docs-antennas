@@ -18,7 +18,11 @@ Sometimes when building an antenna simulation, you will already have a pre-made 
 
 **To import such files**, open *Geometry Editor* and simply **drag & drop** your geometry in *FreeCAD*!
 
-![assets/quickstart/Untitled27.png](assets/quickstart/drag-drop.gif)
+<p align="center">
+
+![drag n drop](assets/quickstart/drag-drop.gif)
+
+</p>
 
 ---
 
@@ -32,15 +36,27 @@ A **sketch is the base for almost all geometrical objects** you can create, **in
 
 In *FreeCAD* you can create sketches in **Sketcher workbench**, which you can access directly through the shortcut icon:
 
-![assets/quickstart/Untitled27.png](assets/quickstart/35.png)
+<p align="center">
+
+![Sketcher](assets/quickstart/35.png)
+
+</p>
 
 Once in the workbench, click **Create a new sketch**.
 
-![assets/quickstart/Untitled27.png](assets/quickstart/37.png)
+<p align="center">
+
+![Sketch new](assets/quickstart/37.png)
+
+</p>
 
 **Select the plane where you want to create you sketch**, and you can start to draw the actual geometry.
 
-![assets/quickstart/Untitled27.png](assets/quickstart/38.png)
+<p align="center">
+
+![Sketch plane](assets/quickstart/38.png)
+
+</p>
 
 *FreeCAD* offers a large variety of tools designed to easily and precisely create any geometry.
 
@@ -54,7 +70,11 @@ Hold down **Alt** to rotate the camera in sketch view
 
 Draw your antenna geometry, and, once you are done, click **Close**.
 
-![assets/quickstart/Untitled27.png](assets/quickstart/41.png)
+<p align="center">
+
+![Close sketch](assets/quickstart/41.png)
+
+</p>
 
 ---
 
@@ -74,15 +94,27 @@ In the **Part** workbench select the face on which you want to draw.
 
 Click **Sketcher workbench**.
 
-![assets/quickstart/Untitled27.png](assets/quickstart/35.png)
+<p align="center">
+
+![Sketcher](assets/quickstart/35.png)
+
+</p>
 
 Then click **Create a new sketch**.
 
-![assets/quickstart/Untitled27.png](assets/quickstart/37.png)
+<p align="center">
+
+![Sketch new](assets/quickstart/37.png)
+
+</p>
 
 Click **OK** to *FlatFace* definition, and start to draw.
 
-![assets/quickstart/Untitled27.png](assets/quickstart/43.png)
+<p align="center">
+
+![FlatFace](assets/quickstart/43.png)
+
+</p>
 
 :::tip
 Hold down **Alt** to rotate the camera in sketch view
@@ -108,11 +140,19 @@ When creating volumes, make sure that they do not overlap with each other. **Ove
 
 For the **simplest volume objects** like cubes, spheres or cylinders, *FreeCAD* offers an easy way of creating such geometries. As you open *FreeCAD*, you will be automatically put in **Part** workbench. There you can simply **select any geometry you want and build it**.
 
-![assets/quickstart/Untitled27.png](assets/quickstart/45.png)
+<p align="center">
+
+![Primitives](assets/quickstart/45.png)
+
+</p>
 
 As you select an object, it will be built with pre-defined size. **To change the size of your geometry**, select your object and change its properties.
 
-![assets/quickstart/Untitled27.png](assets/quickstart/47.png)
+<p align="center">
+
+![Properties](assets/quickstart/47.png)
+
+</p>
 
 ---
 
@@ -126,15 +166,28 @@ To use *Extrusion*, you need to **first create a sketch you need**.
 
 Then switch to **Part workbench**
 
-![assets/quickstart/Untitled27.png](assets/quickstart/48.png)
+<p align="center">
+
+![Part workbench](assets/quickstart/48.png)
+
+</p>
 
 and click **Extrude a selected sketch**.
 
-![assets/quickstart/Untitled27.png](assets/quickstart/49.png)
+<p align="center">
+
+![Extrude icon](assets/quickstart/49.png)
+
+</p>
+
 
 In *Extrude* properties window define the **extrusion lenght**, check **Create solid** and select **Sketch** as a shape to extrude. Once done, click apply.
 
-![assets/quickstart/Untitled27.png](assets/quickstart/51.png)
+<p align="center">
+
+![Extrude properties](assets/quickstart/51.png)
+
+</p>
 
 Now you have succesfully created a complex 3D object!
 
@@ -148,7 +201,11 @@ A very useful thing to have is **parameterized geometry**. This way you can **cr
 
 You can **define parameters** in the *Cenos Parameters* spreadsheet where you can use various units and/or mathematical equations for the values.
 
-![assets/quickstart/Untitled27.png](assets/quickstart/Untitled27.png)
+<p align="center">
+
+![Parameters](assets/quickstart/Untitled27.png)
+
+</p>
 
 :::tip
 To navigate between *Cenos Parameters* and geometry preview, use the tabs below the spreadsheet.
@@ -175,7 +232,11 @@ Once you have finished the geometry, you need to send the mesh to CENOS. To do t
 
 3. As geometry is being sent to CENOS, **FreeCAD study will be automatically saved** in the simulation folder, so you can close it.
 
-![assets/quickstart/Untitled8.png](assets/quickstart/Untitled8.png)
+<p align="center">
+
+![Send geom to CENOS](assets/quickstart/Untitled8.png)
+
+</p>
 
 ---
 
@@ -193,11 +254,19 @@ To create the mesh manually in *FreeCAD*:
 
 1. Switch to the **Meshing** workbench
 
-![assets/quickstart/Untitled6.png](assets/quickstart/69.png)
+<p align="center">
+
+![Mesh workbench](assets/quickstart/69.png)
+
+</p>
 
 2. Select all objects of your design from the tree view and click **Create Mesh**.
 
-![assets/quickstart/Untitled6.png](assets/quickstart/70.png)
+<p align="center">
+
+![Create mesh](assets/quickstart/70.png)
+
+</p>
 
 Mesh size will be **automatically chosen** and mesh generated.
 
@@ -223,15 +292,27 @@ You can **create a mesh refinement** for elements (faces, edges, vertices) in th
 
 1. **Select the objects** which you want to use mesh refinement.
 
-![assets/quickstart/Untitled6.png](assets/quickstart/73.png)
+<p align="center">
+
+![Select object](assets/quickstart/73.png)
+
+</p>
 
 2. Click **Refine mesh**.
 
-![assets/quickstart/Untitled6.png](assets/quickstart/74.png)
+<p align="center">
+
+![Refine mesh](assets/quickstart/74.png)
+
+</p>
 
 3. Click **Recompute mesh**.
 
-![assets/quickstart/Untitled6.png](assets/quickstart/75.png)
+<p align="center">
+
+![Recompute mesh](assets/quickstart/75.png)
+
+</p>
 
 4. Enable the *mesh* visibility to see the new mesh.
 
@@ -247,7 +328,11 @@ To **toggle visibility** of any object, right-click on it and click **Show/Hide 
 
 Once you are satisfied with the mesh, click **Send mesh to CENOS**!
 
-![assets/quickstart/Untitled6.png](assets/quickstart/76.png)
+<p align="center">
+
+![Send mesh to CENOS](assets/quickstart/76.png)
+
+</p>
 
 
 

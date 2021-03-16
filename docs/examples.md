@@ -64,7 +64,11 @@ For more **complex patch antennas** the **feed network needs to be drawn separat
 
 3. Select the **Feed Network** tool
 
-![assets/quickstart/Untitled6.png](assets/quickstart/68.png)
+<p align="center">
+
+![Feed Network](assets/quickstart/68.png)
+
+</p>
 
 4. Select all edges **with the same trace width** and click **Add** to create separate width groups for each of them.
 
@@ -74,7 +78,11 @@ For more **complex patch antennas** the **feed network needs to be drawn separat
 
 5. Click **OK** to generate the feed network.
 
+<p align="center">
+
 ![assets/quickstart/Untitled22.png](assets/quickstart/Untitled22.png)
+
+</p>
 
 :::note
 You will see some visual artifacts (the golden feed surface will appear to flicker).
@@ -83,6 +91,7 @@ This happens when two surfaces overlap, **this is normal behavior and means you 
 
 :::tip
 You can create chamfered corners by filleting the sketch path with a radius half of the trace width:
+
 ![assets/quickstart/Untitled26.png](assets/quickstart/Untitled26.png)
 :::
 
@@ -92,9 +101,13 @@ You can create chamfered corners by filleting the sketch path with a radius half
 
 ### Import NEC
 
-If you have a ***.NEC*** (or other format) file, you can import it from the Part module (pic)
+If you have a ***.NEC*** (or other format) file, you can import it from the Part module.
 
-![assets/quickstart/Untitled.png](assets/quickstart/61.png)
+<p align="center">
+
+![NEC](assets/quickstart/61.png)
+
+</p>
 
 ---
 
@@ -106,30 +119,58 @@ To **create a wire antenna from scratch**, you need to create a sketch of your a
 
     1. For **2D sketches** you can **set sketch position** in its properties (In sketch properties *Base → Placement → Position*)
     
-    ![assets/quickstart/Untitled.png](assets/quickstart/62.png)
+    <p align="center">
+
+    ![Placement](assets/quickstart/62.png)
+
+    </p>
     
     2. To build **3D sketches**, use **Draft Workbench → Drafting → Line**. There you will need to build lines one by one and adjust the *Start* and *End* points to match your design.
     
-    ![assets/quickstart/Untitled.png](assets/quickstart/63.png)
+    <p align="center">
+
+    ![Placement](assets/quickstart/63.png)
+
+    </p>
     
     3. For **helixes or spirals** use **Create Primitives** function in *Part* workbench.
     
-    ![assets/quickstart/Untitled.png](assets/quickstart/64.png)
+    <p align="center">
+
+    ![Placement](assets/quickstart/64.png)
+
+    </p>
     
     In *Geometric Primitives* properties select **Helix** shape, and define your wire.
     
-    ![assets/quickstart/Untitled.png](assets/quickstart/65.png)
+    <p align="center">
+
+    ![Placement](assets/quickstart/65.png)
+
+    </p>
 
 2. **Create a wire** with volume from the edges, select your shape, click **Wire thickness** tool in *Part Workbench* and define the wire thickness.
 
-![assets/quickstart/Untitled.png](assets/quickstart/66.png)
+<p align="center">
+
+![NEC](assets/quickstart/66.png)
+
+</p>
+
+<p align="center">
 
 ![assets/quickstart/Untitled23.png](assets/quickstart/Untitled23.png)
+
+</p>
 
 :::caution
 Sometimes when building wires, the visualization will appear like this:
 
-![assets/quickstart/Untitled.png](assets/quickstart/67.png)  
+<p align="center">
+
+![assets/quickstart/Untitled23.png](assets/quickstart/67.png)
+
+</p>  
 **This is a visualization problem, which does not affect the geometry itself**. You can continue and use this geometry in your setup!
 :::
 
@@ -172,11 +213,19 @@ Coaxial ports, as the name suggests, are ports where the connection surface is m
 
 You can create a coaxial connector yourself or use one from the **Snippet → Component**.
 
-![assets/quickstart/Untitled6.png](assets/quickstart/54.png)
+<p align="center">
+
+![assets/quickstart/Untitled23.png](assets/quickstart/54.png)
+
+</p>
 
 Select **Coaxial edge connector** and click **Create**.
 
-![assets/quickstart/Untitled6.png](assets/quickstart/55.png)
+<p align="center">
+
+![assets/quickstart/Untitled23.png](assets/quickstart/55.png)
+
+</p>
 
 Upon creating the connector, you can **position it** by left-clicking on it in the tree view and selecting **Transform**.
 
@@ -184,4 +233,8 @@ Upon creating the connector, you can **position it** by left-clicking on it in t
 
 You can **change the size** of the connector by clicking on it and editing the **Property** tab to suit your application.
 
-![assets/quickstart/Untitled6.png](assets/quickstart/57.png)
+<p align="center">
+
+![assets/quickstart/Untitled23.png](assets/quickstart/57.png)
+
+</p>

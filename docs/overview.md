@@ -35,7 +35,11 @@ In *Templates* **geometry and mesh is being generated automatically**, and it ca
 
 *Import CAD* approach is **useful when you have already created CAD** of your antenna. Simply click on the folder icon, select your CAD file, and it will be automatically imported in CENOS, where you will be able to process it!
 
-![assets/quickstart/Untitled27.png](assets/quickstart/32.png)
+<p align="center">
+
+![Import CAD](assets/quickstart/32.png)
+
+</p>
 
 ![assets/quickstart/Untitled27.png](assets/quickstart/33.png)
 

@@ -31,7 +31,7 @@ Denominations for used solutions:
 ---
 
 ## Useful shortcuts
-
+    
 | Function                   | Shortcut     |
 | -------------------------- | ------------ |
 | Toggle object visibility   | *Space*        |
@@ -41,6 +41,7 @@ Denominations for used solutions:
 | Rectangle select objects   | *Shift+B*      |
 | Rectangle select elements  | *Shift+E*      |
 | Import File                | *Drag&drop*    |
+
 
 ---
 
