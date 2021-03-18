@@ -6,9 +6,13 @@ sidebar_label: Geometry creation (FreeCAD)
 
 For geometry manipulations *CENOS Antenna Design* uses a very strong geometry editor - *FreeCAD*. This editor is used with both *Import CAD* and *Geometry Editor*, so **it is important for us to understand how to work with FreeCAD**. 
 
-:::tip
-*FreeCAD* has all its tools organized into ***workbenches***, such as *Part* or *Sketcher*, and most tasks can be done using only these two workbenches. You will see them referenced throughout the article.
-:::
+**Watch a short video on how to use FreeCAD for CENOS Antenna Design app**:
+
+<p align="center">
+
+[![FreeCAD video](assets/utilities/1.png)](https://www.youtube.com/watch?v=NF4v3oVvyYY&list=PLtRpbWakrmMf29rhPnm0bxjosBow-nM8q&index=2)
+
+</p>
 
 ---
 

@@ -6,6 +6,14 @@ sidebar_label: Geometry roles
 
 Once you have imported your CAD file and [sent it to CENOS](creation#getting-the-geometry-to-cenos), you will need to **define volumes and surfaces of your antenna**.
 
+**Watch a short video on how to define roles in CENOS Antenna Design app**:
+
+<p align="center">
+
+[![Roles video](assets/utilities/2.png)](https://www.youtube.com/watch?v=COWEdo17b8I&list=PLtRpbWakrmMf29rhPnm0bxjosBow-nM8q&index=2)
+
+</p>
+
 ---
 
 ### Select the type of your antenna.
