@@ -1,7 +1,7 @@
 ---
 id: creation
 title: Geometry creation in FreeCAD
-sidebar_label: Geometry creation
+sidebar_label: Geometry creation (FreeCAD)
 ---
 
 For geometry manipulations *CENOS Antenna Design* uses a very strong geometry editor - *FreeCAD*. This editor is used with both *Import CAD* and *Geometry Editor*, so **it is important for us to understand how to work with FreeCAD**. 

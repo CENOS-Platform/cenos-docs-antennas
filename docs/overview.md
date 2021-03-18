@@ -27,7 +27,7 @@ Templates is the easiest way to define geometry. Just select *Templates*, enter 
 
 In *Templates* **geometry and mesh is being generated automatically**, and it can be used to very **quickly set up a simulation** for *Patch* or *Dipole* antenna!
 
-![assets/quickstart/Untitled27.png](assets/quickstart/31.png)
+![assets/quickstart/Untitled27.png](assets/overview/1.png)
 
 ---
 
@@ -37,7 +37,7 @@ In *Templates* **geometry and mesh is being generated automatically**, and it ca
 
 <p align="center">
 
-![Import CAD](assets/quickstart/32.png)
+![assets/overview/Untitled27.png](assets/overview/3.png)
 
 </p>
 

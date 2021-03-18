@@ -211,7 +211,7 @@ Coaxial ports, as the name suggests, are ports where the connection surface is m
 
 ![assets/quickstart/Untitled25.png](assets/quickstart/Untitled25.png)
 
-You can create a coaxial connector yourself or use one from the **Snippet → Component**.
+You can create a coaxial connector yourself or use one from the **CENOS Component Library**.
 
 <p align="center">
 
