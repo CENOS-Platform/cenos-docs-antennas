@@ -18,7 +18,11 @@ For geometry manipulations *CENOS Antenna Design* uses a very strong geometry ed
 
 ## Geometry import
 
-Sometimes when building an antenna simulation, you will already have a pre-made geometry, which you will want to use. In such cases you can easily import your CAD in **DXF** or **STEP** file formats.
+Sometimes when building an antenna simulation, you will already have a pre-made geometry, which you will want to use.
+
+### DXF/STEP
+
+You can easily import your CAD in **DXF** or **STEP** file formats.
 
 **To import such files**, open *Geometry Editor* and simply **drag & drop** your geometry in *FreeCAD*!
 
@@ -27,6 +31,43 @@ Sometimes when building an antenna simulation, you will already have a pre-made 
 ![drag n drop](assets/quickstart/drag-drop.gif)
 
 </p>
+
+### .NEC
+
+If you have a ***.NEC*** (or other format) file, you can import it from the Part module.
+
+<p align="center">
+
+![NEC](assets/quickstart/61.png)
+
+</p>
+
+<p align="center">
+
+![NEC import](assets/quickstart/83.png)
+
+</p>
+
+---
+
+## Component Library
+
+You can use **CENOS Component Library** templates to **build patch or connector geometries**.
+
+<p align="center">
+
+![assets/quickstart/Untitled23.png](assets/quickstart/54.png)
+
+</p>
+
+**Select the part you want to build** and click **Create**. **Fill out the template** parameters for those parts that it is necessary, and click **OK** to build your geometry!
+
+<p align="center">
+
+![assets/quickstart/Untitled23.png](assets/quickstart/84.png)
+
+</p>
+
 
 ---
 
