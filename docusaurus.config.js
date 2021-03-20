@@ -2,7 +2,7 @@
 module.exports = {
   title: 'CENOS Antenna Design Docs',
   tagline: 'The tagline of my site',
-  url: 'https://docs.cenos-platform.com/antenna-design',
+  url: 'https://ad.cenos-platform.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -28,6 +28,9 @@ module.exports = {
       style: 'dark',
       links: [],
       copyright: `Copyright © ${new Date().getFullYear()} CENOS`,
+    },
+    gtag: {
+      trackingID: 'UA-126203246-1',
     },
   },
   presets: [
