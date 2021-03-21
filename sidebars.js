@@ -1,10 +1,7 @@
 module.exports = {
   someSidebar: {
-    Geometry: ['overview', 'creation','definition', 'examples', 'tips', 'quickstart-geometry'],
-    // Documentation: ['mdx'],
+    Geometry: ['overview', 'creation','definition', 'examples', 'tips'],
     Physics: ['quickstart-physics'],
-    // Documentation: ['mdx'],
     Results: ['quickstart-results'],
-    // Documentation: ['mdx'],
   },
 };
