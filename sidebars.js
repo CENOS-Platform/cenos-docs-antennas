@@ -3,5 +3,6 @@ module.exports = {
     Geometry: ['overview', 'creation','definition', 'examples', 'tips'],
     Physics: ['quickstart-physics'],
     Results: ['quickstart-results'],
+    FAQ: ['faq-installation'],
   },
 };
