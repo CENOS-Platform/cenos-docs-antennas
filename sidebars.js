@@ -1,6 +1,6 @@
 module.exports = {
   someSidebar: {
-    Geometry: ['overview', 'creation','definition', 'examples', 'tips'],
+    Geometry: ['overview', 'good-cad', 'creation','definition', 'examples', 'tips'],
     Physics: ['quickstart-physics'],
     Results: ['quickstart-results'],
     FAQ: ['faq-installation'],
