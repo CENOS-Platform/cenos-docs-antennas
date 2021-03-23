@@ -10,7 +10,7 @@ sidebar_label: Tips & Tricks
 Denominations for used solutions:
 - **<span style={{ color: "blue" }}>Blue</span>** for workbench selection (e.g. **<span style={{ color: "blue" }}>Part</span>**)
 - **<span style={{ color: "green" }}>Green</span>** for toolbar selection (e.g. **<span style={{ color: "green" }}>View</span>**)
-- **<span style={{ color: "orange" }}>Orange</span>** for shortcut icons (e.g. **<span style={{ color: "red" }}>Create a Cylinder</span>**)
+- **<span style={{ color: "orange" }}>Orange</span>** for shortcut icons (e.g. **<span style={{ color: "orange" }}>Create a Cylinder</span>**)
 :::
 
 | Task                                     | Solution                                   | Icon                                   |
