@@ -169,6 +169,51 @@ Now just create the *Mesh refinement* for the selected edges, and you have refin
 </p>
 
 ---
+## Meshing errors
+
+Meshing can sometimes be frustrating, as you try to build the mesh, get an error, but cannot understand what is the actual problem and how to correct it.
+
+In this section we will take a look at some of the **most commonly seen errors** during meshing, and **how to fix them**.
+
+:::note
+When the mesh is calculated but an error is present, you need to **pay attention to the error messages**. Depending on the errors there are different ways to correct them.
+:::
+
+### Ill-shaped tets
+
+Error message **Warning : X ill-shaped tets are still in the mesh** seems to be the most common one. It usually causes problems when sending the mesh to CENOS.
+
+<p align="center">
+
+![Send mesh to CENOS](assets/meshing/21.png)
+
+</p>
+
+:::info SOLUTION
+**Change the submesh element size slightly**. This error can be **very sensitive to the element size**, try making them smaller or larger.
+:::
+
+### Invalid elements in surface
+
+Error message **Warning : X elements remain invalid on surface XX** indicates that the generated mesh has some problematic elements that needs to be corrected. 
+
+<p align="center">
+
+![Send mesh to CENOS](assets/meshing/19.png)
+
+</p>
+
+If this happens, the surface (on which the invalid elements are reported) will be visible in the **Mesh Error elements** group in the tree view.
+
+To **visualize the problematic surfaces**, [disable the sub-mesh visibility](tips#common-tasks) (they will appear red).
+
+![Send mesh to CENOS](assets/meshing/20.png)
+
+:::info SOLUTION
+**Simplify the problematic surfaces** (remove the thread in the example)
+:::
+
+---
 
 ## Send mesh to CENOS
 
