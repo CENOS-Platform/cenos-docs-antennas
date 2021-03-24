@@ -1,7 +1,7 @@
 ---
 id: results-advanced
 title: Advanced result processing
-sidebar_label: Manual evaluation
+sidebar_label: Advanced evaluation
 ---
 
 Besides the default information and evaluation that *CENOS Antenna Design app* generates there is a **huge amount of manipulations** which you can carry out to **more deeply analyse** results and **get additional information** out of the results.
@@ -12,7 +12,7 @@ Besides the default information and evaluation that *CENOS Antenna Design app* g
 
 ### Electric/magnetic field on surface
 
-By default the *Electric field* is visualized,.
+By default the *Electric field* on your antenna is visualized.
 
 <p align="center">
 
