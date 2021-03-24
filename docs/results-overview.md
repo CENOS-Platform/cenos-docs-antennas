@@ -1,10 +1,12 @@
 ---
-id: quickstart-results
-title: Results and post-processing
-sidebar_label: Result evaluation
+id: results-overview
+title: Result overview
+sidebar_label: Overview
 ---
 
-Once the simulation is done, results will be processed and opened in a separate window. *CENOS Antenna Design* app offers different ways and tools to analyze your antenna design. **In this section we will learn how to use CENOS to analyze antenna simulation results**.
+Once the simulation is done, results will be processed and opened in a separate window. *CENOS Antenna Design* app offers different ways and tools to analyze your antenna design.
+
+**In this section we will go over the default result evaluation layout for antenna simulation results**.
 
 **Watch a short video on how to evaluate results in CENOS Antenna Design app**:
 
@@ -38,60 +40,15 @@ You can **access these directly** through CENOS Desk view under *Visualization* 
 
 When the simulation is finished, a new *ParaView* window will open with processed results.
 
+### 3D View
+
+In the *3D View* tab you can see your antenna with ***Electric field*** visualized on the right, together with the ***Radiation pattern*** visualized on the left.
+
 ![Results](assets/results/1.png)
 
 ---
 
-### Electric/magnetic field
-
-By default the *Electric field* is visualized,.
-
-<p align="center">
-
-![Electric field](assets/results/10.png)
-
-</p>
-
-You can **change this visualization to see the** ***Magnetic field*** as well.
-
-To switch between different field visualizations:
-
-1. **Select the left side view** (should  be highlighted by a blue outline)
-
-2. Select the **Dielectric** in the *Pipeline browser* tree.
-
-<p align="center">
-
-![Dielectric](assets/results/11.png)
-
-</p>
-
-3. **Change the field selection** to *Magnetic field*.
-
-<p align="center">
-
-![Magnetic field](assets/results/12.png)
-
-</p>
-
-Now the new field is visualized!
-
-<p align="center">
-
-![Magnetic field2](assets/results/13.png)
-
-</p>
-
-:::tip
-In the same way you can change visualization for *Far Field* as well.
-1. Select the left view
-2. Select *3D Far Field* in *Pipeline Browser*
-3. Change the field selection in the dropdown.
-:::
-
----
-
-### Frequency range
+#### Frequency range
 
 If you calculated your design using *frequency sweep*, you can visualize results for different frequencies by selecting the frequency of interest.
 
@@ -105,7 +62,7 @@ If you calculated your design using *frequency sweep*, you can visualize results
 
 ### Radiation pattern
 
-You can analyze the radiation pattern by switchin to **Radiation patterns** tab.
+You can analyze the radiation pattern by switching to **Radiation patterns** tab.
 
 <p align="center">
 
