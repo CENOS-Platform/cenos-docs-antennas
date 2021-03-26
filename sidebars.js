@@ -4,5 +4,6 @@ module.exports = {
     Physics: ['quickstart-physics'],
     Results: ['results-overview', 'results-advanced'],
     FAQ: ['faq-installation'],
+    'Release notes': ['release-notes'],
   },
 };
