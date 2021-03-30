@@ -170,7 +170,8 @@ Sometimes when building wires, the visualization will appear like this:
 
 ![assets/quickstart/Untitled23.png](assets/quickstart/67.png)
 
-</p>  
+</p>
+
 **This is a visualization problem, which does not affect the geometry itself**. You can continue and use this geometry in your setup!
 :::
 
@@ -178,63 +179,103 @@ Sometimes when building wires, the visualization will appear like this:
 
 ## Lumped Ports
 
-It is quite important to correctly define ports of your antenna so that you would be able to carry out a complete antenna simulation. For this reason we need to **understand what kind of port we have, and make some additional geometry modifications accordingly**.
+*Ports* or *feeds* are the power source of the antenna, and it is important that we define such ports correctly. 
+
+For this reason we need to **understand what kind of port we have, and make some additional geometry modifications accordingly**.
 
 Currently there are two types of lumped ports in CENOS:
 
 - *Uniform port*
 - *Coaxial port*
 
----
-
-### Uniform
-
-Uniform ports are essentially a rectangular surface, either on a plane or curved, which is **used in most planar antenna design simulations**. In the picture below you can see an example of two uniform ports, rectangular and curved.
-
-![assets/quickstart/Untitled24.png](assets/quickstart/Untitled24.png)
-
-Uniform ports are **widely used in PCB antennas**, where the port connects the *patch* with the *conductive layer* or ground. As it is not resolved through the dielectric volume, we need to draw this port manually.
-
-The simplest way to do this would be to **create a sketch on the side and draw a uniform port on the edge of the patch**, connecting the top conductive layer with the ground plane:
-
-![assets/quickstart/Untitled6.png](assets/quickstart/Untitled6.png)
-
 :::tip
-If the port sketch is attached to a volume (substrate in this case), then you don't have to upgrade it to a face. But if it is in free air then you have to turn it into a face.
+Antenna simulations **do not require complex port geometries**, and most connectors **can be simplified** to a single feed surface or simple connector assembly - it will make the **meshing easier and calculation faster**, while **keeping the accuracy of the results**!
 :::
 
 ---
 
-### Coaxial
+## Uniform ports
 
-Coaxial ports, as the name suggests, are ports where the connection surface is made by a coaxial cable. For these kind of ports **you don't need to create a separate surface**, as it is already included in the volume definition.
-
-![assets/quickstart/Untitled25.png](assets/quickstart/Untitled25.png)
-
-You can create a coaxial connector yourself or use one from the **CENOS Component Library**.
+Uniform port is essentially a rectangular surface, **planar** or **curved**, which is **used in most planar antenna design simulations**.
 
 <p align="center">
 
-![assets/quickstart/Untitled23.png](assets/quickstart/54.png)
+![assets/quickstart/Untitled24.png](assets/example/5.png)
 
 </p>
 
-Select **Coaxial edge connector** and click **Create**.
+### Planar
+
+Uniform ports are **widely used in PCB antennas**, where the port connects the *patch* with the *conductive layer* (ground). In real antennas **coaxial edge connectors** are often used, but for simulation they are not necessary and you can **replace them with simple planar ports**.
+
+![assets/quickstart/Untitled24.png](assets/example/1.png)
+
+To **create planar feed**:
+
+1. **[Create a sketch](creation#sketches) on the side and draw a uniform port on the edge of the patch**, connecting the top conductive layer with the ground plane.
 
 <p align="center">
 
-![assets/quickstart/Untitled23.png](assets/quickstart/55.png)
+![assets/quickstart/Untitled24.png](assets/example/2.png)
 
 </p>
 
-Upon creating the connector, you can **position it** by left-clicking on it in the tree view and selecting **Transform**.
+### Curved
 
-![assets/quickstart/Untitled7.png](assets/quickstart/Untitled7.png)
-
-You can **change the size** of the connector by clicking on it and editing the **Property** tab to suit your application.
+In addition to *coaxial edge connectors*, **SMA connectors** are commonly used in planar antennas. Again, the actual **connector can be simplified to a curved port**.
 
 <p align="center">
 
-![assets/quickstart/Untitled23.png](assets/quickstart/57.png)
+![assets/quickstart/Untitled24.png](assets/example/3.png)
+
+</p>
+
+To **create curved feed**:
+
+1. **[Create a sketch](creation#sketches)** on the patch and **draw a circle** of where the port will be.
+
+<p align="center">
+
+![assets/quickstart/Untitled24.png](assets/example/7.png)
+
+</p>
+
+2. **[Extrude](creation#extrusion)** the port through the patch.
+
+3. Choose the patch and cylinder objects and click **Cut** boolean to create a hole in the patch.
+
+<p align="center">
+
+![assets/quickstart/Untitled24.png](assets/example/8.png)
+
+</p>
+
+<p align="center">
+
+![assets/quickstart/Untitled24.png](assets/example/9.png)
+
+</p>
+
+---
+
+## Coaxial port
+
+Coaxial ports are ports where the connection surface is made by a coaxial cable. For these kind of ports **you don't need to create a separate surface**, as it is already included in the volume definition.
+
+<p align="center">
+
+![assets/quickstart/Untitled24.png](assets/example/10.png)
+
+</p>
+
+:::tip
+You can create a coaxial connector yourself or use one from the **[Component Library](creation#component-library)**.
+:::
+
+Coaxial ports can be **simplified as well** - replace the complex assembly with simple cylinders!
+
+<p align="center">
+
+![assets/quickstart/Untitled24.png](assets/example/11.png)
 
 </p>

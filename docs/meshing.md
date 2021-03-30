@@ -213,6 +213,22 @@ To **visualize the problematic surfaces**, [disable the sub-mesh visibility](tip
 **Simplify the problematic surfaces** (remove the thread in the example)
 :::
 
+### Volume mesh: worst distortion
+
+Error message **Warning : Volume mesh: worst distortion** is actually not an error, but a warnng, which indicates that there are some elements which are quite distorted and might impact the simulation results.
+
+<p align="center">
+
+![Send mesh to CENOS](assets/meshing/22.png)
+
+</p>
+
+In case of such warning **you can still use the mesh** and send it to CENOS, but **be aware that it could impact the result accuracy**!
+
+:::info SOLUTION
+**Decrease the submesh size**, it should create smaller mesh elements and correct the element distortion.
+:::
+
 ---
 
 ## Send mesh to CENOS

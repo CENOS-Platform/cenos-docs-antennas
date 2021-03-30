@@ -20,6 +20,8 @@ For geometry manipulations *CENOS Antenna Design* uses a very strong geometry ed
 
 Sometimes when building an antenna simulation, you will already have a pre-made geometry, which you will want to use.
 
+---
+
 ### DXF/STEP
 
 You can easily import your CAD in **DXF** or **STEP** file formats.
@@ -31,6 +33,8 @@ You can easily import your CAD in **DXF** or **STEP** file formats.
 ![drag n drop](assets/quickstart/drag-drop.gif)
 
 </p>
+
+---
 
 ### .NEC
 
@@ -50,6 +54,77 @@ If you have a ***.NEC*** (or other format) file, you can import it from the Part
 
 ---
 
+### Unit scaling
+
+CAD files which are imported in *FreeCAD* must be in the **correct units - milimeters**. If your geometry is **scaled incorrectly**, you **need to rescale it**, otherwise meshing problems will occur.
+
+To scale your geometry:
+
+1. Switch to **Draft** workbench.
+
+<p align="center">
+
+![NEC import](assets/quickstart/94.png)
+
+</p>
+
+2. In *Tree View* select your geometry and click **Clone** (this function will create a **scalable copy** of your geometry).
+
+<p align="center">
+
+![NEC import](assets/quickstart/95.png)
+
+</p>
+
+
+3. Once the clone object is created, **scale your geometry** in *Properties*. Make sure that the scale factor is the same in every direction to avoid distorting your geometry!
+
+<p align="center">
+
+![NEC import](assets/quickstart/96.png)
+
+</p>
+
+
+:::note
+As an alternative to geometry scaling you can use **Scale** function, but it will **not work on every geometry**, as opposed to **Clone** approach.
+
+<p align="center">
+
+![NEC import](assets/quickstart/97.png)
+
+</p>
+
+:::
+
+---
+
+### CAD compound check
+
+If you have imported one or more CAD files and **stumble into a problem either at meshing or anywhere else**, it might be an **indicator that the CAD file is actually not a solid, but compound of surfaces**, which can cause problems for FreeCAD.
+
+To check if your CAD is a solid:
+
+1. Click on the object in *Tree View* and open **Python console** (*right-click* on the icon toolbar and select *Python console*)
+
+2. On the lower right corner *Python console* will open. Write **len(obj.Shape.Solids)** and click enter.
+
+3. Take a look of the output.
+
+<p align="center">
+
+![assets/quickstart/Untitled23.png](assets/quickstart/93.png)
+
+</p>
+
+The number of solids indicate how many volumes are there. If this number is high, **evaluate the quality of your CAD file**!
+
+:::note
+If you get an error message an cannot display the number of solids, click **Edit → Send to python console**, and redo the previous steps!
+:::
+
+---
+
 ## Component Library
 
 You can use **CENOS Component Library** templates to **build patch or connector geometries**.
@@ -60,11 +135,41 @@ You can use **CENOS Component Library** templates to **build patch or connector 
 
 </p>
 
-**Select the part you want to build** and click **Create**. **Fill out the template** parameters for those parts that it is necessary, and click **OK** to build your geometry!
+### Patch antenna
+
+**Select the patch you want to build** and click **Create**. **Fill out the template** parameters and click **OK** to build your geometry!
 
 <p align="center">
 
 ![assets/quickstart/Untitled23.png](assets/quickstart/84.png)
+
+</p>
+
+---
+
+### Coaxial edge connector
+
+Select **Coaxial edge connector** and click **Create**.
+
+<p align="center">
+
+![assets/quickstart/Untitled23.png](assets/quickstart/55.png)
+
+</p>
+
+Connector will be automatically placed in your workbench, so you can **position it** by left-clicking on it in the tree view and selecting **Transform**.
+
+<p align="center">
+
+![assets/quickstart/Untitled7.png](assets/quickstart/Untitled7.png)
+
+</p>
+
+To **change the size** of the connector, select it in tree view and edit the **Property** tab to suit your application.
+
+<p align="center">
+
+![assets/quickstart/Untitled23.png](assets/quickstart/57.png)
 
 </p>
 
