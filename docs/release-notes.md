@@ -4,6 +4,15 @@ title: Release notes
 sidebar_label: v1.x
 ---
 
+## v1.0.2 (April 6, 2021)
+
+* ParaView updated to version 5.9, which solves crashing issues. 
+* First time hints can be reenabled in settings. 
+* Meshing is not blocking UI in FreeCAD.
+* Meshing improvements in FreeCAD.
+* STL files are explicitly not supported as CAD input. 
+* Added "Extract face/edge" tool in FreeCAD.
+
 ## v1.0.1 (March 26, 2021)
 
 #### Improvements
