@@ -8,6 +8,12 @@ PCB/planar/patch antennas are **very widely used in modern electronics**, and of
 
 In this guide we will take a look at **how to build a complete patch antenna simulation from scratch in CENOS Antenna Design app**, using its built-in geometry editor, *FreeCAD*.
 
+<p align="center">
+
+![assets/quickstart/Untitled24.png](assets/example/44.png)
+
+</p>
+
 ---
 
 ## Case setup
