@@ -1,5 +1,5 @@
 ---
-id: tips
+id: geometry-tips
 title: Useful Tips, Tricks and Shortcuts for working with FreeCAD
 sidebar_label: Tips & Tricks
 ---

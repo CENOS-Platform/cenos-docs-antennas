@@ -1,5 +1,5 @@
 ---
-id: patch-example
+id: example-patch
 title: Patch antenna simulation setup
 sidebar_label: Patch antenna
 ---
@@ -68,7 +68,7 @@ In this *Geometry creation* section we will cover **all main points you need to 
 
 First thing we need to do is to build the substrate. The easiest way to do that is through box creation.
 
-In **<span style={{ color: "blue" }}>Part</span>** workbench **[create a box](creation#3d-volumes)** and **change the parameters** (height) to the values corresponding to your antenna substrate.
+In **<span style={{ color: "blue" }}>Part</span>** workbench **[create a box](geometry-creation#primitives)** and **change the parameters** (height) to the values corresponding to your antenna substrate.
 
 <p align="center">
 
@@ -80,7 +80,7 @@ In **<span style={{ color: "blue" }}>Part</span>** workbench **[create a box](cr
 
 ### Patch / Conductive layers
 
-Next we need to create the patch for our antenna. In **<span style={{ color: "blue" }}>Sketch</span>** workbench patch can be drawn directly on the substrate as a **[2D sketch](creation#on-volumes)** or created as a **[3D extrusion](creation#extrusion)**. **They both work!**
+Next we need to create the patch for our antenna. In **<span style={{ color: "blue" }}>Sketch</span>** workbench patch can be drawn directly on the substrate as a **[2D sketch](geometry-creation#on-volumes)** or created as a **[3D extrusion](geometry-creation#extrusion)**. **They both work!**
 
 <p align="center">
 
@@ -91,11 +91,11 @@ Next we need to create the patch for our antenna. In **<span style={{ color: "bl
 #### PROS/CONS
 
 For 2D patch:
-* **Easier to create** ([Sketch on surface](creation#from-scratch))
+* **Easier to create** ([Sketch on surface](geometry-creation#on-volumes))
 * Can **avoid meshing problems**
 
 For 3D layer:
-* Slightly more **difficult to create** (Have to create an [extrusion](creation#extrusion))
+* Slightly more **difficult to create** (Have to create an [extrusion](geometry-creation#extrusion))
 * **More accurate results**
 
 ---
@@ -110,7 +110,7 @@ Last thing we need to add is a uniform port surface. Select the side of the box 
 
 </p>
 
-Depending on your patch, you can create **[planar](lumped-ports#planar)** or **[curved](lumped-ports#curved)** ports.
+Depending on your patch, you can create **[planar](geometry-lumped-ports#planar)** or **[curved](geometry-lumped-ports#curved)** ports.
 
 <p align="center">
 
@@ -193,7 +193,7 @@ As geometry is being sent to CENOS, **FreeCAD study will be automatically saved*
 
 ### Manual meshing
 
-If during the calculation you get a **message about meshing problems**, you will need to **[manually mesh](meshing#general-mesh)** your antenna in FreeCAD. You can also mesh it manually already when building your geometry (while still in FreeCAD) in case you want more control over your simulation.
+If during the calculation you get a **message about meshing problems**, you will need to **[manually mesh](geometry-meshing#general-mesh)** your antenna in FreeCAD. You can also mesh it manually already when building your geometry (while still in FreeCAD) in case you want more control over your simulation.
 
 <p align="center">
 
@@ -213,7 +213,7 @@ Essentially you need to clarify which part of your geometry is the dielectric, w
 
 ### Type of antenna
 
-Before you define roles, you need to **[select what kind of antenna you have](definition#select-the-type-of-your-antenna)** - *Microstrip*, *Wire* or *Other*.
+Before you define roles, you need to **[select what kind of antenna you have](geometry-roles#select-the-type-of-your-antenna)** - *Microstrip*, *Wire* or *Other*.
 
 For this example we choose **Microstrip/PCB** antenna type.
 
@@ -227,7 +227,7 @@ For this example we choose **Microstrip/PCB** antenna type.
 
 ### Surface/volume roles
 
-Now you need to **[define surface and volume roles](definition#assign-roles-to-your-geometry)** for your substrate, patch, ground and port.
+Now you need to **[define surface and volume roles](geometry-roles#assign-roles-to-your-geometry)** for your substrate, patch, ground and port.
 
 <p align="center">
 

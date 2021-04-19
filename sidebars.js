@@ -1,9 +1,9 @@
 module.exports = {
   someSidebar: {
-    Geometry: ['overview', 'good-cad', 'creation', 'lumped-ports', 'definition', 'meshing', 'tips'],
-    Physics: ['quickstart-physics', 'boundaries'],
+    Geometry: ['geometry-overview', 'geometry-good-cad', 'geometry-creation', 'geometry-lumped-ports', 'geometry-roles', 'geometry-meshing', 'geometry-tips'],
+    Physics: ['physics-overview', 'physics-boundaries'],
     Results: ['results-overview', 'results-advanced'],
-    Examples: ['patch-example', 'dipole-example'],
+    Examples: ['example-patch', 'example-dipole'],
     FAQ: ['faq-installation'],
     'Release notes': ['release-notes'],
   },

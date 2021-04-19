@@ -1,5 +1,5 @@
 ---
-id: boundaries
+id: physics-boundaries
 title: Boundary conditions
 sidebar_label: Boundaries
 ---

@@ -1,5 +1,5 @@
 ---
-id: dipole-example
+id: example-dipole
 title: Folded dipole antenna simulation setup
 sidebar_label: Folded dipole antenna
 ---
@@ -66,7 +66,7 @@ In this *Geometry creation* section we will cover **all main points you need to 
 
 ### Dipole wire sketch
 
-First thing we need to do is to **draw the sketch of our wire**. In **<span style={{ color: "blue" }}>Sketch</span>** workbench **[create a sketch](creation#on-volumes)** and draw the wire outline.
+First thing we need to do is to **draw the sketch of our wire**. In **<span style={{ color: "blue" }}>Sketch</span>** workbench **[create a sketch](geometry-creation#on-volumes)** and draw the wire outline.
 
 <p align="center">
 
@@ -97,7 +97,7 @@ To create separate **surface for our port**, draw a **separate line in the sketc
 
 ### Wire thickness
 
-Once the sketch is created, add **[wire thickness](creation#wire-thickness)** to the sketch to build the actual wire geometry.
+Once the sketch is created, add **[wire thickness](geometry-creation#wire-thickness)** to the sketch to build the actual wire geometry.
 
 <p align="center">
 
@@ -129,7 +129,7 @@ As geometry is being sent to CENOS, **FreeCAD study will be automatically saved*
 
 ### Manual meshing
 
-If during the calculation you get a **message about meshing problems**, you will need to **[manually mesh](meshing#general-mesh)** your antenna in FreeCAD. You can also mesh it manually already when building your geometry (while still in FreeCAD) in case you want more control over your simulation.
+If during the calculation you get a **message about meshing problems**, you will need to **[manually mesh](geometry-meshing#general-mesh)** your antenna in FreeCAD. You can also mesh it manually already when building your geometry (while still in FreeCAD) in case you want more control over your simulation.
 
 <p align="center">
 
@@ -149,7 +149,7 @@ Essentially you need to clarify which part of your geometry is the dielectric, w
 
 ### Type of antenna
 
-Before you define roles, you need to **[select what kind of antenna you have](definition#select-the-type-of-your-antenna)** - *Microstrip*, *Wire* or *Other*.
+Before you define roles, you need to **[select what kind of antenna you have](geometry-roles#select-the-type-of-your-antenna)** - *Microstrip*, *Wire* or *Other*.
 
 For this example we choose **Wire** antenna type.
 
@@ -163,7 +163,7 @@ For this example we choose **Wire** antenna type.
 
 ### Wire/port roles
 
-Now you need to **[define surface and volume roles](definition#assign-roles-to-your-geometry)** for your wire and port.
+Now you need to **[define surface and volume roles](geometry-roles#assign-roles-to-your-geometry)** for your wire and port.
 
 <p align="center">
 

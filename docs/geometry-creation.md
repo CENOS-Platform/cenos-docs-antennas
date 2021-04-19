@@ -1,5 +1,5 @@
 ---
-id: creation
+id: geometry-creation
 title: Geometry creation in FreeCAD
 sidebar_label: Geometry creation (FreeCAD)
 ---

@@ -1,5 +1,5 @@
 ---
-id: overview
+id: geometry-overview
 title: Geometry overview
 sidebar_label: Overview
 slug: /

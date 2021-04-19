@@ -1,5 +1,5 @@
 ---
-id: quickstart-physics
+id: physics-overview
 title: Physics and simulation setup
 sidebar_label: Physics overview
 ---

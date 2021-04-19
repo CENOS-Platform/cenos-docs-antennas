@@ -1,5 +1,5 @@
 ---
-id: lumped-ports
+id: geometry-lumped-ports
 title: Lumped ports
 sidebar_label: Lumped ports/feeds
 ---
@@ -37,7 +37,7 @@ Uniform ports are **widely used in PCB antennas**, where the port connects the *
 
 To **create planar feed**:
 
-1. **[Create a sketch](creation#sketches) on the side and draw a uniform port on the edge of the patch**, connecting the top conductive layer with the ground plane.
+1. **[Create a sketch](geometry-creation#sketches) on the side and draw a uniform port on the edge of the patch**, connecting the top conductive layer with the ground plane.
 
 <p align="center">
 
@@ -57,7 +57,7 @@ In addition to *coaxial edge connectors*, **SMA connectors** are commonly used i
 
 To **create curved feed**:
 
-1. **[Create a sketch](creation#sketches)** on the patch and **draw a circle** of where the port will be.
+1. **[Create a sketch](geometry-creation#sketches)** on the patch and **draw a circle** of where the port will be.
 
 <p align="center">
 
@@ -65,7 +65,7 @@ To **create curved feed**:
 
 </p>
 
-2. **[Extrude](creation#extrusion)** the port through the patch.
+2. **[Extrude](geometry-creation#extrusion)** the port through the patch.
 
 3. Choose the patch and cylinder objects and click **Cut** boolean to create a hole in the patch.
 

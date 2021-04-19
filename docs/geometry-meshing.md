@@ -1,5 +1,5 @@
 ---
-id: meshing
+id: geometry-meshing
 title: Manual meshing in FreeCAD
 sidebar_label: Manual meshing (FreeCAD)
 ---
@@ -106,7 +106,7 @@ For such cases we need to **refine the outer edge of our patch**, which will **c
 
 To create such edge refinement:
 
-1. **Create an additional edge in your [sketch](creation#sketches)** (in the middle of the patch). This will work as a reference edge for keeping the mesh element size in the middle of the patch large.
+1. **Create an additional edge in your [sketch](geometry-creation#sketches)** (in the middle of the patch). This will work as a reference edge for keeping the mesh element size in the middle of the patch large.
 
 <p align="center">
 
@@ -114,7 +114,7 @@ To create such edge refinement:
 
 </p>
 
-2. **Before creating [mesh refinement](meshing#general-refinements)**, [enable the visibility](tips#common-tasks) of the sketch and **select the outer edges of your patch**. Leave the internal edge unselected!
+2. Before creating mesh refinement, **[enable the visibility](geometry-tips#common-tasks)** of the sketch and **select the outer edges of your patch**. Leave the internal edge unselected!
 
 <p align="center">
 
@@ -122,7 +122,7 @@ To create such edge refinement:
 
 </p>
 
-Now just create the *Mesh refinement* for the selected edges, and you have created an optimized mesh for your patch!
+Now just create the **[mesh refinement](geometry-meshing#general-refinements)** for the selected edges, and you have created an optimized mesh for your patch!
 
 <p align="center">
 
@@ -144,7 +144,7 @@ For patch antennas with insets it is **important to resolute the inset gaps thro
 
 To refine mesh in these places:
 
-1. **Create two additional edges in your [sketch](creation#sketches)** (in the middle of both insets). These will work as a reference edges for decreasing the mesh element size in the middle of the inset.
+1. **Create two additional edges in your [sketch](geometry-creation#sketches)** (in the middle of both insets). These will work as a reference edges for decreasing the mesh element size in the middle of the inset.
 
 <p align="center">
 
@@ -152,7 +152,7 @@ To refine mesh in these places:
 
 </p>
 
-2. **Before creating [mesh refinement](meshing#general-refinements)**, [enable the visibility](tips#common-tasks) of the sketch and **select the two edges in your inset parts**.
+2. **Before creating [mesh refinement](geometry-meshing#general-refinements)**, [enable the visibility](geometry-tips#common-tasks) of the sketch and **select the two edges in your inset parts**.
 
 <p align="center">
 
@@ -205,7 +205,7 @@ Error message **Warning : X elements remain invalid on surface XX** indicates th
 
 If this happens, the surface (on which the invalid elements are reported) will be visible in the **Mesh Error elements** group in the tree view.
 
-To **visualize the problematic surfaces**, [disable the sub-mesh visibility](tips#common-tasks) (they will appear red).
+To **visualize the problematic surfaces**, [disable the sub-mesh visibility](geometry-tips#common-tasks) (they will appear red).
 
 ![Send mesh to CENOS](assets/meshing/20.png)
 

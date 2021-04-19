@@ -1,5 +1,5 @@
 ---
-id: good-cad
+id: geometry-good-cad
 title: CAD quality requirements
 sidebar_label: CAD quality
 ---
