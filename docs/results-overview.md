@@ -1,7 +1,7 @@
 ---
 id: results-overview
 title: Result overview
-sidebar_label: Overview
+sidebar_label: Result overview
 ---
 
 Once the simulation is done, results will be processed and opened in a separate window. *CENOS Antenna Design* app offers different ways and tools to analyze your antenna design.

@@ -1,7 +1,7 @@
 ---
 id: quickstart-physics
 title: Physics and simulation setup
-sidebar_label: Physics Definitions
+sidebar_label: Physics overview
 ---
 
 ## Overview

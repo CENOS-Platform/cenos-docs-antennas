@@ -78,6 +78,30 @@ Parts of antenna such as **screws**, **bolts**, **threads** or **embedded text**
 
 </p>
 
+### Port simplification
+
+For physical antennas port or feed is one of the most important parts of the assembly, however, you can easily **simplify the port geometry**, to make the simulation faster without sigificant losses in precision.
+
+![assets/quickstart/Untitled24.png](assets/example/1.png)
+
+<p align="center">
+
+![assets/quickstart/Untitled24.png](assets/example/3.png)
+
+</p>
+
+<p align="center">
+
+![assets/quickstart/Untitled24.png](assets/example/45.png)
+
+</p>
+
+<p align="center">
+
+![assets/quickstart/Untitled24.png](assets/example/30.png)
+
+</p>
+
 ## Resolve incorrect connections
 
 During geometry creation be careful with connections between different parts of your antenna – inaccurate connections will result in meshing problems and calculation errors!
