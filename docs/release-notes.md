@@ -4,6 +4,15 @@ title: Release notes
 sidebar_label: v1.x
 ---
 
+## v1.1.0 (April 20, 2021)
+
+* Multiple processor cores will be used in simulation. Custom settings added to select threads and processor architecture.  (Professional subscription)
+* Direct support chat built into application. (Professional subscription)
+* PCB flattening tool added to FreeCAD.
+* KiCAD integration into FreeCAD.
+* Fixed display of multi-frequency simulation in PDF results.
+* FreeCAD component library updated.
+
 ## v1.0.2 (April 6, 2021)
 
 * ParaView updated to version 5.9, which solves crashing issues. 
