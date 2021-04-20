@@ -94,7 +94,7 @@ Coaxial ports are ports where the connection surface is made by a coaxial cable.
 </p>
 
 :::tip
-You can create a coaxial connector yourself or use one from the **[Component Library](creation#component-library)**.
+You can create a coaxial connector yourself or use one from the **[Component Library](geometry-creation#component-library)**.
 :::
 
 Coaxial ports can be **simplified as well** - replace the complex assembly with simple cylinders!
