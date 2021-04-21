@@ -223,6 +223,6 @@ As you do this, the **generated mesh will be visualized on your results**, and y
 
 </p>
 
-In this case the spikes are numerical effect caused by coarse mesh, so we should **[refine the mesh](geometry-meshing#patch-meshing)** to get more precise results!
+In this case the spikes are numerical effect caused by coarse mesh, so we should **[refine the mesh](meshing)** to get more precise results!
 
 ---
