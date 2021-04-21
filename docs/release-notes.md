@@ -12,6 +12,9 @@ sidebar_label: v1.x
 * KiCAD integration into FreeCAD.
 * Fixed display of multi-frequency simulation in PDF results.
 * FreeCAD component library updated.
+* Terms & Conditions updated removing some restrictions (Section 6). Now, no issue to use the software for design of such things as medical equipment, e-cigaretes and military/governmental projects.
+
+
 
 ## v1.0.2 (April 6, 2021)
 
