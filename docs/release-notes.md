@@ -4,6 +4,15 @@ title: Release notes
 sidebar_label: v1.x
 ---
 
+## v1.1.1 (May 13, 2021)
+
+* All PRO plan functionality is enabled for Trial plan as well.
+* App notifies if VC++ redistributables are missing and there is no access to Windows registry settings.
+* Ipt import now works with non-English locale.
+* Panel mount SMA connector is added to component library.
+* Bug where play button re-imports file is fixed.
+* Component library descriptions now display correctly formatted markdown.
+
 ## v1.1.0 (April 20, 2021)
 
 * Multiple processor cores will be used in simulation. Custom settings added to select threads and processor architecture.  (Professional subscription)
