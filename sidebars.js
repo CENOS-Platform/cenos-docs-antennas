@@ -4,7 +4,7 @@ module.exports = {
     Physics: ['physics-overview', 'physics-boundaries'],
     Results: ['results-overview', 'results-advanced'],
     Examples: ['example-patch', 'example-dipole'],
-    FAQ: ['faq-installation'],
+    FAQ: ['faq-installation', 'faq-hardware'],
     'Release notes': ['release-notes'],
   },
 };
