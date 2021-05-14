@@ -4,7 +4,7 @@ title: Release notes
 sidebar_label: v1.x
 ---
 
-## v1.1.1 (May 13, 2021)
+## v1.1.1 (May 14, 2021)
 
 * All PRO plan functionality is enabled for Trial plan as well.
 * App notifies if VC++ redistributables are missing and there is no access to Windows registry settings.
