@@ -8,6 +8,20 @@ sidebar_label: Installation/OS
 
 - No, CENOS AD app is built for usage on machines with **Windows 10 only**. Earlier versions (Win7&8) will not support it!
 
+#### What is the blue screen during the installation?
+
+- Sometimes *Windows Defender* may ask your permission. Click **More info** and then **Run anyway** to install CENOS!
+
+<p align="center">
+
+![drag n drop](assets/faq/1.png)
+
+</p>
+
+#### Why do I need to install separately all open-source components?
+
+- Open-ource components are necessary for CENOS to run, however you don't need to install them manually - at the installation, click "Download automatically", and CENOS will do everything for you!
+
 #### Can I install *CENOS Antenna Design* app on *virtual machine*?
 
 - Generally there are no limitations for virtual machines, but we do not support them officially. When installing on virtual machines you need to **be careful with GPU**, as they can be outdated and not able to run *ParaView* (**it must support** ***OpenGL 3.3***), which is a relatively large problem specific to virtual machines.
