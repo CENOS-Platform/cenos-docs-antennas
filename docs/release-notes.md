@@ -4,6 +4,10 @@ title: Release notes
 sidebar_label: v1.x
 ---
 
+## v1.1.3 (June 2, 2021)
+
+* Fixed version check of 3rd party components.
+
 ## v1.1.2 (May 19, 2021)
 
 * Fixed freeze while meshing in FreeCAD.
