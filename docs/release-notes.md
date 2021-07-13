@@ -3,6 +3,17 @@ id: release-notes
 title: Release notes
 sidebar_label: v1.x
 ---
+## v1.1.4 (July 13, 2021)
+
+* Improved support chat.
+* Recent material badges are now pinnable. 
+* Role parameters are kept/updated, if geometry is sent from pre-processor again. 
+* License key now can be changed.
+* Cases now can be stored in path with 'space' in file path.
+* Improved import of STEP files. 
+* Fixed hanging of FreeCAD during meshing. 
+* Role type can now be changed.
+* Can rename faces in Geometry interface.
 
 ## v1.1.3 (June 2, 2021)
 
