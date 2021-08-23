@@ -3,6 +3,14 @@ id: release-notes
 title: Release notes
 sidebar_label: v1.x
 ---
+
+## v1.1.5 (August 23, 2021)
+
+* Warning message if user opens newer case in the older CENOS version.
+* Fix: Correct calculations when coaxial port is selected.
+* Frequency start and end values should be positive integers.
+* Fix: Microsoft VC++ redistributable install restarted PC without asking.
+
 ## v1.1.4 (July 13, 2021)
 
 * Improved support chat.
