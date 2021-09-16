@@ -30,7 +30,7 @@ module.exports = {
       copyright: `Copyright © ${new Date().getFullYear()} CENOS`,
     },
     gtag: {
-      trackingID: 'UA-126203246-1',
+      trackingID: 'G-NZL2ED8GXN',
     },
   },
   presets: [
