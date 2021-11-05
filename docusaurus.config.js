@@ -32,6 +32,12 @@ module.exports = {
     gtag: {
       trackingID: 'G-NZL2ED8GXN',
     },
+    algolia: {
+      appId: 'TEL58RDMQQ',
+      apiKey: 'fec7e73e384b37585cf920a8a8281eb4',
+      indexName: 'cenos_docs_antennas',
+      searchParameters: {},
+    },
   },
   presets: [
     [
