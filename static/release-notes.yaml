@@ -1,0 +1,20 @@
+# Text of the next release is shown on the Download pop-up inside CENOS software.
+#
+# You do not need to enter all release notes. Think of the most useful and most
+# relevant for the existing users.
+#
+# DO NOT use more than 4 entries per version.
+releases:
+  '1.2.0-FIXME':
+    - 'NEW: Parametric study'
+    - New templates
+    - Multiport
+
+  '1.1.5':
+    - Warning message if user opens newer case in the older CENOS version
+    - 'Fix: Correct calculations when coaxial port is selected'
+    - Frequency start and end values should be positive integers
+    - 'Fix: Microsoft VC++ redistributable install restarted PC without asking'
+
+# List may contain also entries for beta releases.
+# You are free to delete older release notes.
