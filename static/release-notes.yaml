@@ -5,10 +5,11 @@
 #
 # DO NOT use more than 4 entries per version.
 releases:
-  '1.2.0-FIXME':
-    - 'NEW: Parametric study'
-    - New templates
-    - Multiport
+  '1.2.0':
+
+    - Multi-port S-Parameters
+    - Parametric Workbench
+    - New templates added: Triangular Microstrip, Circular Microstrip, Yagi-Uda Wire Antenna
 
   '1.1.5':
     - Warning message if user opens newer case in the older CENOS version

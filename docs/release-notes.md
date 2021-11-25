@@ -3,6 +3,14 @@ id: release-notes
 title: Release notes
 sidebar_label: v1.x
 ---
+## v1.2.0 (November 25, 2021)
+
+* Multi-port S-Parameters, enabling engineers to simulate antenna arrays and other networks (such as filters) like never before;
+* Parametric Workbench, accelerating the process of trial and error in terms of geometric adjustments, by running all the desired configurations in one go automatically;
+* Three new antenna templates added:
+    - Triangular Microstrip Antenna
+    - Circular Microstrip Antenna
+    - Yagi-Uda Wire Antenna
 
 ## v1.1.5 (August 23, 2021)
 
