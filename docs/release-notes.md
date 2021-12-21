@@ -3,6 +3,13 @@ id: release-notes
 title: Release notes
 sidebar_label: v1.x
 ---
+
+## v1.2.1 (December 21, 2021)
+
+* Coaxial port now works similar to uniform port.
+* Fixed "Create automatic mesh now" workflow.
+* License key can now be changed.
+
 ## v1.2.0 (November 25, 2021)
 
 * Multi-port S-Parameters, enabling engineers to simulate antenna arrays and other networks (such as filters) like never before;

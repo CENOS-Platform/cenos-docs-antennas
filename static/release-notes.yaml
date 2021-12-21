@@ -5,8 +5,12 @@
 #
 # DO NOT use more than 4 entries per version.
 releases:
-  '1.2.0':
+  '1.2.1':
+    - Coaxial port now works similar to uniform port.
+    - Fixed "Create automatic mesh now" workflow.
+    - License key can now be changed.
 
+  '1.2.0':
     - Multi-port S-Parameters
     - Parametric Workbench
     - New templates added: Triangular Microstrip, Circular Microstrip, Yagi-Uda Wire Antenna
