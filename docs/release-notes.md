@@ -4,7 +4,7 @@ title: Release notes
 sidebar_label: v1.x
 ---
 
-## v1.2.1 (March 11, 2021)
+## v1.2.2 (March 11, 2021)
 
 * Polar plots' scaling is now normalized.
 * Resolved consistency in the symbol of object merging.
