@@ -4,6 +4,16 @@ title: Release notes
 sidebar_label: v1.x
 ---
 
+## v1.2.1 (March 11, 2021)
+
+* Polar plots' scaling is now normalized.
+* Resolved consistency in the symbol of object merging.
+* Resolved phase shift issue that introduced errors in physics computations.
+* Improved the robustness of the role assignment procedure.
+* Fixed 3D farfield bug that disappeared upon the introduction of ParaView filters.
+* Fixed |S11| > 0 dB caused by phase-related issues.
+* Phase shift value is now stored and isn't lost when going back to a previous value-definition stage.
+
 ## v1.2.1 (December 21, 2021)
 
 * Coaxial port now works similar to uniform port.

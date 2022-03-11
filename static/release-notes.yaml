@@ -5,6 +5,11 @@
 #
 # DO NOT use more than 4 entries per version.
 releases:
+  '1.2.2':
+    - Polar plots' scaling is now normalized.
+    - Resolved consistency in the symbol of object merging.
+    - Resolved phase shift issue that introduced errors in physics computations.
+
   '1.2.1':
     - Coaxial port now works similar to uniform port.
     - Fixed "Create automatic mesh now" workflow.
