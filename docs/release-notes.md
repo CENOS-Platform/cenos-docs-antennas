@@ -4,6 +4,24 @@ title: Release notes
 sidebar_label: v1.x
 ---
 
+## v1.2.3 (March 31, 2021)
+
+* Fixed S11 > 0 bug.
+* Fixed unstoppable parametric sweep.
+* Fixed license check crash.
+* Fixed template case saving issue (temporary cases).
+* Fixed disappearing From CAD geometry (which failed to simulate).
+* Fixed boundary side highlight (preview section).
+* Fixed parametric sweep when using an imported mesh.
+* Fixed rotated PDF results.
+* Fixed ParaView lacking results/error display.
+* Fixed E-field display bug.
+* Fixed invisibility of sketched faces.
+* Fixed radiation pattern plots' normalization.
+* Mesh element count fix.
+* Mesh edge orientation fix.
+* Resolved radiated power calculation (from accepted power and dielectric losses).
+
 ## v1.2.2 (March 11, 2021)
 
 * Polar plots' scaling is now normalized.
