@@ -4,6 +4,10 @@ title: Release notes
 sidebar_label: v1.x
 ---
 
+## v1.2.4 (April 1, 2021)
+
+* Updates to support chat.
+
 ## v1.2.3 (March 31, 2021)
 
 * Fixed S11 > 0 bug.
