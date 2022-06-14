@@ -1,6 +1,6 @@
 ---
 id: release-notes-v1
-title: Release notes
+title: Release notes v1.x 
 sidebar_label: v1.x
 ---
 

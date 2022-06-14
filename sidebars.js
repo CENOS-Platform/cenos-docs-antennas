@@ -5,6 +5,6 @@ module.exports = {
     Results: ['results-overview', 'results-advanced'],
     Examples: ['example-patch', 'example-dipole'],
     FAQ: ['faq-installation', 'faq-hardware'],
-    'Release notes': ['release-notes'],
+    'Release notes': ['release-notes', 'release-notes-v1'],
   },
 };
