@@ -4,9 +4,9 @@ title: Folded dipole antenna simulation setup
 sidebar_label: Folded dipole antenna
 ---
 
-In radio and telecommunications a dipole antenna is the **simplest** and **most widely used** class of antenna. There are multiple types of dipole antennas - the simplest ones you can simulate using *CENOS Antenna Design* **Templates**, but for more complex ones (such as loop or folded dipole) **Geometry Editor** can be used!
+In radio and telecommunications a dipole antenna is the **simplest** and **most widely used** class of antenna. There are multiple types of dipole antennas - the simplest ones you can simulate using *CENOS Radio Frequency* **Templates**, but for more complex ones (such as loop or folded dipole) **Geometry Editor** can be used!
 
-In this guide we will take a look at **how to build a complete folded dipole antenna simulation from scratch in CENOS Antenna Design app**, using its built-in geometry editor, *FreeCAD*.
+In this guide we will take a look at **how to build a complete folded dipole antenna simulation from scratch in CENOS Radio Frequency app**, using its built-in geometry editor, *FreeCAD*.
 
 <p align="center">
 

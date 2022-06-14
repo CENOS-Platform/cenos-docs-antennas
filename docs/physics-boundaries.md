@@ -6,7 +6,7 @@ sidebar_label: Boundaries
 
 **Boundary conditions** or **Boundaries** are very important part of the simulation, as they are needed to physically define your antenna design. Even though *Boundaries* are always filled automatically, in some occasions you will need to **change or adjust the default definitions**.
 
-In this article we will **go over the boundary conditions available** in *CENOS Antenna Design* app and **learn the meaning of each definition**.
+In this article we will **go over the boundary conditions available** in *CENOS Radio Frequency* app and **learn the meaning of each definition**.
 
 ## Uniform/Coaxial port
 

@@ -7,7 +7,7 @@ slug: /
 
 In **CENOS RF 2.0** there are multiple ways available for antenna geometry creation - *Templates*, *Import CAD* and *Geometry editor*.
 
-In this section we will take a look at the **general layout and workflow** of the geometry setup in *CENOS Antenna Design* app.
+In this section we will take a look at the **general layout and workflow** of the geometry setup in *CENOS Radio Frequency* app.
 
 ---
 

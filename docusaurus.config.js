@@ -1,6 +1,6 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
-  title: 'CENOS Antenna Design Docs',
+  title: 'CENOS Radio Frequency Docs',
   tagline: 'The tagline of my site',
   url: 'https://ad.cenos-platform.com',
   baseUrl: '/',
@@ -11,7 +11,7 @@ module.exports = {
   projectName: 'cenos-docs-antennas', // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: 'CENOS Antenna Design',
+      title: 'CENOS Radio Frequency',
       logo: {
         alt: 'Cenos Logo',
         src: 'img/logo.svg',

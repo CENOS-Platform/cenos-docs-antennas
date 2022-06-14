@@ -4,11 +4,11 @@ title: Result overview
 sidebar_label: Result overview
 ---
 
-Once the simulation is done, results will be processed and opened in a separate window. *CENOS Antenna Design* app offers different ways and tools to analyze your antenna design.
+Once the simulation is done, results will be processed and opened in a separate window. *CENOS Radio Frequency* app offers different ways and tools to analyze your antenna design.
 
 **In this section we will go over the default result evaluation layout for antenna simulation results**.
 
-**Watch a short video on how to evaluate results in CENOS Antenna Design app**:
+**Watch a short video on how to evaluate results in CENOS Radio Frequency app**:
 
 <p align="center">
 
@@ -98,7 +98,7 @@ For *S11 and other charts* you can **set a custom frequency range** at the botto
 
 ## Spreadsheet
 
-*CENOS Antenna Design* outputs a .csv file with all of the global values such as **S11, VSWR**, and many more. You can open this in Excel, for example, where you can then plot, compare and analyze the results however you wish.
+*CENOS Radio Frequency* outputs a .csv file with all of the global values such as **S11, VSWR**, and many more. You can open this in Excel, for example, where you can then plot, compare and analyze the results however you wish.
 
 ![assets/quickstart/Untitled17.png](assets/quickstart/Untitled17.png)
 

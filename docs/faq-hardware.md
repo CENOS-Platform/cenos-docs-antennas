@@ -1,6 +1,6 @@
 ---
 id: faq-hardware
-title: CENOS Antenna Design Hardware requirements
+title: CENOS Radio Frequency Hardware requirements
 sidebar_label: Hardware requirements
 ---
 
