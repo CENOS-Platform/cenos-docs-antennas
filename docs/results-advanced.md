@@ -4,7 +4,7 @@ title: Advanced result processing
 sidebar_label: Advanced evaluation
 ---
 
-Besides the default information and evaluation that *CENOS Antenna Design app* generates there is a **huge amount of manipulations** which you can carry out to **more deeply analyse** results and **get additional information** out of the results.
+Besides the default information and evaluation that *CENOS Radio Frequency app* generates there is a **huge amount of manipulations** which you can carry out to **more deeply analyse** results and **get additional information** out of the results.
 
 **In this section we will learn different methods on how to manually analyze antenna simulation results**.
 

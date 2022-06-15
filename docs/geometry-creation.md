@@ -4,9 +4,9 @@ title: Geometry creation in FreeCAD
 sidebar_label: Geometry creation (FreeCAD)
 ---
 
-For geometry manipulations *CENOS Antenna Design* uses a very strong geometry editor - *FreeCAD*. This editor is used with both *Import CAD* and *Geometry Editor*, so **it is important for us to understand how to work with FreeCAD**. 
+For geometry manipulations *CENOS Radio Frequency* uses a very strong geometry editor - *FreeCAD*. This editor is used with both *Import CAD* and *Geometry Editor*, so **it is important for us to understand how to work with FreeCAD**. 
 
-**Watch a short video on how to use FreeCAD for CENOS Antenna Design app**:
+**Watch a short video on how to use FreeCAD for CENOS Radio Frequency app**:
 
 <p align="center">
 
@@ -433,7 +433,7 @@ To **use these parameters**, click the *Formula Editor* button in the value fiel
 ![assets/quickstart/Untitled28.png](assets/quickstart/Untitled28.png)
 
 :::note
-For now, to update the parameters, you will have to open FreeCAD and re-send the geometry to CENOS. In the next CENOS Antenna Design versions parameters will be accessable directly from CENOS interface.
+For now, to update the parameters, you will have to open FreeCAD and re-send the geometry to CENOS. In the next CENOS Radio Frequency versions parameters will be accessable directly from CENOS interface.
 :::
 
 ---

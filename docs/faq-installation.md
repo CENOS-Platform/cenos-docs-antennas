@@ -4,7 +4,7 @@ title: Installation & Open-source FAQ
 sidebar_label: Installation/OS
 ---
 
-#### Can I install *CENOS Antenna Design* app on *Windows 7*?
+#### Can I install *CENOS Radio Frequency* app on *Windows 7*?
 
 - No, CENOS AD app is built for usage on machines with **Windows 10 only**. Earlier versions (Win7&8) will not support it!
 
@@ -22,7 +22,7 @@ sidebar_label: Installation/OS
 
 - Open-ource components are necessary for CENOS to run, however you don't need to install them manually - at the installation, click "Download automatically", and CENOS will do everything for you!
 
-#### Can I install *CENOS Antenna Design* app on *virtual machine*?
+#### Can I install *CENOS Radio Frequency* app on *virtual machine*?
 
 - Generally there are no limitations for virtual machines, but we do not support them officially. When installing on virtual machines you need to **be careful with GPU**, as they can be outdated and not able to run *ParaView* (**it must support** ***OpenGL 3.3***), which is a relatively large problem specific to virtual machines.
 
