@@ -7,7 +7,7 @@ sidebar_label: Hardware requirements
 **You don’t need a supercomputer** to run antenna design simulations with CENOS. Intel i5 or i7 (or similar) are good enough. **The faster processor you have, the faster calculation will go**.
 
 
-We recommend to have at least 16 GB RAM to calculate 3D cases, 32 GB is better. Actually, **the more RAM you have, the bigger (more complex) 3D geometries you can simulate**. Some of our customers use 128 GB machines and that’s like for rocket-science-cases.
+We recommend to have at least 16 GB RAM to calculate 3D cases, 32 GB is better. Actually, **the more RAM you have, the bigger (more complex) 3D geometries you can simulate**. Some of our customers use 128 GB machines and that’s like for rocket-science-cases. Test
 
 
 | Hadware component          | Requirements     |
