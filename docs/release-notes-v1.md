@@ -10,13 +10,13 @@ sidebar_label: v1.x
 
 ## v1.2.3 (March 31, 2021)
 
-* Fixed S11 > 0 bug.
-* Fixed unstoppable parametric sweep.
+* **Fixed** S11 > 0 bug.
+* **Fixed** unstoppable parametric sweep.
 * Fixed license check crash.
 * Fixed template case saving issue (temporary cases).
 * Fixed disappearing From CAD geometry (which failed to simulate).
 * Fixed boundary side highlight (preview section).
-* Fixed parametric sweep when using an imported mesh.
+* **Fixed* parametric sweep when using an imported mesh.
 * Fixed rotated PDF results.
 * Fixed ParaView lacking results/error display.
 * Fixed E-field display bug.
