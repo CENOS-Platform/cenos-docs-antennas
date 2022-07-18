@@ -62,15 +62,15 @@ In this example we will set up successive running for 3 cases. Simply write the 
 
 **IMPORTANT**: To make sure the console window does not close after the end of calculations, write *pause* after case command lines.
 
-:::note
-If the CENOS or case path contains spaces, place that path in parentheses, for example, "E:\CENOS Case Folder\example_case_name".
-:::
-
 <p align="center">
 
 ![Frequency comparement](assets/batch-running/6.png)
 
 </p>
+
+:::note
+If the CENOS or case path contains spaces, place that path in parentheses, for example, "E:\CENOS Case Folder\example_case_name".
+:::
 
 ### 3. Save as .bat file
 
