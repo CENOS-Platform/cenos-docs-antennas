@@ -34,7 +34,7 @@ In this example we will set up a successive running of 3 cases.
 
 ### 2. Define the sequence
 
-To define the cases you want to run, you need to **write a command line for each case** which defines with what to run it and where to find the case file. The basic structure of this command consists of 2 parts - **CENOS path**, where CENOS is installed and from where it is started, and **case path** to the case folder you want to run.
+To define the cases you want to run, you need to **write a command line for each case** which defines with what to run it and where to find the case file. The basic structure of this command consists of 2 parts - **"CENOS path"**, where CENOS is installed and from where it is started, and **"case path"** to the case folder you want to run.
 
 <p align="center">
 
@@ -60,17 +60,19 @@ To find **case path**, in **File Explorer** go to the case folder and copy its a
 
 In this example we will set up successive running for 3 cases. Simply write the command for each case in its own line.
 
-**IMPORTANT**: To make sure the console window does not close after the end of calculations, write *pause* after case command lines.
+:::note
+To make sure the console window does not close after the end of calculations, write *pause* after case command lines.
+:::
+
+:::warning important
+Put both paths inside quotation marks! Spacing in the path breaks the command!
+:::
 
 <p align="center">
 
 ![Frequency comparement](assets/batch-running/6.png)
 
 </p>
-
-:::note
-If the CENOS or case path contains spaces, place that path in parentheses, for example, "E:\CENOS Case Folder\example_case_name".
-:::
 
 ### 3. Save as .bat file
 
