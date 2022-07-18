@@ -65,7 +65,7 @@ To make sure the console window does not close after the end of calculations, wr
 :::
 
 :::warning important
-Put both paths inside quotation marks! Spacing in the path breaks the command!
+Put both paths inside quotation marks, otherwise the spacing will break the command!
 :::
 
 <p align="center">
