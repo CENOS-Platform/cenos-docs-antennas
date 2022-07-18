@@ -50,7 +50,7 @@ To find **CENOS path**, right-click on CENOS shortcut and select **Properties**.
 
 </p>
 
-To find **case path**, in **File Explorer** go to the case folder and copy its adress from the **Adress Bar**.
+To find **case path**, in **File Explorer** go to the case folder and copy its address from the **Address Bar**.
 
 <p align="center">
 
@@ -61,6 +61,10 @@ To find **case path**, in **File Explorer** go to the case folder and copy its a
 In this example we will set up successive running for 3 cases. Simply write the command for each case in its own line.
 
 **IMPORTANT**: To make sure the console window does not close after the end of calculations, write *pause* after case command lines.
+
+:::note
+If the CENOS or case path contains spaces, place that path in parentheses, for example, "E:\CENOS Case Folder\example_case_name".
+:::
 
 <p align="center">
 
