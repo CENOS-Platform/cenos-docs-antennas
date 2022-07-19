@@ -18,7 +18,7 @@ Once you have imported your CAD file and **[sent it to CENOS](geometry-roles#get
 
 ### Select the type of your antenna.
 
-First you need to **select the type of your antenna** - *PCB*, *Wire* or *Other*.
+First you need to **select the type of your antenna** - *Microstrip/PCB*, *Wire*, *Reflector*, *Multi-port network*, *Waveguide* or *Custom*.
 
 ![assets/overview/Untitled27.png](assets/roles/1.png)
 
