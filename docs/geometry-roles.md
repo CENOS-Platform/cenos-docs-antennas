@@ -16,7 +16,7 @@ Once you have imported your CAD file and **[sent it to CENOS](geometry-creation#
 
 ---
 
-### Select the type of your antenna.
+### Select the type of your model.
 
 First you need to **select the type of your model** - *Microstrip/PCB*, *Wire Antenna*, *Reflector*, *Multi-port network*, *Waveguide* or *Custom*.
 
