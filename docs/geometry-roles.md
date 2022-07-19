@@ -4,7 +4,7 @@ title: Geometry roles
 sidebar_label: Geometry roles
 ---
 
-Once you have imported your CAD file and **[sent it to CENOS](geometry-creation#getting-the-geometry-to-cenos)**, you will need to **define volumes and surfaces of your antenna**.
+Once you have imported your CAD file and **[sent it to CENOS](geometry-creation#getting-the-geometry-to-cenos)**, you will need to **define volumes and surfaces of your RF model**.
 
 **Watch a short video on how to define roles in CENOS Radio Frequency app**:
 
@@ -18,12 +18,12 @@ Once you have imported your CAD file and **[sent it to CENOS](geometry-creation#
 
 ### Select the type of your antenna.
 
-First you need to **select the type of your antenna** - *Microstrip/PCB*, *Wire*, *Reflector*, *Multi-port network*, *Waveguide* or *Custom*.
+First you need to **select the type of your model** - *Microstrip/PCB*, *Wire Antenna*, *Reflector*, *Multi-port network*, *Waveguide* or *Custom*.
 
 ![assets/overview/Untitled27.png](assets/roles/1.png)
 
 :::note tip
-If you want to **change selected antenna type**, click *Reset geometry type*.
+If you want to **change selected model type**, click *Reset geometry type*.
 
 <p align="center">
 
