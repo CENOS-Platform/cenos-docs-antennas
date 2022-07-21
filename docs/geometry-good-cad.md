@@ -60,7 +60,7 @@ For example, you can
 
 but you should
 
-- **leave any plastic encasings or covers over your antenna**.
+- **leave any plastic encasings or covers over your geometry**.
 
 ### Delete unnecessary elements
 
