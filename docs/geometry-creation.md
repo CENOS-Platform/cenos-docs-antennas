@@ -4,7 +4,7 @@ title: Geometry creation in FreeCAD
 sidebar_label: Geometry creation (FreeCAD)
 ---
 
-For geometry manipulations *CENOS Radio Frequency* uses a very strong geometry editor - *FreeCAD*. This editor is used with both *Import CAD* and *Geometry Editor*, so **it is important for us to understand how to work with FreeCAD**. 
+For geometry manipulations *CENOS Radio Frequency* uses a very strong geometry editor - *FreeCAD*. This editor is used in the *Geometry Editor* workflow, so **it is important for us to understand how to work with FreeCAD**. 
 
 **Watch a short video on how to use FreeCAD for CENOS Radio Frequency app**:
 
@@ -18,15 +18,15 @@ For geometry manipulations *CENOS Radio Frequency* uses a very strong geometry e
 
 ## Geometry import
 
-Sometimes when building an antenna simulation, you will already have a pre-made geometry, which you will want to use.
+Sometimes when building an RF simulation, you will already have pre-made geometry, which you can import into FreeCAD for additional geometry manipulations.
 
 ---
 
-### DXF/STEP
+### DXF/STEP/IGES
 
-You can easily import your CAD in **DXF** or **STEP** file formats.
+You can easily import your CAD file in **DXF**, **IGES** or **STEP** file formats.
 
-**To import such files**, open *Geometry Editor* and simply **drag & drop** your geometry in *FreeCAD*!
+**To import such files**, open *Geometry Editor* and simply **drag & drop** your geometry into *FreeCAD*!
 
 <p align="center">
 
@@ -120,14 +120,14 @@ To check if your CAD is a solid:
 The number of solids indicate how many volumes are there. If this number is high, **evaluate the quality of your CAD file**!
 
 :::note
-If you get an error message an cannot display the number of solids, click **Edit → Send to python console**, and redo the previous steps!
+If you get an error message and cannot display the number of solids, click **Edit → Send to python console**, and redo the previous steps!
 :::
 
 ---
 
 ## Component Library
 
-You can use **CENOS Component Library** templates to **build patch or connector geometries**.
+You can use **CENOS Component Library** templates to **build patch or SMA connector geometries**.
 
 <p align="center">
 
@@ -137,13 +137,26 @@ You can use **CENOS Component Library** templates to **build patch or connector 
 
 ### Patch antenna
 
-**Select the patch you want to build** and click **Create**. **Fill out the template** parameters and click **OK** to build your geometry!
+**Select the patch you want to build** and click **Create**.
 
 <p align="center">
 
-![assets/quickstart/Untitled23.png](assets/quickstart/84.png)
+![assets/quickstart/Untitled23.png](assets/creation/1.png)
 
 </p>
+
+You can **change the parameters** for the template **by clicking on the spreadsheet titled "Patch Parameters"** or "Patch inset parameters" if you chose the patch with an inset.
+
+<p align="center">
+
+![assets/quickstart/Untitled23.png](assets/creation/2.png)
+
+</p>
+
+:::tip
+To navigate between *Cenos Parameters* and geometry preview, use the tabs below the spreadsheet.
+![assets/quickstart/Untitled28.png](assets/quickstart/53.png)
+:::
 
 ---
 
@@ -153,11 +166,11 @@ Select **Coaxial edge connector** and click **Create**.
 
 <p align="center">
 
-![assets/quickstart/Untitled23.png](assets/quickstart/55.png)
+![assets/quickstart/Untitled23.png](assets/creation/3.png)
 
 </p>
 
-Connector will be automatically placed in your workbench, so you can **position it** by left-clicking on it in the tree view and selecting **Transform**.
+The connector will be automatically placed in your workbench, so you can **position it** by left-clicking on it in the tree view and selecting **Transform**.
 
 <p align="center">
 
@@ -178,13 +191,13 @@ To **change the size** of the connector, select it in tree view and edit the **P
 
 ## Sketches
 
-A **sketch is the base for almost all geometrical objects** you can create, **including geometries for antennas**, which is why we need to know how to create one.
+A **sketch is the base for almost all geometrical objects** you can create, **including geometries for RF models**, which is why we need to know how to create one.
 
 ---
 
 ### From scratch
 
-In *FreeCAD* you can create sketches in **Sketcher workbench**, which you can access directly through the shortcut icon:
+In *FreeCAD* you can create sketches in the **Sketcher workbench**, which you can access directly through the shortcut icon:
 
 <p align="center">
 
@@ -218,7 +231,7 @@ Once in the workbench, click **Create a new sketch**.
 Hold down **Alt** to rotate the camera in sketch view
 :::
 
-Draw your antenna geometry, and, once you are done, click **Close**.
+Draw your model's geometry, and, once you are done, click **Close**.
 
 <p align="center">
 
@@ -230,7 +243,7 @@ Draw your antenna geometry, and, once you are done, click **Close**.
 
 ### On volumes
 
-In some cases **it is beneficial to create a sketch on an already created volume**, for example, for PCB antennas. Once you have created a 3D volume, for example, a box, you can select one surface on which to create you sketch.
+In some cases **it is beneficial to create a sketch on an already created volume**, for example, PCB antennas. Once you have created a 3D volume, for example, a box, you can select one surface on which to create you sketch.
 
 :::note
 The geometry you create will be partitioned upon sending it to CENOS, which means that **sketches created on top of volumes will appear as separate surfaces in CENOS**!
@@ -296,7 +309,7 @@ For the **simplest volume objects** like cubes, spheres or cylinders, *FreeCAD* 
 
 </p>
 
-As you select an object, it will be built with pre-defined size. **To change the size of your geometry**, select your object and change its properties.
+As you select an object, it will be built with a pre-defined size. **To change the size of your geometry**, select your object and change its properties.
 
 <p align="center">
 
@@ -411,9 +424,9 @@ Sometimes when building wires, the visualization will appear like this:
 
 ---
 
-## Geometry parameters
+## Geometry parameters and Parametric study
 
-A very useful thing to have is **parameterized geometry**. This way you can **create your geometry and dynamically change it through parameters** without the need to rebuild everything.
+A very useful thing to have is **parameterized geometry**. This way you can **create your geometry and dynamically change it through parameters** without the need to rebuild everything, as well as **perform a parametric study** of your geometry.
 
 You can **define parameters** in the *Cenos Parameters* spreadsheet where you can use various units and/or mathematical equations for the values.
 
@@ -423,28 +436,32 @@ You can **define parameters** in the *Cenos Parameters* spreadsheet where you ca
 
 </p>
 
-:::tip
-To navigate between *Cenos Parameters* and geometry preview, use the tabs below the spreadsheet.
-![assets/quickstart/Untitled28.png](assets/quickstart/53.png)
-:::
-
 To **use these parameters**, click the *Formula Editor* button in the value field and then enter `CenosParameters.name`
 
 ![assets/quickstart/Untitled28.png](assets/quickstart/Untitled28.png)
 
-:::note
-For now, to update the parameters, you will have to open FreeCAD and re-send the geometry to CENOS. In the next CENOS Radio Frequency versions parameters will be accessable directly from CENOS interface.
+:::caution
+Make sure to **constrain your model's sketches** and **check all the values you want to simulate** if you intend on performing a parametric study! Otherwise, your sketches might hang over your base geometry and the simulation will fail!
+
+<p align="center">
+
+![assets/quickstart/Untitled23.png](assets/creation/4.png)
+
+</p>
+
 :::
+
+Once you have finished working on your model and assigned all the parameters you are interested in, you can *send the geometry to CENOS*, where in the *Physics* section you will be able to start the parametric study.
 
 ---
 
 ## Getting the geometry to CENOS
 
-Once you have finished the geometry, you need to send the mesh to CENOS. To do that:
+To send your finished geometry to CENOS, you have to:
 
 1. **Select all final objects** in the tree view.
 
-2. Click **Geometry to CENOS**.
+2. Click **Send Geometry to CENOS**.
 
 <p align="center">
 
@@ -452,7 +469,7 @@ Once you have finished the geometry, you need to send the mesh to CENOS. To do t
 
 </p>
 
-As geometry is being sent to CENOS, **FreeCAD study will be automatically saved** in the simulation folder, so you can close it.
+As geometry is being sent to CENOS, the **FreeCAD study will be automatically saved** in the simulation folder, so you can close it.
 
 
 
