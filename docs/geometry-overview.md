@@ -39,8 +39,6 @@ In *Templates* **the geometry and mesh are generated automatically**, and it can
 
 ![assets/overview/Untitled27.png](assets/overview/3.png)
 
-<p>
-
 ---
 
 ### Geometry editor
