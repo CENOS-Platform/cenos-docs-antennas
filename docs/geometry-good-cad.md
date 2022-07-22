@@ -4,13 +4,13 @@ title: CAD quality requirements
 sidebar_label: CAD quality
 ---
 
-Geometrical model of your antenna plays a big role in **how easy or hard it will be to set up and get accurate results** from an antenna design simulation.
+The geometry of your model plays a big role in **how easy or hard it will be to set up and get accurate results** from the simulation.
 
-We have **summarized the main aspects for good, simulation-friendly CAD file**, which should be followed in order to create a simple, trouble-free geometry for your simulation.
+We have **summarized the main aspects for a good, simulation-friendly CAD file**, which should be followed in order to create simple, trouble-free geometry for your simulation.
 
-## Build your antenna as a single solid
+## Build the parts of your model as a single solid
 
-In many CAD softwares it is easier to build the antenna geometry from blocks, which all combined form a complete antenna CAD. When creating geometry for simulation, these **blocks should be fused together to form a single solid** – in this way you can get rid of unnecessary faces between blocks and ease not only the work with geometry but simplify the meshing process as well.
+In many CAD softwares it is easier to build the geometry of the model from blocks, which all combined form a complete CAD model. When creating geometry for simulation, these **blocks should be fused together to form a single solid** – in this way you can get rid of unnecessary faces between blocks and ease not only the work with the geometry but simplify the meshing process as well.
 
 <p align="center">
 
@@ -20,7 +20,7 @@ In many CAD softwares it is easier to build the antenna geometry from blocks, wh
 
 ### Fuse geometry in FreeCAD
 
-You can easily fuse your geometry blocks together in *FreeCAD* as well, using **Union** tool.
+You can easily fuse your geometry blocks together in *FreeCAD* as well, using the **Union** tool.
 
 1. **Select all parts you want to fuse** and click **Union**
 
@@ -46,7 +46,7 @@ The following features can be deleted, as **they take up significant amount of c
 
 ### Remove irrelevant plastic parts
 
-Depending on the type of your antenna, one or more plastic components might be included in the design. You need to **evaluate the relevance** of those parts, and **remove them if they do not have a significant impact**.
+Depending on the type of your model, one or more plastic components might be included in the design. You need to **evaluate the relevance** of those parts, and **remove them if they do not have a significant impact**.
 
 <p align="center">
 
@@ -60,11 +60,11 @@ For example, you can
 
 but you should
 
-- **leave any plastic encasings or covers over your antenna**.
+- **leave any plastic encasings or covers over your geometry**.
 
 ### Delete unnecessary elements
 
-Parts of antenna such as **screws**, **bolts**, **threads** or **embedded text** can be taken out of your model.
+Parts, such as **screws**, **bolts**, **threads** or **embedded text**, can be taken out of your model.
 
 <p align="center">
 
@@ -80,7 +80,7 @@ Parts of antenna such as **screws**, **bolts**, **threads** or **embedded text**
 
 ### Port simplification
 
-For physical antennas port or feed is one of the most important parts of the assembly, however, you can easily **simplify the port geometry**, to make the simulation faster without sigificant losses in precision.
+The port or feed is one of the most important parts of the assembly, however, you can easily **simplify the port geometry**, to make the simulation faster without sigificant losses in accuracy.
 
 ![assets/quickstart/Untitled24.png](assets/example/1.png)
 
@@ -104,7 +104,7 @@ For physical antennas port or feed is one of the most important parts of the ass
 
 ## Resolve incorrect connections
 
-During geometry creation be careful with connections between different parts of your antenna – inaccurate connections will result in meshing problems and calculation errors!
+During the creation of the geometry, be careful with connections between different parts of your model – inaccurate connections will result in meshing problems and calculation errors!
 
 ### Overlapping
 
