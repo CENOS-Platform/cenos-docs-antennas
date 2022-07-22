@@ -5,7 +5,7 @@ sidebar_label: Overview
 slug: /
 ---
 
-In **CENOS Radio Frequency** there are multiple ways available for RF model geometry creation - *Templates*, *From CAD* and *Geometry editor*.
+In **CENOS Radio Frequency** there are multiple ways available for creating the geometry of your RF model - *Templates*, *From CAD* and *Geometry editor*.
 
 In this section we will take a look at the **general layout and workflow** of the geometry setup in *CENOS Radio Frequency* app.
 
