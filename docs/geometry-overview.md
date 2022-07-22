@@ -41,8 +41,6 @@ In *Templates* **the geometry and mesh are generated automatically**, and it can
 
 <p>
 
-![assets/quickstart/Untitled27.png](assets/quickstart/33.png)  
-
 ---
 
 ### Geometry editor
