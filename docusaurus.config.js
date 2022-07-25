@@ -18,7 +18,7 @@ module.exports = {
       },
       items: [
         {
-          to: 'https://www.cenos-platform.com/antenna-design',
+          to: 'https://www.cenos-platform.com/radio-frequency-simulation-software',
           label: 'CENOS Home',
           position: 'right',
         },
