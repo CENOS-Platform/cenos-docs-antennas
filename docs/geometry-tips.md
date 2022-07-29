@@ -36,7 +36,6 @@ Denominations for used solutions:
 | Toggle object visibility   | *Space*        |
 | Set camera rotation center | *Middle-click* |
 | Pan camera                 | *Left-click*   |
-| Import File                | *Drag&drop*    |
 | Rectangle select objects   | *Shift+B*      |
 | Rectangle select elements  | *Shift+E*      |
 | Import File                | *Drag&drop*    |
