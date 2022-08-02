@@ -32,9 +32,17 @@ In *Physics* the definitions are quite straightforward.
 
 In **SIMULATION CONTROL** you need to select the frequency of your model, choose whether you want to enable **Sequential or Simultaneous excitation** of the defined ports and enable the **Parametric Study**. You can set one frequency, or do a **frequency sweep** to test your model for a whole range of frequencies.
 
-![assets/quickstart/Untitled13.png](assets/physics/3.png)
+<p align="center">
 
+![Frequency Selection](assets/physics/3.png)
 
+</p>
+
+<p align="center">
+
+![Parametric Study](assets/physics/9.png)
+
+</p>
 
 ---
 
