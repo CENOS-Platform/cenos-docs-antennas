@@ -6,7 +6,7 @@ sidebar_label: Physics overview
 
 ## Overview
 
-Physics window in *CENOS* is quite straightforward. On the left side you can see the **preview window** with your antenna geometry.
+Setting up the physical settings in *CENOS* is simple. On the left side you can see the **preview window** of your geometry.
 
 <p align="center">
 
@@ -14,7 +14,7 @@ Physics window in *CENOS* is quite straightforward. On the left side you can see
 
 </p>
 
-On the right you can find the actual **physical definitions** of your antenna. You can **switch between definitions using tabs**.
+On the right you can find the **physical definitions** of your model. You can **switch between the definitions using the tabs**. The material definitions are sorted by role, so you will see the volumes and surfaces with the same role under the same tab.
 
 <p align="center">
 
@@ -30,17 +30,19 @@ In *Physics* the definitions are quite straightforward.
 
 ### SIMULATION CONTROL
 
-In **SIMULATION CONTROL** you need to define only the frequency of your antenna. You can set one frequency, or do a **frequency sweep** to test your antenna for a whole range of frequencies.
+In **SIMULATION CONTROL** you need to select the frequency of your model, choose whether you want to enable **Sequential or Simultaneous excitation** of the defined ports and enable the **Parametric Study**. You can set one frequency, or do a **frequency sweep** to test your model for a whole range of frequencies.
 
 ![assets/quickstart/Untitled13.png](assets/physics/3.png)
 
+
+
 ---
 
-### DIELECTRIC/VOLUMES
+### VOLUMES
 
-For volume objects of your antenna you need to **define only the material** it is made of.
+For volume objects of your model you only need to **define the material** it is made of.
 
-You can write the name of your material directly into **search bar**, choose from CENOS **built-in material library** or **create your own material**!
+You can write the name of your material directly into **search bar**, choose from CENOS's **built-in material library** or **define your own material**!
 
 <p align="center">
 
@@ -50,12 +52,36 @@ You can write the name of your material directly into **search bar**, choose fro
 
 ---
 
-### BOUNDARIES
+### SURFACES
 
-**BOUDARIES** is the place where you define boundary surfaces of your antenna, such as *feed*, *ground*, *patch* and other surfaces.
+The surfaces of your model, which are typically conductive materials, are automatically assigned as *perfect electric conductors*, but you are able to redefine them as real materials as well, such as *copper* or *aluminium*.
 
 <p align="center">
 
-![Boundaries](assets/physics/5.png)
+![Surface material definition](assets/physics/6.png)
+
+</p>
+
+---
+
+### PORTS
+
+After you have defined your ports in the *Geometry* section, you can define the **input impedance** and the **phase shift angle** in the **PORTS** tab.
+
+<p align="center">
+
+![Ports](assets/physics/7.png)
+
+</p>
+
+---
+
+### LUMPED ELEMENTS
+
+If you have defined some **lumped elements** in your model, you can define the *resistance*, *capacitance* and/or *inductance* for each element in the **LUMPED ELEMENTS** tab. Here you can also switch the configuration of each element between *Serial* and *Parallel*.
+
+<p align="center">
+
+![Lumped Elements](assets/physics/8.png)
 
 </p>
