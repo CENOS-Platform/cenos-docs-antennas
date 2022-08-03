@@ -28,9 +28,9 @@ On the right you can find the **physical definitions** of your model. You can **
 
 In *Physics* the definitions are quite straightforward.
 
-### SIMULATION CONTROL
+### Simulation Control
 
-In **SIMULATION CONTROL** you need to select the frequency of your model, choose whether you want to enable **Sequential or Simultaneous excitation** of the defined ports and enable the **Parametric Study**. You can set one frequency, or do a **frequency sweep** to test your model for a whole range of frequencies.
+In **Simulation Control** you need to select the frequency of your model, choose whether you want to enable **Sequential or Simultaneous excitation** of the defined ports and enable the **Parametric Study**. You can set one frequency, or do a **frequency sweep** to test your model for a whole range of frequencies.
 
 <p align="center">
 
@@ -46,7 +46,7 @@ In **SIMULATION CONTROL** you need to select the frequency of your model, choose
 
 ---
 
-### VOLUMES
+### Volumes
 
 For volume objects of your model you only need to **define the material** it is made of.
 
@@ -58,9 +58,17 @@ You can write the name of your material directly into **search bar**, choose fro
 
 </p>
 
+You can browse through the whole material library by clicking on *Select...* and see all the defined materials. If you have defined some new materials, you can see them all in the *Pre-defined* tab.
+
+<p align="center">
+
+![Material library](assets/physics/10.png)
+
+</p>
+
 ---
 
-### SURFACES
+### Surfaces
 
 The surfaces of your model, which are typically conductive materials, are automatically assigned as *perfect electric conductors*, but you are able to redefine them as real materials as well, such as *copper* or *aluminium*.
 
@@ -72,7 +80,7 @@ The surfaces of your model, which are typically conductive materials, are automa
 
 ---
 
-### PORTS
+### Ports
 
 After you have defined your ports in the *Geometry* section, you can define the **input impedance** and the **phase shift angle** in the **PORTS** tab.
 
@@ -84,9 +92,9 @@ After you have defined your ports in the *Geometry* section, you can define the 
 
 ---
 
-### LUMPED ELEMENTS
+### Lumped elements
 
-If you have defined some **lumped elements** in your model, you can define the *resistance*, *capacitance* and/or *inductance* for each element in the **LUMPED ELEMENTS** tab. Here you can also switch the configuration of each element between *Serial* and *Parallel*.
+If you have defined some **lumped elements** in your model, you can define the *resistance*, *capacitance* and/or *inductance* for each element in the **Lumped Elements** tab. Here you can also switch the configuration of each element between *Serial* and *Parallel*.
 
 <p align="center">
 
