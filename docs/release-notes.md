@@ -13,7 +13,6 @@ Features:
 
 Improvements:
 
-* Minor improvements to the Support Chat
 * Python is no longer needed to be installed separately
 * Removed legacy post-processing menu
 * Improved waveguide port accuracy
