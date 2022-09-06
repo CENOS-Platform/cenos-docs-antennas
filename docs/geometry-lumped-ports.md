@@ -1,67 +1,85 @@
 ---
 id: geometry-lumped-ports
-title: Lumped ports
-sidebar_label: Lumped ports/feeds
+title: Port definitions in CENOS
+sidebar_label: Port definitions
 ---
 
-*Ports* or *feeds* are the power source of the antenna, and it is important that we define such ports correctly. 
+An essential element of your RF simulation is the *port* and it is important to figure out how to define it properly. For this reason, we need to **understand what kind of options we have and make modifications to our model, if necessary.**
 
-For this reason we need to **understand what kind of port we have, and make some additional geometry modifications accordingly**.
+_For most applications, you won’t need to modify your geometry to feed your model_, as defining a port in CENOS RF has been made incredibly straightforward and can be done with your existing geometry.
 
-Currently there are two types of lumped ports in CENOS:
+Currently there are two types of port definitions in CENOS:
 
-- *Uniform port*
+- *Discrete port*
 - *Coaxial port*
 
+---
+
+## Discrete port
+
+The **discrete port** in CENOS is the _simplest way to define the feed of your model_. Essentially, **all you have to do is to select two terminals** - one on each conductive surface where you connect the feed in real life. The placement of each of the terminals is dependent on the type of model you are simulating.
+
+For example, if you are simulating a simple microstrip antenna, such as an IFA, you would place one terminal on the edge of the feed line of the microstrip and the other on the closest edge of the ground plane.
+
+<p align="center">
+
+![Image for port placement on an IFA antenna](assets/ports/1.png)
+
+</p>
+
+If you are simulating a symmetrical design, such as a dipole antenna, you would have to place a point on each pole, leaving a gap in between the poles.
+
+<p align="center">
+
+![Image for port placement on a dipole antenna](assets/ports/2.png)
+
+</p>
+
+---
+
+## Coaxial port
+
+Coaxial ports are ports where the connection surface is made by a coaxial connector or cable. If your model already contains the geometry for the cable or connector, **all you have to do is to select the surface of the dielectric** to define such a port.
+
+<p align="center">
+
+![Coax connector example image](assets/ports/3.png)
+
+</p>
+
 :::tip
-Antenna simulations **do not require complex port geometries**, and most connectors **can be simplified** to a single feed surface or simple connector assembly - it will make the **meshing easier and calculation faster**, while **keeping the accuracy of the results**!
+You can create a coaxial connector yourself or use one from the **[Component Library](geometry-creation#component-library)** in FreeCAD.
 :::
 
 ---
 
-## Uniform ports
+## Port geometry simplification
 
-Uniform port is essentially a rectangular surface, **planar** or **curved**, which is **used in most planar antenna design simulations**.
+Quite frequently it makes sense to simplify your geometry in order to make the mesh smaller, and in turn reduce the overall calculation time and overall complexity of your RF model. If your model contains a coaxial connector, you can choose to remove it from your design and use a discrete port instead.
 
-<p align="center">
-
-![assets/quickstart/Untitled24.png](assets/example/5.png)
-
-</p>
-
-### Planar
-
-Uniform ports are **widely used in PCB antennas**, where the port connects the *patch* with the *conductive layer* (ground). In real antennas **coaxial edge connectors** are often used, but for simulation they are not necessary and you can **replace them with simple planar ports**.
-
-![assets/quickstart/Untitled24.png](assets/example/1.png)
-
-To **create planar feed**:
-
-1. **[Create a sketch](geometry-creation#sketches) on the side and draw a uniform port on the edge of the patch**, connecting the top conductive layer with the ground plane.
+Removal of the coaxial connector is quite frequently done if the connector is placed on the edge of the substrate, where the connector can be removed completely.
 
 <p align="center">
 
-![assets/quickstart/Untitled24.png](assets/example/2.png)
+![Coaxial edge connector simplification image](assets/ports/4.png)
 
 </p>
 
-### Curved
-
-In addition to *coaxial edge connectors*, **SMA connectors** are commonly used in planar antennas. Again, the actual **connector can be simplified to a curved port**.
+If you are using a panel type connector, you can remove the connector and create a cutout where the connector was placed previously.
 
 <p align="center">
 
-![assets/quickstart/Untitled24.png](assets/example/3.png)
+![Coaxial panel connector simplification image](assets/ports/5.png)
 
 </p>
 
-To **create curved feed**:
+To **create a cutout feed** in FreeCAD:
 
 1. **[Create a sketch](geometry-creation#sketches)** on the patch and **draw a circle** of where the port will be.
 
 <p align="center">
 
-![assets/quickstart/Untitled24.png](assets/example/7.png)
+![Image of sketch for cutout](assets/ports/6.png)
 
 </p>
 
@@ -71,36 +89,48 @@ To **create curved feed**:
 
 <p align="center">
 
-![assets/quickstart/Untitled24.png](assets/example/8.png)
+![Image of Boolean operations in FreeCAD](assets/ports/7.png)
 
 </p>
 
 <p align="center">
 
-![assets/quickstart/Untitled24.png](assets/example/9.png)
+![Image of final cutout](assets/ports/8.png)
+
+</p>
+
+In cases where the coaxial connector functions as a probe, such as probe-fed horn antennas, you can **simplify the connector to a simple cylinder assembly**!
+
+<p align="center">
+
+![Coaxial connector simplification image](assets/ports/9.png)
 
 </p>
 
 ---
 
-## Coaxial port
+## Limitations
 
-Coaxial ports are ports where the connection surface is made by a coaxial cable. For these kind of ports **you don't need to create a separate surface**, as it is already included in the volume definition.
+Although the process of defining a port in CENOS RF is incredibly straightforward, _there are a few things to keep in mind_.
+
+### Discrete port terminal selection
+
+Currently, the possible points of terminal selection are fixed. On a straight edge, you will be able to place a terminal on its leftmost and rightmost point and in the middle of these two points. 
 
 <p align="center">
 
-![assets/quickstart/Untitled24.png](assets/example/10.png)
+![Terminal placement limitation image](assets/ports/10.png)
 
 </p>
 
-:::tip
-You can create a coaxial connector yourself or use one from the **[Component Library](geometry-creation#component-library)**.
-:::
+However, **this shouldn't affect the accuracy of the results**, as the solver finds the shortest path possible between the terminals along the mesh cells to excite the model.
 
-Coaxial ports can be **simplified as well** - replace the complex assembly with simple cylinders!
+### Mesh density around the port definition
+
+_On rare occasions_, the mesh around the port definition might be too rough. If you notice a rough mesh (jagged Electric Field distribution) around where you defined the port, go back to the Mesh Generation screen, enable manual meshing and apply a finer refinement along the edges or face of the port.
 
 <p align="center">
 
-![assets/quickstart/Untitled24.png](assets/example/11.png)
+![Rough electric field around port definition of an IFA antenna](assets/ports/11.png)
 
 </p>
