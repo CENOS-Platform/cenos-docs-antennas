@@ -55,7 +55,7 @@ You can create a coaxial connector yourself or use one from the **[Component Lib
 
 ## Port geometry simplification
 
-Quite frequently it makes sense to simplify your geometry in order to make the mesh smaller, and in turn reduce the overall calculation time and overall complexity of your RF model. If your model contains a coaxial connector, you can choose to remove it from your design and use a discrete port instead.
+Quite frequently it makes sense to simplify your geometry in order to make the mesh smaller, and in turn reduce the overall calculation time. If your model contains a coaxial connector, you can choose to remove it from your design and use a discrete port instead.
 
 Removal of the coaxial connector is quite frequently done if the connector is placed on the edge of the substrate, where the connector can be removed completely.
 
