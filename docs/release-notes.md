@@ -15,8 +15,9 @@ Bugfixes:
 * Fixed an issue where GetDP caused some cases to not calculate
 * PDF report can now be generated for cases with a coaxial port
 * Dielectric and Substrate roles now mesh properly using the automatic mesh
-* Fixed sending updated geometry with topology changes from FreeCAD
+* Fixed an issue where it was not possible to send updated geometry with topology changes from FreeCAD
 * Fixed inaccurate radiated power values in the CSV export
+* Fixed identical S-parameters in cases with multiple coaxial ports
 
 ## v2.0.1 (September 6th, 2022)
 
