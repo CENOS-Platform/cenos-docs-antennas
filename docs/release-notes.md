@@ -4,7 +4,7 @@ title: Release notes
 sidebar_label: v2.x
 ---
 
-## v2.0.2 (October 14th, 2022)
+## v2.0.2 (October 17th, 2022)
 
 Improvements:
 
