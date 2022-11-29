@@ -53,6 +53,8 @@ You can create a coaxial connector yourself or use one from the **[Component Lib
 
 Here is a quick video tutorial on setting up a coaxial port and it's necessary roles:
 
+<p align="center">
+
 <iframe width="560" height="315"
   src="https://www.youtube.com/embed/-55-D7FdeGI"
   title="Defining a coaxial port in CENOS Radio Frequency simulation software"
@@ -60,6 +62,8 @@ Here is a quick video tutorial on setting up a coaxial port and it's necessary r
   allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
   allowfullscreen>
 </iframe>
+
+</p>
 
 ---
 
