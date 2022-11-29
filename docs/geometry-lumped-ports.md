@@ -51,6 +51,20 @@ Coaxial ports are ports where the connection surface is made by a coaxial connec
 You can create a coaxial connector yourself or use one from the **[Component Library](geometry-creation#component-library)** in FreeCAD.
 :::
 
+Here is a quick video tutorial on setting up a coaxial port and it's necessary roles:
+
+<p align="center">
+
+<iframe width="560" height="315"
+  src="https://www.youtube.com/embed/BFaKWdDQPYk"
+  title="How to define a coaxial port in CENOS RF?"
+  frameborder="0" 
+  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+  allowfullscreen>
+</iframe>
+
+</p>
+
 ---
 
 ## Port geometry simplification
