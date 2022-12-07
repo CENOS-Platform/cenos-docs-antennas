@@ -4,6 +4,27 @@ title: Release notes
 sidebar_label: v2.x
 ---
 
+## v2.1 (December 7th, 2022)
+
+Features:
+
+* Added a mesh volume gradient, which affects the fineness of the mesh between volumes
+* Added a Smith chart export to the case “results” folder
+* Added a Touchstone (SnP) file export for the discrete port to the case “results” folder.
+  * Option to renormalize the port impedance seen in the Touchstone export from the Port section in Physics.
+  * Added option for complex port impedance.
+
+Improvements:
+
+* Improved the Mesh Generation screen for a better user experience
+* Now possible to select individual faces for mesh refinement if they have been merged under a single role
+
+Bugfixes:
+
+* Cases with a coaxial port now show the combined results for a Parametric Study
+* Excited waveguide ports no longer radiate in both directions
+
+
 ## v2.0.2 (October 19th, 2022)
 
 Improvements:
