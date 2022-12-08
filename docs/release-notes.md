@@ -4,15 +4,17 @@ title: Release notes
 sidebar_label: v2.x
 ---
 
-## v2.1 (December 7th, 2022)
+## v2.1 (December 8th, 2022)
 
 Features:
 
 * Added a mesh volume gradient, which affects the fineness of the mesh between volumes
 * Added a Smith chart export to the case “results” folder
-* Added a Touchstone (SnP) file export for the discrete port to the case “results” folder.
-  * Option to renormalize the port impedance seen in the Touchstone export from the Port section in Physics.
-  * Added option for complex port impedance.
+  * Currently works only on single and sequentially excited multiple discrete ports
+* Added a Touchstone (SnP) file export to the case “results” folder.
+  * Option to renormalize the port impedance seen in the Touchstone export from the Port section in Physics
+  * Added option for complex port impedance
+  * Currently works only on single and sequentially excited multiple discrete ports
 
 Improvements:
 
