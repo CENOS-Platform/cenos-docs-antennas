@@ -4,6 +4,12 @@ title: Release notes
 sidebar_label: v2.x
 ---
 
+## v2.1.1 (December 12th, 2022)
+
+Bugfixes:
+
+* Fixed a problem which sometimes occured during post-proccesing
+
 ## v2.1 (December 8th, 2022)
 
 Features:
@@ -25,7 +31,6 @@ Bugfixes:
 
 * Cases with a coaxial port now show the combined results for a Parametric Study
 * Excited waveguide ports no longer radiate in both directions
-
 
 ## v2.0.2 (October 19th, 2022)
 
