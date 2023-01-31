@@ -4,6 +4,27 @@ title: Release notes
 sidebar_label: v2.x
 ---
 
+## v2.2 (January 31st, 2023)
+
+Features:
+
+* Added application type for RFID
+* Added Curvature Safety setting to Mesh Generation, allowing for more control over cylinder and other curved edge meshing
+
+Improvements:
+
+* Moved Touchstone export settings from Ports to Simulation Control
+* Moved Touchstone export, Smith charts and CSV export to a separate folder in the case folder (“extra_results”)
+* Improved overall error message handling and user experience
+
+Bugfixes:
+
+* Fixed “Cancel” not stopping mesh generation
+* Fixed issue where non-incremented port ID’s caused the Touchstone export to fail
+* Fixed Kernel error that randomly appeared at RUN
+* Fixed the Core: XXXXXX error in simulation terminal
+
+
 ## v2.1.1 (December 12th, 2022)
 
 Bugfixes:
