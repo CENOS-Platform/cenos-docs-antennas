@@ -106,15 +106,13 @@ The port or feed is one of the most important parts of the assembly, however, yo
 
 During the creation of the geometry, be careful with connections between different parts of your model – inaccurate connections will result in meshing problems and calculation errors!
 
-### Overlapping
+### Gaps & Overlapping
 
 <p align="center">
 
 ![drag n drop](assets/quickstart/91.png)
 
 </p>
-
-### Gaps
 
 <p align="center">
 
