@@ -35,6 +35,50 @@ You can easily import your CAD file in **DXF**, **IGES** or **STEP** file format
 </p>
 
 ---
+### KiCAD PCB files
+
+To import KiCAD PCB files directly into *CENOS RF*, select the *Geometry Editor* approach and there you will need to click on the folder icon to load your geometry.
+
+<p align="center">
+
+![drag n drop](assets/quickstart/09.png)
+
+</p>
+
+Once you have selected your file you will return to the main CENOS interface where you will now click on the play icon. Then the software will ask you to save the case and, after this, *FreeCAD* will automatically open with your geometry!
+
+<p align="center">
+
+![drag n drop](assets/quickstart/10.png)
+
+</p>
+
+You have the option to use your model completely in 3D or **flatten the thin conductive parts**, such as tracks, to have them in 2D. We recommend selecting the **Faces mode**, as the results will not be significantly affected but the mesh will be easier to create and the calculation time will be reduced!
+
+<p align="center">
+
+![drag n drop](assets/quickstart/11.png)
+
+</p>
+
+<p align="center">
+
+![drag n drop](assets/quickstart/12.png)
+
+</p>
+
+:::warning important
+We recommend that for the substrate you use a geometric figure **without curvatures** since this would cause troubles reading the geometry and it will not be imported correctly into *FreecCAD*. If the curvatures in the substrate are important in your model, you can create it within *FreeCAD* once the model has already been imported.
+
+<p align="center">
+
+![drag n drop](assets/quickstart/13.png)
+
+</p>
+
+:::
+
+---
 
 ### .NEC
 
@@ -87,7 +131,7 @@ To scale your geometry:
 
 
 :::note
-As an alternative to geometry scaling you can use **Scale** function, but it will **not work on every geometry**, as opposed to **Clone** approach.
+As an alternative to geometry scaling you can use **Scale** function, but it will **not work on every geometry**, as opposed to the **Clone** approach.
 
 <p align="center">
 
@@ -101,7 +145,7 @@ As an alternative to geometry scaling you can use **Scale** function, but it wil
 
 ### CAD compound check
 
-If you have imported one or more CAD files and **stumble into a problem either at meshing or anywhere else**, it might be an **indicator that the CAD file is actually not a solid, but compound of surfaces**, which can cause problems for FreeCAD.
+If you have imported one or more CAD files and **stumble into a problem either at meshing or anywhere else**, it might be an **indicator that the CAD file is actually not a solid, but a compound of surfaces**, which can cause problems for *FreeCAD*.
 
 To check if your CAD is a solid:
 
@@ -109,7 +153,7 @@ To check if your CAD is a solid:
 
 2. On the lower right corner *Python console* will open. Write **len(obj.Shape.Solids)** and click enter.
 
-3. Take a look of the output.
+3. Take a look at the output.
 
 <p align="center">
 
