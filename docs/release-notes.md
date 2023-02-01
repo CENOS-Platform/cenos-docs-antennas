@@ -4,6 +4,14 @@ title: Release notes
 sidebar_label: v2.x
 ---
 
+## v2.2.1 (February 1st, 2023)
+
+Bugfixes:
+
+* Fixed message in Support Chat that says there is a version mismatch despite running in the latest version
+* Fixed "Wire" role meshing roughly in some cases
+
+
 ## v2.2 (January 31st, 2023)
 
 Features:
