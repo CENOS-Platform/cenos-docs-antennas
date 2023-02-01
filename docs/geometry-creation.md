@@ -14,13 +14,13 @@ For geometry manipulations *CENOS Radio Frequency* uses a very strong geometry e
 
 </p>
 
----
+
 
 ## Geometry import
 
 Sometimes when building an RF simulation, you will already have pre-made geometry, which you can import into FreeCAD for additional geometry manipulations.
 
----
+
 
 ### DXF/STEP/IGES
 
@@ -34,7 +34,8 @@ You can easily import your CAD file in **DXF**, **IGES** or **STEP** file format
 
 </p>
 
----
+
+
 ### KiCAD PCB files
 
 To import KiCAD PCB files directly into *CENOS RF*, select the *Geometry Editor* approach and there you will need to click on the folder icon to load your geometry.
@@ -78,7 +79,7 @@ We recommend that for the substrate you use a geometric figure **without curvatu
 
 :::
 
----
+
 
 ### .NEC
 
@@ -96,7 +97,7 @@ If you have a ***.NEC*** (or other format) file, you can import it from the Part
 
 </p>
 
----
+
 
 ### Unit scaling
 
@@ -141,7 +142,7 @@ As an alternative to geometry scaling you can use **Scale** function, but it wil
 
 :::
 
----
+
 
 ### CAD compound check
 
@@ -167,11 +168,11 @@ The number of solids indicate how many volumes are there. If this number is high
 If you get an error message and cannot display the number of solids, click **Edit → Send to python console**, and redo the previous steps!
 :::
 
----
+
 
 ## Component Library
 
-You can use **CENOS Component Library** templates to **build patch or SMA connector geometries**.
+You can use **CENOS Component Library** templates to **build or add patch or SMA connector geometries**.
 
 <p align="center">
 
@@ -189,7 +190,7 @@ You can use **CENOS Component Library** templates to **build patch or SMA connec
 
 </p>
 
-You can **change the parameters** for the template **by clicking on the spreadsheet titled "Patch Parameters"** or "Patch inset parameters" if you chose the patch with an inset.
+You can **change the parameters** for the template **by clicking on the spreadsheet titled "Patch Parameters"** or **"Patch inset parameters"** if you chose the patch with an inset.
 
 <p align="center">
 
@@ -202,7 +203,7 @@ To navigate between *Cenos Parameters* and geometry preview, use the tabs below 
 ![assets/quickstart/Untitled28.png](assets/quickstart/53.png)
 :::
 
----
+
 
 ### Coaxial edge connector
 
@@ -214,7 +215,7 @@ Select **Coaxial edge connector** and click **Create**.
 
 </p>
 
-The connector will be automatically placed in your workbench, so you can **position it** by left-clicking on it in the tree view and selecting **Transform**.
+The connector will be automatically placed in your workbench, so you can **position it** by right-clicking on it in the tree view and selecting **Transform**.
 
 <p align="center">
 
@@ -231,13 +232,13 @@ To **change the size** of the connector, select it in tree view and edit the **P
 </p>
 
 
----
+
 
 ## Sketches
 
 A **sketch is the base for almost all geometrical objects** you can create, **including geometries for RF models**, which is why we need to know how to create one.
 
----
+
 
 ### From scratch
 
@@ -287,7 +288,7 @@ Draw your model's geometry, and, once you are done, click **Close**.
 
 ### On volumes
 
-In some cases **it is beneficial to create a sketch on an already created volume**, for example, PCB antennas. Once you have created a 3D volume, for example, a box, you can select one surface on which to create you sketch.
+In some cases **it is beneficial to create a sketch on an already created volume**, for example, PCB antennas. Once you have created a 3D volume, for example, a box, you can select one surface on which to create your sketch.
 
 :::note
 The geometry you create will be partitioned upon sending it to CENOS, which means that **sketches created on top of volumes will appear as separate surfaces in CENOS**!
@@ -343,7 +344,7 @@ When creating volumes, make sure that they do not overlap with each other. **Ove
 
 ---
 
-### Primitives
+### Basic Shapes
 
 For the **simplest volume objects** like cubes, spheres or cylinders, *FreeCAD* offers an easy way of creating such geometries. As you open *FreeCAD*, you will be automatically put in **Part** workbench. There you can simply **select any geometry you want and build it**.
 
@@ -361,13 +362,13 @@ As you select an object, it will be built with a pre-defined size. **To change t
 
 </p>
 
----
+
 
 ### Extrusion
 
-For **more complicated geometries** it is possible to draw a sketch and create a 3D volume object from that sketch. There are multiple functions for this procedure, but the most commonly used one is *Extrusion*.
+For **more complicated geometries** it is possible to draw a sketch and create a 3D volume object from that sketch. There are multiple functions for this procedure, but the most commonly used one is **Extrusion**.
 
-To use *Extrusion*, you need to **first create a sketch you need**.
+To use **Extrusion**, you need to **first create a sketch you need**.
 
 ![assets/quickstart/Untitled27.png](assets/quickstart/50.png)
 
@@ -388,7 +389,7 @@ and click **Extrude a selected sketch**.
 </p>
 
 
-In *Extrude* properties window define the **extrusion lenght**, check **Create solid** and select **Sketch** as a shape to extrude. Once done, click apply.
+In **Extrude** properties window define the **extrusion lenght**, check **Create solid** and select **Sketch** as a shape to extrude. Once done, click *apply*.
 
 <p align="center">
 
@@ -400,7 +401,7 @@ Now you have succesfully created a complex 3D object!
 
 ![assets/quickstart/Untitled27.png](assets/quickstart/52.png)
 
----
+
 
 ## Wire thickness
 
@@ -480,7 +481,7 @@ You can **define parameters** in the *Cenos Parameters* spreadsheet where you ca
 
 </p>
 
-To **use these parameters**, click the *Formula Editor* button in the value field and then enter `CenosParameters.name`
+To **use these parameters**, click the *Formula Editor* button in the value field and then enter `CenosParameters.name`.
 
 ![assets/quickstart/Untitled28.png](assets/quickstart/Untitled28.png)
 
@@ -497,7 +498,7 @@ Make sure to **constrain your model's sketches** and **check all the values you 
 
 Once you have finished working on your model and assigned all the parameters you are interested in, you can *send the geometry to CENOS*, where in the *Physics* section you will be able to start the parametric study.
 
----
+
 
 ## Getting the geometry to CENOS
 
