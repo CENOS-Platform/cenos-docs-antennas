@@ -16,9 +16,9 @@ Once you have imported your CAD file and **[sent it to CENOS](geometry-creation#
 
 ---
 
-### Select the type of your model.
+### Select the type of your model
 
-First you need to **select the type of your model** - *Microstrip/PCB*, *Wire Antenna*, *Reflector*, *Multi-port network*, *Waveguide* or *Custom*.
+First you need to **select the type of your model** - _Microstrip/PCB, RFID, Wire Antenna, Reflector, Multi-port network, Waveguide_ or _Custom_.
 
 ![assets/overview/Untitled27.png](assets/roles/1.png)
 
@@ -63,7 +63,7 @@ You can **rename objects** by simply clicking the edit tool next to the name.
 
 ### GO TO PHYSICS
 
-Once all *Roles* are assigned, **GO TO PHYSICS** button will enable, and you can move on to the physics setup!
+Once all *Roles* are assigned, the **GO TO PHYSICS** button will enable, and you can move on to the physics setup!
 
 <p align="center">
 
