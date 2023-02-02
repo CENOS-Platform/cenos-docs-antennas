@@ -1,23 +1,24 @@
 ---
-id: geometry-lumped-ports
+id: geometry-ports
 title: Port definitions in CENOS
 sidebar_label: Port definitions
 ---
 
-An essential element of your RF simulation is the *port* and it is important to figure out how to define it properly. For this reason, we need to **understand what kind of options we have and make modifications to our model, if necessary.**
+An essential element of your RF simulation is the *port* and it is important to figure out how to define it properly. For this reason, we need to **understand what kind of options we have and make modifications to our model, if necessary**.
 
-_For most applications, you won’t need to modify your geometry to feed your model_, as defining a port in CENOS RF has been made incredibly straightforward and can be done with your existing geometry.
+*For most applications, you won’t need to modify your geometry to feed your model*, as defining a port in CENOS RF has been made incredibly straightforward and can be done with your existing geometry.
 
-Currently there are two types of port definitions in CENOS:
+Currently there are three types of port definitions in CENOS:
 
 - *Discrete port*
 - *Coaxial port*
+- *Waveguide port*
 
----
+
 
 ## Discrete port
 
-The **discrete port** in CENOS is the _simplest way to define the feed of your model_. Essentially, **all you have to do is to select two terminals** - one on each conductive surface where you connect the feed in real life. The placement of each of the terminals is dependent on the type of model you are simulating.
+The **discrete port** in CENOS is the *simplest way to define the feed of your model*. Essentially, **all you have to do is to select two terminals** - one on each conductive surface where you connect the feed in real life. The placement of each of the terminals is dependent on the type of model you are simulating.
 
 For example, if you are simulating a simple microstrip antenna, such as an IFA, you would place one terminal on the edge of the feed line of the microstrip and the other on the closest edge of the ground plane.
 
@@ -48,7 +49,7 @@ Coaxial ports are ports where the connection surface is made by a coaxial connec
 </p>
 
 :::tip
-You can create a coaxial connector yourself or use one from the **[Component Library](geometry-creation#component-library)** in FreeCAD.
+You can create a coaxial connector yourself or use one from the **[Component Library](geometry-creation#component-library)** in *FreeCAD*.
 :::
 
 Here is a quick video tutorial on setting up a coaxial port and it's necessary roles:
@@ -65,7 +66,9 @@ Here is a quick video tutorial on setting up a coaxial port and it's necessary r
 
 </p>
 
----
+## Waveguide port
+When you are working with waveguides, it is necessary to use the Waveguide port for this purpose. **The port will be defined as a face in the model**, and for this it is necessary to **create the dielectric that is inside the waveguide**, once you have it, simply select the necessary face.
+
 
 ## Port geometry simplification
 
@@ -113,6 +116,10 @@ To **create a cutout feed** in FreeCAD:
 
 </p>
 
+:::note
+You should take into account that using the coaxial port can slightly increase the accuracy of the results but will increase the computation time.
+:::
+
 In cases where the coaxial connector functions as a probe, such as probe-fed horn antennas, you can **simplify the connector to a simple cylinder assembly**!
 
 <p align="center">
@@ -121,7 +128,7 @@ In cases where the coaxial connector functions as a probe, such as probe-fed hor
 
 </p>
 
----
+
 
 ## Limitations
 
@@ -139,9 +146,13 @@ Currently, the possible points of terminal selection are fixed. On a straight ed
 
 However, **this shouldn't affect the accuracy of the results**, as the solver finds the shortest path possible between the terminals along the mesh cells to excite the model.
 
+### Waveguide port geometry
+
+_CENOS RF_ currently only supports **rectangular faces for the Waveguide port**. Try to **avoid curvatures** in the port as this will not allow you to move forward with the simulation. 
+
 ### Mesh density around the port definition
 
-_On rare occasions_, the mesh around the port definition might be too rough. If you notice a rough mesh (jagged Electric Field distribution) around where you defined the port, go back to the Mesh Generation screen, enable manual meshing and apply a finer refinement along the edges or face of the port.
+_On rare occasions_, the mesh around the port definition might be too rough. If you notice a rough mesh (jagged Electric Field distribution) around where you defined the port, go back to the _Mesh Generation_ screen, enable **manual meshing** and apply a **finer refinement along the edges or face of the port**.
 
 <p align="center">
 
