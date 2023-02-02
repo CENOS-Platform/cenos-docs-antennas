@@ -16,7 +16,7 @@ If during the calculation you get a **message about meshing problems**, you will
 
 To create the mesh manually in *FreeCAD*:
 
-1. Switch to the **Meshing** workbench
+1. Switch to the **Meshing** workbench.
 
 <p align="center">
 
@@ -90,7 +90,7 @@ To **toggle visibility** of any object, right-click on it and click **Show/Hide 
 
 ## Patch meshing
 
-Different antenna types might require different meshing approaches to optimize the simulation. In this section **we will take a look at different meshing approaches specific to patch antenna**.
+Different antenna types might require different meshing approaches to optimize the simulation. In this section **we will take a look at different meshing approaches specific to patch antennas**.
 
 ### Outer edge refinement
 
@@ -130,7 +130,7 @@ Now just create the **[mesh refinement](geometry-meshing#general-refinements)** 
 
 </p>
 
----
+
 
 ### Inset refinement
 
@@ -168,7 +168,7 @@ Now just create the *Mesh refinement* for the selected edges, and you have refin
 
 </p>
 
----
+
 ## Meshing errors
 
 Meshing can sometimes be frustrating, as you try to build the mesh, get an error, but cannot understand what is the actual problem and how to correct it.
@@ -181,7 +181,7 @@ When the mesh is calculated but an error is present, you need to **pay attention
 
 ### Ill-shaped tets
 
-Error message **Warning : X ill-shaped tets are still in the mesh** seems to be the most common one. It usually causes problems when sending the mesh to CENOS.
+Error message **Warning: X ill-shaped tets are still in the mesh** seems to be the most common one. It usually causes problems when sending the mesh to CENOS.
 
 <p align="center">
 
@@ -195,7 +195,7 @@ Error message **Warning : X ill-shaped tets are still in the mesh** seems to be 
 
 ### Invalid elements in surface
 
-Error message **Warning : X elements remain invalid on surface XX** indicates that the generated mesh has some problematic elements that needs to be corrected. 
+Error message **Warning: X elements remain invalid on surface XX** indicates that the generated mesh has some problematic elements that needs to be corrected. 
 
 <p align="center">
 
@@ -210,12 +210,12 @@ To **visualize the problematic surfaces**, [disable the sub-mesh visibility](geo
 ![Send mesh to CENOS](assets/meshing/20.png)
 
 :::info SOLUTION
-**Simplify the problematic surfaces** (remove the thread in the example)
+**Simplify the problematic surfaces** (remove the thread in the example).
 :::
 
 ### Volume mesh: worst distortion
 
-Error message **Warning : Volume mesh: worst distortion** is actually not an error, but a warnng, which indicates that there are some elements which are quite distorted and might impact the simulation results.
+Error message **Warning: Volume mesh: worst distortion** is actually not an error, but a warning, which indicates that there are some elements which are quite distorted and might impact the simulation results.
 
 <p align="center">
 
@@ -229,7 +229,7 @@ In case of such warning **you can still use the mesh** and send it to CENOS, but
 **Decrease the submesh size**, it should create smaller mesh elements and correct the element distortion.
 :::
 
----
+
 
 ## Send mesh to CENOS
 
