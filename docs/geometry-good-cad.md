@@ -104,9 +104,11 @@ The port or feed is one of the most important parts of the assembly, however, yo
 
 ## Resolve incorrect connections
 
-During the creation of the geometry, be careful with connections between different parts of your model – inaccurate connections will result in meshing problems and calculation errors!
+During the creation of the geometry, be careful with connections between different parts of your model.
 
 ### Gaps & Overlapping
+
+It is important that your geometry is continuous so be sure to avoid any overlappings and gaps, since inaccurate connections will result in meshing problems and calculation errors!
 
 <p align="center">
 
