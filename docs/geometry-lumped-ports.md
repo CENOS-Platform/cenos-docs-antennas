@@ -15,7 +15,6 @@ Currently there are three types of port definitions in CENOS:
 - *Waveguide port*
 
 
-
 ## Discrete port
 
 The **discrete port** in CENOS is the *simplest way to define the feed of your model*. Essentially, **all you have to do is to select two terminals** - one on each conductive surface where you connect the feed in real life. The placement of each of the terminals is dependent on the type of model you are simulating.
@@ -36,7 +35,6 @@ If you are simulating a symmetrical design, such as a dipole antenna, you would 
 
 </p>
 
----
 
 ## Coaxial port
 
@@ -66,8 +64,15 @@ Here is a quick video tutorial on setting up a coaxial port and it's necessary r
 
 </p>
 
+
 ## Waveguide port
 When you are working with waveguides, it is necessary to use the Waveguide port for this purpose. **The port will be defined as a face in the model**, and for this it is necessary to **create the dielectric that is inside the waveguide**, once you have it, simply select the necessary face.
+
+<p align="center">
+
+![Waveguide port face](assets/ports/12.png)
+
+</p>
 
 
 ## Port geometry simplification
@@ -116,6 +121,7 @@ To **create a cutout feed** in FreeCAD:
 
 </p>
 
+
 :::note
 You should take into account that using the coaxial port can slightly increase the accuracy of the results but will increase the computation time.
 :::
@@ -129,10 +135,10 @@ In cases where the coaxial connector functions as a probe, such as probe-fed hor
 </p>
 
 
-
 ## Limitations
 
 Although the process of defining a port in CENOS RF is incredibly straightforward, _there are a few things to keep in mind_.
+
 
 ### Discrete port terminal selection
 
@@ -146,9 +152,17 @@ Currently, the possible points of terminal selection are fixed. On a straight ed
 
 However, **this shouldn't affect the accuracy of the results**, as the solver finds the shortest path possible between the terminals along the mesh cells to excite the model.
 
+
 ### Waveguide port geometry
 
 _CENOS RF_ currently only supports **rectangular faces for the Waveguide port**. Try to **avoid curvatures** in the port as this will not allow you to move forward with the simulation. 
+
+<p align="center">
+
+![Image for port placement on an IFA antenna](assets/ports/13.png)
+
+</p>
+
 
 ### Mesh density around the port definition
 
