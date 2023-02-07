@@ -14,7 +14,7 @@ Once you have imported your CAD file and **[sent it to CENOS](geometry-creation#
 
 </p>
 
----
+
 
 ### Select the type of your model
 
@@ -32,7 +32,7 @@ If you want to **change selected model type**, click *Reset geometry type*.
 </p>
 :::
 
----
+
 
 ### Assign roles to your geometry.
 
@@ -59,7 +59,7 @@ You can **rename objects** by simply clicking the edit tool next to the name.
 ![assets/quickstart/Untitled13.png](assets/quickstart/82.png)
 :::
 
----
+
 
 ### GO TO PHYSICS
 
