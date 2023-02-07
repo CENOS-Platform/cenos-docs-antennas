@@ -54,7 +54,7 @@ Once you have selected your file you will return to the main CENOS interface whe
 
 </p>
 
-You have the option to use your model completely in 3D or **flatten the thin conductive parts**, such as tracks, to have them in 2D. We recommend selecting the **Faces mode**, as the results will not be significantly affected but the mesh will be easier to create and the calculation time will be reduced!
+You have the option to use your model completely in 3D or **flatten the thin conductive parts**, such as tracks, to have them in 2D. We recommend selecting the **Faces mode**, as the results will not be significantly affected but the mesh will be easier to create and the calculation time will be reduced! 
 
 <p align="center">
 
@@ -69,6 +69,12 @@ You have the option to use your model completely in 3D or **flatten the thin con
 </p>
 
 :::warning important
+
+**RFID geometries should not be simplified as 2D faces** as this will affect results.
+
+:::
+
+:::note
 We recommend that for the substrate you use a geometric figure **without curvatures** since this would cause troubles reading the geometry and it will not be imported correctly into *FreecCAD*. If the curvatures in the substrate are important in your model, you can create it within *FreeCAD* once the model has already been imported.
 
 <p align="center">
@@ -233,7 +239,6 @@ To **change the size** of the connector, select it in tree view and edit the **P
 
 
 
-
 ## Sketches
 
 A **sketch is the base for almost all geometrical objects** you can create, **including geometries for RF models**, which is why we need to know how to create one.
@@ -284,7 +289,7 @@ Draw your model's geometry, and, once you are done, click **Close**.
 
 </p>
 
----
+
 
 ### On volumes
 
@@ -332,7 +337,7 @@ Once you have finished drawing your sketch, simply **Close** it and you are done
 
 ![assets/quickstart/Untitled27.png](assets/quickstart/44.png)
 
----
+
 
 ## 3D volumes
 
@@ -342,7 +347,7 @@ For a lot of times it will be necessary to **create 3D geometries, not only 2D s
 When creating volumes, make sure that they do not overlap with each other. **Overlapping volume objects are forbidden**!
 :::
 
----
+
 
 ### Basic Shapes
 
@@ -467,7 +472,7 @@ Sometimes when building wires, the visualization will appear like this:
 **This is a visualization problem, which does not affect the geometry itself**. You can continue and use this geometry in your setup!
 :::
 
----
+
 
 ## Geometry parameters and Parametric study
 
