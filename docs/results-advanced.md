@@ -8,11 +8,11 @@ Besides the default information and evaluation that *CENOS Radio Frequency app* 
 
 **In this section we will learn different methods on how to manually analyze antenna simulation results**.
 
----
+
 
 ### Electric/magnetic field on surface
 
-By default the *Electric field* on your antenna is visualized.
+By default the *Electric field* on your antenna is visualized. You can _change this visualization to see the Magnetic field_ as well.
 
 <p align="center">
 
@@ -20,11 +20,9 @@ By default the *Electric field* on your antenna is visualized.
 
 </p>
 
-You can **change this visualization to see the** ***Magnetic field*** as well.
-
 To switch between different field visualizations:
 
-1. **Select the right side view** (should  be highlighted by a blue outline)
+1. **Select the right side view** (should  be highlighted by a blue outline).
 
 2. Select the **Dielectric** in the *Pipeline browser* tree.
 
@@ -52,94 +50,12 @@ Now the new field is visualized!
 
 :::tip
 In the same way you can change visualization for *Far Field* as well.
-1. Select the left view
-2. Select *3D Far Field* in *Pipeline Browser*
+1. Select the left view.
+2. Select *3D Far Field* in *Pipeline Browser*.
 3. Change the field selection in the dropdown.
 :::
 
----
 
-### Near-field
-
-For antenna analysis it is often interesting to take a look at the ***Electric field*** **and see how it is distributed around antenna**.
-
-In the example below - *patch antenna near-field side view*.
-
-<p align="center">
-
-![Dielectric](assets/results/25.png)
-
-</p>
-
-To analyze the *near-field*:
-
-1. **Select the left side view** (should  be highlighted by a blue outline)
-
-2. Disable the visibility for **3D Far Field** in the *Pipeline browser* tree.
-
-<p align="center">
-
-![Dielectric](assets/results/17.png)
-
-</p>
-
-3. Select **Simulation Data**.
-
-<p align="center">
-
-![Dielectric](assets/results/18.png)
-
-</p>
-
-4. Click **Filters → Search...**. In search box write **Extract Block** and press *Enter*.
-
-<p align="center">
-
-![Dielectric](assets/results/19.png)
-
-</p>
-
-5. In *Properties* window select **air** and click *Apply*.
-
-<p align="center">
-
-![Dielectric](assets/results/20.png)
-
-</p>
-
-We have now created a new object in our *Tree View* - **ExtractBlock1**, and we can visually see the air domain (sphere) around our geometry.
-
-<p align="center">
-
-![Dielectric](assets/results/21.png)
-
-</p>
-
-We need to **slice the air domain to analyze the near-field** around our antenna.
-
-6. With *ExtractBlock1* selected, click **Slice**. Position your slice plane (you can change the normals in *Properties*) and click *Apply*.
-
-<p align="center">
-
-![Dielectric](assets/results/22.png)
-
-</p>
-
-7. Rescale the *Electric Field* scale to better see the field around your antenna, and that is it!
-
-<p align="center">
-
-![Dielectric](assets/results/23.png)
-
-</p>
-
-<p align="center">
-
-![Dielectric](assets/results/24.png)
-
-</p>
-
----
 
 ### Color discretization
 
@@ -181,7 +97,112 @@ By default the table value will be 256 - if you **decrease it**, you can decreas
 
 </p>
 
----
+
+
+### Plane cut 
+Sometimes, making a **cut in a plane** helps us to better analyze the distribution of the **electric field within a structure**.
+
+Here is how you can cut any object in ParaView:
+
+1. Click in the Electric Field Distribution window, which is on the right side – you can see this when the window has a blue outline.
+
+<p align="center">
+
+![EF window](assets/results/34.png)
+
+</p>
+
+2. Select the object you want to cut in the _Pipeline Browser_ on the left of your screen and make sure *it is marked blue*!
+
+<p align="center">
+
+![Pipeline Browser](assets/results/35.png)
+
+</p>
+
+3. Now in the upper toolbar, find the **Slice** or **Clip** tool. Choose whichever you like! Slice creates a thin slice where you position the plane to be. Clip cuts the object, leaving it in half in its place.
+
+<p align="center">
+
+![Clip and Slice](assets/results/36.png)
+
+</p>
+
+4. Once you have selected the tool, click on it. You should see a new object appear in the browser, named either _Slice1_ or _Clip1_, depending on what you chose. The Visualization in the screen will now have a white frame and a red rectangle.
+
+<p align="center">
+
+![Frame](assets/results/37.png)
+
+</p>
+
+5. Now you have to select where you want to cut. There are **different ways to change the angle and placement of the cut**.
+  
+    1. The first way is to **drag it in place in the Visualization window**. Placing your cursor on the white part of the red frame will turn it green, thus allowing you to move the plane in the selected axis by clicking and dragging.
+    
+    2. If you click and hold the red arrow, you can **change its angle**.
+    
+    3.  You can select **specific angles** for the cut in the Properties tab for the object you created on the left. Here you can specify **normal vectors** for the placement of the red frame (X Y and Z normal will reset the red frame to the middle and the respective normal vector).
+
+
+<p align="center">
+
+![Frame](assets/results/38.png)
+
+</p>
+
+<p align="center">
+
+![Angle](assets/results/39.png)
+
+</p>
+
+<p align="center">
+
+![Angle](assets/results/40.png)
+
+</p>
+
+6. Now that you have selected the place you want to cut, **click apply** in the top of the Properties tab. Now you are done!
+
+<p align="center">
+
+![Cut](assets/results/41.png)
+
+</p>
+
+:::note tip
+Here are a few useful small tips when creating a plane cut:
+
+1. Select a different object in the Pipeline Browser, so that you can **pan around the field visualization without changing the cut plane**! Once you have done this, you will no longer have the red frame for cutting.
+
+<p align="center">
+
+![Tip](assets/results/42.png)
+
+</p>
+
+2. If you have made any mistake during this process, you can use _Ctrl+Z_ **to undo those mistakes**!
+
+3. You can change the created cut within ParaView by selecting the cut Clip or Plane in the Pipeline browser and then checking the Properties tab. Changing the cut in the Visualization is also allowed!
+
+4. If you want to **rescale the data range** (for example, make colors above or beyond a certain range be completely red), you select the Rescale to Custom Data Range tool in the upper toolbar, select the values you want and the click Rescale:
+
+<p align="center">
+
+![Tip](assets/results/43.png)
+
+</p>
+
+The result should look like this (note the scale has changed in the right side of the screen):
+
+<p align="center">
+
+![Tip](assets/results/44.png)
+
+</p>
+:::
+
 
 ### Result accuracy (mesh)
 
@@ -197,7 +218,7 @@ If you zoom in on your geometry, you can **visually examine** if the result is g
 
 To **visualize the mesh over calculated results**:
 
-1. **Select the right side view** (should  be highlighted by a blue outline)
+1. **Select the right side view** (should  be highlighted by a blue outline).
 
 2. Select the part you want to test in the *Pipeline browser* tree (*Dielectric* in this example).
 
@@ -225,4 +246,4 @@ As you do this, the **generated mesh will be visualized on your results**, and y
 
 In this case the spikes are numerical effect caused by coarse mesh, so we should **[refine the mesh](geometry-meshing#patch-meshing)** to get more precise results!
 
----
+
