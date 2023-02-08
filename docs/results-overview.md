@@ -92,7 +92,7 @@ To analyze parameters such as **S11 magnitude**, **S11 phase**, **Impedance**, *
 
 ## Parametric Study Results
 
-If you used the [Parametric Study](geometry-creation#geometry parameters and parametric study) in the simulation of your RF model, the results you will see automatically displayed will be the **S-parameter values of all cases**. This way you can directly compare the performance between cases with different dimensions!
+If you used the [Parametric Study](physics-overview#parametric-study) in the simulation of your RF model, the results you will see automatically displayed will be the **S-parameter values of all cases**. This way you can directly compare the performance between cases with different dimensions!
 
 <p align="center">
 
@@ -121,11 +121,11 @@ If you need to see the rest of the results for each case such as the radiation p
 
 *CENOS Radio Frequency* outputs a .csv file with all of the global values such as **S11, VSWR**, and many more. You can open this in Excel, for example, where you can then plot, compare and analyze the results however you wish.
 
-![assets/quickstart/Untitled17.png](assets/quickstart/Untitled17.png)
+![assets/quickstart/Untitled17.png](assets/results/17.png)
 
 
 ## PDF Reports 
 
 A very useful feature for reports is CENOS **built-in PDF report generator**. With this tool you can generate a **PDF file with your simulation setup and result overview**, which you can easily share with others!
 
-![assets/quickstart/Untitled19.png](assets/quickstart/Untitled19.png)
+![assets/quickstart/Untitled19.png](assets/results/19.png)
