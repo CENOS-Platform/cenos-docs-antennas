@@ -54,14 +54,14 @@ You have the option to **renormalize the port impedance**, where you can enter t
 You can find the Touchstone file in the folder called _"extra_results"_ located in the general folder of your case  _(case_folder\extra_results)_.
 In this same folder you will find the **Smith Chart** that you can use as a tool for impedance visualization!
 
-## Parametric Study
+## [Parametric Study](geometry-creation#geometry-parameters-and-parametric-study)
 With _CENOS RF_ software it is possible to create a **parameterized model** and change the dimensions of your geometry in a simple way.
 
 Without parametric values, each geometry modification requires the creation of a new model **from scratch or going back to previous stages** of the simulation to make the required changes, which can be very **time consuming**. If the model is parameterized, geometry modifications only require changing the required parameter in the _Simulation Control_.
 
 ## How to use Parametric Study?
 
-The _Parametric Study_ feature is available through the Geometry Editor approach. The first step is to **parametrize your geometry** within _FreeCAD_.
+The _Parametric Study_ feature is available through the Geometry Editor approach. The first step is to **[parametrize your geometry](geometry-creation#geometry-parameters-and-parametric-study)** within _FreeCAD_.
 
 Once you have sent your geometry to _CENOS_ and are in the _Simulation Control_, you will need to **enable the parametric study** and click on **CONFIGURE**. 
 
