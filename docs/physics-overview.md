@@ -47,7 +47,7 @@ You have the option to **renormalize the port impedance**, where you can enter t
 
 <p align="center">
 
-![Touchstone export](assets/physics/10.png)
+![Touchstone export](assets/physics/20.png)
 
 </p>
 
