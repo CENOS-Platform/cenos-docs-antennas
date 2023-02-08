@@ -16,15 +16,15 @@ Once the simulation is done, results will be processed and opened in a separate 
 
 </p>
 
----
 
 ## Overview
 
 To analyze your antenna simulation, you have 3 different tools for that:
 
-- **ParaView** (visual results)
-- **Spreadsheet** (easy for result analysis in Excel)
-- **PDF** (simulation report generation)
+- **ParaView** (visual results).
+- **Spreadsheet** (easy for result analysis in Excel).
+- **Touchstone file** (documenting the n-port network parameter data).
+- **PDF** (simulation report generation) - _Pro plan only_.
 
 You can **access these directly** through CENOS Desk view under *Visualization* block.
 
@@ -34,19 +34,22 @@ You can **access these directly** through CENOS Desk view under *Visualization* 
 
 </p>
 
----
 
 ## ParaView
 
 When the simulation is finished, a new *ParaView* window will open with processed results.
 
+
 ### 3D View
 
 In the *3D View* tab you can see your antenna with ***Electric field*** visualized on the right, together with the ***Radiation pattern*** visualized on the left.
 
+<p align="center">
+  
 ![Results](assets/results/1.png)
 
----
+</p>
+
 
 #### Frequency range
 
@@ -58,7 +61,6 @@ If you calculated your design using *frequency sweep*, you can visualize results
 
 </p>
 
----
 
 ### Radiation pattern
 
@@ -74,11 +76,10 @@ Here you can find radiation patterns displayed in **cartesian** and **polar** co
 
 ![assets/quickstart/Untitled14.png](assets/results/4.png)
 
----
 
-### S11 and other charts
+### Frequency charts
 
-To analyze parameters such as **S11**, **VSWR**, **Impedance**, **Resistance**, **Reactance** and **Applied Power**, switch to *S11 and other charts* tab.
+To analyze parameters such as **S11 magnitude**, **S11 phase**, **Impedance**, **Resistance**, **Reactance** and **VSWR**, switch to *Frequency charts* tab.
 
 <p align="center">
 
@@ -88,13 +89,33 @@ To analyze parameters such as **S11**, **VSWR**, **Impedance**, **Resistance**, 
 
 ![assets/quickstart/Untitled14.png](assets/results/8.png)
 
-:::tip
-For *S11 and other charts* you can **set a custom frequency range** at the bottom left part of the window, in the properties:
 
-![assets/quickstart/Untitled14.png](assets/results/9.png)
-:::
+## Parametric Study Results
 
----
+If you used the [Parametric Study](geometry-creation#geometry parameters and parametric study) in the simulation of your RF model, the results you will see automatically displayed will be the **S-parameter values of all cases**. This way you can directly compare the performance between cases with different dimensions!
+
+<p align="center">
+
+![S11 results](assets/results/31.png)
+
+</p>
+
+By clicking on the _PARAMETRIC STUDY_ box you can see the number of simulated cases and the dimensions of the parameters that were modified.  
+
+If you need to see the rest of the results for each case such as the radiation pattern or the electric field it is possible to do so by clicking on the results box of the case of interest! By doing so you will see that a **Paraview window is automatically displayed** with all the results.
+
+<p align="center">
+
+![Parametric study box](assets/results/32.png)
+
+</p>
+
+<p align="center">
+
+![Parametric study results table](assets/results/33.png)
+
+</p>
+
 
 ## Spreadsheet
 
@@ -102,9 +123,8 @@ For *S11 and other charts* you can **set a custom frequency range** at the botto
 
 ![assets/quickstart/Untitled17.png](assets/quickstart/Untitled17.png)
 
----
 
-## PDF Reports
+## PDF Reports 
 
 A very useful feature for reports is CENOS **built-in PDF report generator**. With this tool you can generate a **PDF file with your simulation setup and result overview**, which you can easily share with others!
 
