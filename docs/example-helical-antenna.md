@@ -64,7 +64,7 @@ In this Geometry creation section we will cover all main points you need to comp
 
 
 
-### Dipole wire sketch
+### Helix wire sketch
 
 First thing we need to do is to **create the sketch of our wire**. In  **<span style={{ color: "blue" }}>Part</span>** workbench select the creation of **[parametrized geometric primitives](geometry-creation#basic-shapes)**. In the _Combo View_ select _Helix_ and you will be able to modify both its parameters and its position. You can position **one of the helix terminals in the center of the coordinate axes** so that the rest of the geometry can be easily placed.
 
@@ -104,7 +104,7 @@ One important thing we need to add is the **port**. For this case we are going t
 
 ### Inner conductor of coaxial cable
 
-To create the inner conductor we need to draw the sketch of our wire. In **<span style={{ color: "blue" }}>Sketcht</span>** workbench **[create a sketch](geometry-creation#sketches)** and draw the wire outline making sure it makes contact with the helix. After this add a wire thickness as we did before.
+To create the inner conductor we need to draw the sketch of our wire. In **<span style={{ color: "blue" }}>Sketch</span>** workbench **[create a sketch](geometry-creation#sketches)** and draw the wire outline making sure it makes contact with the helix. After this add a wire thickness as we did before.
 
 <p align="center">
 
@@ -148,7 +148,7 @@ To create the dielectric you have to select the geometric shape tube, which is o
 
 ### Ground plane
 
-Finally, we need to create the ground plane. An easy way to do this is by creating a 2D sketch  and then creating a **[3D extruasion](geometry-creation#extrusion)**. Remember to include the hole where the coaxial cable will be positioned. 
+Finally, we need to create the ground plane. An easy way to do this is by creating a 2D sketch  and then creating a **[3D extrusion](geometry-creation#extrusion)**. Remember to include the hole where the coaxial cable will be positioned. 
 
 <p align="center">
 
