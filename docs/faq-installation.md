@@ -6,7 +6,7 @@ sidebar_label: Installation/OS
 
 #### Can I install *CENOS Radio Frequency* app on *Windows 7*?
 
-- No, CENOS AD app is built for usage on machines with **Windows 10 only**. Earlier versions (Win7&8) will not support it!
+- No, CENOS AD app is built for usage on machines with **Windows 10 or Windows 11 only**. Earlier versions (Win7&8) will not support it!
 
 #### What is the blue screen during the installation?
 
