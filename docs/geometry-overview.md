@@ -61,9 +61,11 @@ Templates is the easiest and quickest way to define geometry. Just select *Templ
 
 In *Templates* **the geometry and mesh are generated automatically**, and it can be used to very **quickly set up a simulation** for *Patch* or *Wire* antennas!
 
+<p align="center">
+
 ![templates](assets/overview/1.png)
 
-
+</p>
 
 ## From CAD
 
