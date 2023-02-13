@@ -86,8 +86,6 @@ First thing we need to do is to **create the sketch of our wire**. In  **<span s
 
 Once the sketch is created, add **[wire thickness](geometry-creation#wire-thickness)** to the sketch to build the actual wire geometry.
 
-</p>
-
 <p align="center">
 
 ![helix](assets/example/52.png)
