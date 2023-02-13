@@ -1,5 +1,5 @@
 ---
-id: geometry-ports
+id: geometry-lumped-ports
 title: Port definitions in CENOS
 sidebar_label: Port definitions
 ---
