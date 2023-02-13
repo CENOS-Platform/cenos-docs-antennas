@@ -150,7 +150,7 @@ With any option you choose, the new geometry will be loaded and all the paramete
 
 There are some limitations when using FromCAD, since with this approach you will not be able to **make modifications to your geometry directly in CENOS** - you will have to modify the model in your own CAD software, or use a different workflow - _Geometry Editor (FreeCAD)_. Another limitation is the use of the parametric study, which is only available with the _Geometry Editor (FreeCAD)_ workflow. 
 
-If you want to continue working with other CAD software, you can create different geometries with the necessary modifications to the dimensions. This way you can **[reload each CAD file](geometry-overview#cad-reloading)** and the role assignment and materials will be kept, without the need to do all the work more than once!
+If you want to continue working with other CAD software, you can create different geometries with the necessary modifications to the dimensions. This way you can **[reload each CAD file](#cad-reloading)** and the role assignment and materials will be kept, without the need to do all the work more than once!
 
 
 
