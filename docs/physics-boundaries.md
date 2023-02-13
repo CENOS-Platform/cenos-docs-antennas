@@ -8,61 +8,13 @@ sidebar_label: Boundaries
 
 In this article we will **go over the boundary conditions available** in *CENOS Radio Frequency* app and **learn the meaning of each definition**.
 
-## Uniform/Coaxial port
+## Coaxial port
 
-This is the most important boundary, as it is responsible for the **antenna feed definition**.
-
-CENOS will **automatically set** ***Uniform*** or ***Coaxial*** port depending on *Role* definition. Port **Impedance** by default is set to **50 Ohm**, which you can adjust depending on your case.
+This a boundary condition that will be automatically assigned to the face that has been defined with the ***Coaxial*** port role in the Geometry section. Port **Impedance** by default is set to **50 Ohms**, which you can easily adjust for your use case. You can also define a *phase shift* in the corresponding box for the port through which you can change the angle of excitation of the wave at the antenna input.
 
 <p align="center">
 
 ![Tabs](assets/boundaries/1.png)
-
-</p>
-
-<p align="center">
-
-![Tabs](assets/boundaries/2.png)
-
-</p>
-
-### Automatic Feed Parameters - Uniform
-
-**Automatic Feed Parameters** will be set by default. If you uncheck the selection, you will have access to the **manual definitions** of ***Feed Parameters***.
-
-<p align="center">
-
-![Tabs](assets/boundaries/3.png)
-
-</p>
-
-**Uniform Parameters**:
-
-- **Voltage [V]** - Applied voltage to the feed;
-- **Gap [m]** - Inset gap (for patch antennas). If you don't have an inset, put **0**;
-- **Feed vector X, Y, Z** - Vector parallel to the feed plane.
-
-### Automatic Feed Parameters - Coaxial
-
-<p align="center">
-
-![Tabs](assets/boundaries/4.png)
-
-</p>
-
-**Coaxial Parameters**:
-
-- **Voltage [V]** - Applied voltage to the feed;
-- **Inner radius [m]** - Inner radius of the Coaxial port;
-- **Outer radius [m]** - Outer radius of the Coaxial port.
-
-### Phase shift
-
-By enabling the *Phase Shift* checkbox, you can define phase shift through which you can change the angle of excitation of the wave at the antenna input.
-
-<p align="center">
-
-![Tabs](assets/boundaries/5.png)
 
 </p>
 
@@ -88,7 +40,7 @@ You can use **Conductor** boundary instead of *Perfect Electric Conductor*. **Co
 
 ## Radiation Boundary
 
-**Radiation Boundary** is by default applied to the **outer surface of the air box** - a domain which is automatically generated around your antenna.
+**Radiation Boundary** is by default applied to the **outer surface of the air box** - a domain which is automatically generated around your antenna. By default, this boundary condition is hidden. The radiation boundary in CENOS uses the *Silver-Muller absorbing condition*. 
 
 <p align="center">
 
