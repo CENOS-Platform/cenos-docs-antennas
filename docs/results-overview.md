@@ -43,12 +43,8 @@ When the simulation is finished, a new *ParaView* window will open with processe
 ### 3D View
 
 In the *3D View* tab you can see your antenna with ***Electric field*** visualized on the right, together with the ***Radiation pattern*** visualized on the left.
-
-<p align="center">
   
 ![Results](assets/results/1.png)
-
-</p>
 
 
 #### Frequency range
