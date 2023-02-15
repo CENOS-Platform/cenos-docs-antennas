@@ -4,6 +4,20 @@ title: Release notes
 sidebar_label: v2.x
 ---
 
+## v2.2.2 (February 16th, 2023)
+
+Improvements:
+
+* Added a button under “Visualization” in Desk that directly opens the “extra_results” folder with the File Explorer
+
+Bugfixes:
+
+* Fixed Component Library in FreeCAD not displaying text properly
+* Fixed the SMA edge connector not getting placed in the model in FreeCAD from the Component Library
+* Removed feed sketches from both Patch antenna templates in FreeCAD’s Components Library
+* Fixed incorrectly assigned parameters for both Patch antenna templates in FreeCAD’s Components Library
+
+
 ## v2.2.1 (February 1st, 2023)
 
 Bugfixes:
