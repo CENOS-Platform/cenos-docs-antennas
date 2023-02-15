@@ -14,8 +14,8 @@ Bugfixes:
 
 * Fixed Component Library in FreeCAD not displaying text properly
 * Fixed the SMA edge connector not getting placed in the model in FreeCAD from the Component Library
-* Removed feed sketches from both Patch antenna templates in FreeCAD’s Components Library
-* Fixed incorrectly assigned parameters for both Patch antenna templates in FreeCAD’s Components Library
+* Removed feed sketches from both Patch antenna templates in FreeCAD’s Component Library
+* Fixed incorrectly assigned parameters for both Patch antenna templates in FreeCAD’s Component Library
 
 
 ## v2.2.1 (February 1st, 2023)
