@@ -14,13 +14,13 @@ In this guide we will take a look at **how to build a complete patch antenna sim
 
 </p>
 
----
+
 
 ## Case setup
 
 Before we can actually start building our simulation, we need to first prepare our case - **choose the way we will build our geometry**, and **save the case**.
 
----
+
 
 ### Choose geometry approach
 
@@ -34,7 +34,7 @@ Patch antenna **can be simulated with any one of these approaches**, as there is
 
 </p>
 
----
+
 
 ### Save the case
 
@@ -54,7 +54,7 @@ Once the case is saved, click the *Play* icon to open *FreeCAD* - CENOS geometry
 
 </p>
 
----
+
 
 ## Geometry creation
 
@@ -62,13 +62,13 @@ In *FreeCAD* we have all the possibilities to **build our antenna geometry**, an
 
 In this *Geometry creation* section we will cover **all main points you need to complete** to build your own patch antenna geometry manually.
 
----
+
 
 ### Substrate (dielectric)
 
 First thing we need to do is to build the substrate. The easiest way to do that is through box creation.
 
-In **<span style={{ color: "blue" }}>Part</span>** workbench **[create a box](geometry-creation#primitives)** and **change the parameters** (height) to the values corresponding to your antenna substrate.
+In **<span style={{ color: "blue" }}>Part</span>** workbench **[create a box](geometry-creation#primitives)** and **change the parameters** to the values corresponding to your antenna substrate.
 
 <p align="center">
 
@@ -76,7 +76,7 @@ In **<span style={{ color: "blue" }}>Part</span>** workbench **[create a box](ge
 
 </p>
 
----
+
 
 ### Patch / Conductive layers
 
@@ -91,38 +91,14 @@ Next we need to create the patch for our antenna. In **<span style={{ color: "bl
 #### PROS/CONS
 
 For 2D patch:
-* **Easier to create** ([Sketch on surface](geometry-creation#on-volumes))
-* Can **avoid meshing problems**
+* **Easier to create** ([Sketch on surface](geometry-creation#on-volumes)).
+* Can **avoid meshing problems**.
 
 For 3D layer:
-* Slightly more **difficult to create** (Have to create an [extrusion](geometry-creation#extrusion))
-* **More accurate results**
+* Slightly more **difficult to create** (Have to create an [extrusion](geometry-creation#extrusion)).
+* **More accurate results**.
 
----
 
-### Port/feed
-
-Last thing we need to add is a uniform port surface. Select the side of the box and in **<span style={{ color: "blue" }}>Sketch</span>** workbench create a **uniform port sketch**.
-
-<p align="center">
-
-![assets/quickstart/Untitled24.png](assets/example/18.png)
-
-</p>
-
-Depending on your patch, you can create **[planar](geometry-lumped-ports#planar)** or **[curved](geometry-lumped-ports#curved)** ports.
-
-<p align="center">
-
-![assets/quickstart/Untitled24.png](assets/example/5.png)
-
-</p>
-
-:::note
-Remember that you can **simplify your port geometry from a connector to a simple feed plane!**
-:::
-
----
 
 ### Feed networks
 
@@ -171,7 +147,7 @@ You can create chamfered corners by filleting the sketch path with a radius half
 ![assets/quickstart/Untitled26.png](assets/quickstart/Untitled26.png)
 :::
 
----
+
 
 ### Send geometry to CENOS
 
@@ -189,19 +165,7 @@ Once you have finished the geometry, you need to send the mesh to CENOS. To do t
 
 As geometry is being sent to CENOS, **FreeCAD study will be automatically saved** in the simulation folder, so you can close it.
 
----
 
-### Manual meshing
-
-If during the calculation you get a **message about meshing problems**, you will need to **[manually mesh](geometry-meshing#general-mesh)** your antenna in FreeCAD. You can also mesh it manually already when building your geometry (while still in FreeCAD) in case you want more control over your simulation.
-
-<p align="center">
-
-![assets/quickstart/Untitled24.png](assets/example/19.png)
-
-</p>
-
----
 
 ## Roles
 
@@ -209,11 +173,11 @@ Once the geometry is finished and sent to CENOS, you need to **define your geome
 
 Essentially you need to clarify which part of your geometry is the dielectric, which is the port etc., in other words, **define roles for parts of your geometry**.
 
----
+
 
 ### Type of antenna
 
-Before you define roles, you need to **[select what kind of antenna you have](geometry-roles#select-the-type-of-your-antenna)** - *Microstrip*, *Wire* or *Other*.
+Before you define roles, you need to **[select what kind of antenna you have](geometry-roles#select-the-type-of-your-antenna)** - *Microstrip*, *RFID*, *Wire*, *Reflector*, *Multi-port network*, *Waveguide* or *Other*.
 
 For this example we choose **Microstrip/PCB** antenna type.
 
@@ -223,7 +187,7 @@ For this example we choose **Microstrip/PCB** antenna type.
 
 </p>
 
----
+
 
 ### Surface/volume roles
 
@@ -235,7 +199,7 @@ Now you need to **[define surface and volume roles](geometry-roles#assign-roles-
 
 </p>
 
----
+
 
 ### Got to physics
 
@@ -247,13 +211,13 @@ When roles are assigned, **GO TO PHYSICS** button will become active - click it 
 
 </p>
 
----
+
 
 ## Physics
 
 In physics you need to **define the physical parameters of your simulation**, which include **frequencies**, **material definitions** and **boundary conditions**.
 
----
+
 
 ### Simulation control
 
@@ -265,11 +229,11 @@ In **SIMULATION CONTROL** you define either a **single frequency** or a **freque
 
 </p>
 
----
 
-### Volumes/free space
 
-For substrate you only need to specify the material - ***Free space*** **is already predefined for you**, so you don't need to worry about that
+### Volumes
+
+For substrate you only need to specify the material.
 
 <p align="center">
 
@@ -282,11 +246,10 @@ For substrate you only need to specify the material - ***Free space*** **is alre
 
 **Boundaries** or boundary conditions have also been **predefined**:
 
-- *Feed* surface → **Uniform Port** (with default 50 Ohm Impedance)
+- *Uniform Port* → Default 50 Ohm Impedance.
 
-- *Patch* and *Ground* → **Perfect Electric Conductor**
+- *Patch* and *Ground* → **Perfect Electric Conductor**.
 
-- Outer surface of free space → **Radiation Boundary**
 
 <p align="center">
 
@@ -302,7 +265,20 @@ Once all physical parameters are filled, **RUN** button will become active and y
 
 </p>
 
----
+
+
+## Manual meshing
+
+If during the calculation you get a **message about meshing problems**, you will need to **[manually mesh](geometry-CENOS-meshing#manual-mesh-selection)** your antenna. You can also mesh it manually already in the _mesh generation_ section in case you want more control over your simulation.
+
+<p align="center">
+
+![assets/quickstart/Untitled24.png](assets/example/19.png)
+
+</p>
+
+
+
 
 ## Results
 
