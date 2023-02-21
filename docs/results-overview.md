@@ -30,7 +30,7 @@ You can **access these directly** through CENOS Desk view under *Visualization* 
 
 <p align="center">
 
-![Result selection](assets/results/5.png)
+![Results selection](assets/results/5.png)
 
 </p>
 
@@ -117,11 +117,55 @@ If you need to see the rest of the results for each case such as the radiation p
 
 *CENOS Radio Frequency* outputs a .csv file with all of the global values such as **S11, VSWR**, and many more. You can open this in Excel, for example, where you can then plot, compare and analyze the results however you wish.
 
-![assets/quickstart/Untitled17.png](assets/results/17.png)
+<p align="center">
+
+![Spreadsheet](assets/results/17.png)
+
+</p>
 
 
 ## PDF Reports 
 
 A very useful feature for reports is CENOS **built-in PDF report generator**. With this tool you can generate a **PDF file with your simulation setup and result overview**, which you can easily share with others!
 
-![assets/quickstart/Untitled19.png](assets/results/19.png)
+<p align="center">
+
+![PDF report](assets/results/19.png)
+
+</p>
+
+## Extra results
+
+In the _extra_results_ folder you can find **more information about your case**! You can easily access these results from the CENOS Radio Frequency interface, just click on the folder icon under the visualization box. In case you have used the impedance normalization tool, you will find the results in this folder. 
+
+<p align="center">
+
+![extra results folder](assets/results/45.png)
+
+</p>
+
+You will find a **touchstone file** corresponding to your case results for future processing. You will also find an image corresponding to the **Smith Chart**! 
+
+<p align="center">
+
+![extra results folder](assets/results/46.png)
+
+</p>
+
+<p align="center">
+
+![Smith chart](assets/results/47.png)
+
+</p>
+
+:::note
+
+Remember that by using the option to **[renormalize the impedance](physics-overview#touchstone-export)** you will have the option to display the results in _dB and angle_ or in _Real and Imaginary_ format. Depending on the option you choose, your data will be displayed. 
+
+<p align="center">
+
+![impedance](assets/results/48.png)
+
+</p>
+
+:::
