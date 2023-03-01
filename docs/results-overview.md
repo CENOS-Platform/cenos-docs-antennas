@@ -112,6 +112,27 @@ If you need to see the rest of the results for each case such as the radiation p
 
 </p>
 
+Once you have the results of the cases you have set up, you may only be interested in the data of some specific cases. For this, there is the possibility to deactivate the graphs shown for specific cases, to do so follow the steps below:
+
+1. Open the Paraview window with the **combined results** view. 
+
+2. On the left side you will find the **Python console** with the list of parametric study cases. Delete the cases that are not of interest to you.
+
+<p align="center">
+
+![Python console](assets/results/49.png)
+
+</p>
+
+3. Click out of the Python console and the plots will be updated automatically!
+
+<p align="center">
+
+![Parametric study results](assets/results/50.png)
+
+</p>
+
+
 
 ## Spreadsheet
 
