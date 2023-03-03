@@ -19,7 +19,7 @@ Once the simulation is done, results will be processed and opened in a separate 
 
 ## Overview
 
-To analyze your antenna simulation, you have 4 different tools for that:
+To analyze your antenna simulation, you have 4 different options for that:
 
 - **ParaView** (visual results).
 - **Spreadsheet** (easy for result analysis in Excel).
@@ -157,15 +157,14 @@ A very useful feature for reports is CENOS **built-in PDF report generator**. Wi
 
 ## Extra results
 
-In the _extra_results_ folder you can find **more information about your case**! You can easily access these results from the _CENOS Radio Frequency_ interface, just click on the folder icon under the visualization box. In case you have used the impedance normalization tool, you will find the results in this folder. 
-
+In the _extra_results_ folder you can find **more information about your case**! You can easily access these results from the _CENOS Radio Frequency_ interface, just click on the folder icon under the visualization box. *CENOS RF* automatically produces a **Touchstone file** export for the impedance you set for your port, as well as any impedance you may have defined with the impedance renormalization settings.
 <p align="center">
 
 ![extra results folder](assets/results/45.png)
 
 </p>
 
-The **touchstone file** corresponding to your case results for future processing will be available here! In addition, _CENOS Radio Frequency_ provides you with an image corresponding to the **Smith Chart**! 
+The **Touchstone file** corresponding to your case results for future processing will be available here! In addition, _CENOS Radio Frequency_ provides you with an image corresponding to the **Smith Chart**! 
 
 <p align="center">
 
