@@ -19,7 +19,7 @@ Once the simulation is done, results will be processed and opened in a separate 
 
 ## Overview
 
-To analyze your antenna simulation, you have 3 different tools for that:
+To analyze your antenna simulation, you have 4 different options for that:
 
 - **ParaView** (visual results).
 - **Spreadsheet** (easy for result analysis in Excel).
@@ -30,7 +30,7 @@ You can **access these directly** through CENOS Desk view under *Visualization* 
 
 <p align="center">
 
-![Result selection](assets/results/5.png)
+![Results selection](assets/results/5.png)
 
 </p>
 
@@ -112,16 +112,80 @@ If you need to see the rest of the results for each case such as the radiation p
 
 </p>
 
+Once you have the results of the cases you have set up, you may only be interested in the data of some specific cases. For this, there is the possibility to deactivate the graphs shown for specific cases, to do so follow the steps below:
+
+1. Open the Paraview window with the **combined results** view. 
+
+2. On the left side you will find the **Python console** with the list of parametric study cases. Delete the cases that are not of interest to you.
+
+<p align="center">
+
+![Python console](assets/results/49.png)
+
+</p>
+
+3. Click out of the Python console and the plots will be updated automatically!
+
+<p align="center">
+
+![Parametric study results](assets/results/50.png)
+
+</p>
+
+
 
 ## Spreadsheet
 
 *CENOS Radio Frequency* outputs a .csv file with all of the global values such as **S11, VSWR**, and many more. You can open this in Excel, for example, where you can then plot, compare and analyze the results however you wish.
 
-![assets/quickstart/Untitled17.png](assets/results/17.png)
+<p align="center">
+
+![Spreadsheet](assets/results/17.png)
+
+</p>
 
 
 ## PDF Reports 
 
 A very useful feature for reports is CENOS **built-in PDF report generator**. With this tool you can generate a **PDF file with your simulation setup and result overview**, which you can easily share with others!
 
-![assets/quickstart/Untitled19.png](assets/results/19.png)
+<p align="center">
+
+![PDF report](assets/results/19.png)
+
+</p>
+
+## Extra results
+
+In the _extra_results_ folder you can find **more information about your case**! You can easily access these results from the _CENOS Radio Frequency_ interface, just click on the folder icon under the visualization box. *CENOS RF* automatically produces a **Touchstone file** export for the impedance you set for your port, as well as any impedance you may have defined with the impedance renormalization settings.
+<p align="center">
+
+![extra results folder](assets/results/45.png)
+
+</p>
+
+The **Touchstone file** corresponding to your case results for future processing will be available here! In addition, _CENOS Radio Frequency_ provides you with an image corresponding to the **Smith Chart**! 
+
+<p align="center">
+
+![extra results folder](assets/results/46.png)
+
+</p>
+
+<p align="center">
+
+![Smith chart](assets/results/47.png)
+
+</p>
+
+:::note
+
+Remember that by using the option to **[renormalize the impedance](physics-overview#touchstone-export)** you will have the option to display the results in _dB and angle_ or in _Real and Imaginary_ format. Depending on the option you choose, your data will be displayed. 
+
+<p align="center">
+
+![impedance](assets/results/48.png)
+
+</p>
+
+:::
