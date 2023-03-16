@@ -13,7 +13,7 @@ Improvements:
 * Added a log entry that shows which case or Parametric Study subcase is being calculated to better understand which case is running
 * Added an error message when no port is defined in Geometry section
 * Added ability to create new spreadsheets for parameter definitions in FreeCAD
-* Reworked Far Field calculations
+* Reworked Far Field calculations for increased accuracy
 
 
 Bugfixes:
@@ -23,6 +23,9 @@ Bugfixes:
 * Removed second prompt to create a new document when importing a new .FCStd file in FreeCAD
 * Fixed error that occurred when sending geometry from FreeCAD with a parameter that starts with uppercase “A”
 * Fixed an issue where simulation would produce no results if port terminals overlapped
+* Fixed the Template section not being opened automatically when selecting the Templates workflow
+* Fixed boundary definitions not clearing after changing or deleting the role of a face
+
 
 
 ## v2.2.2 (February 16th, 2023)
