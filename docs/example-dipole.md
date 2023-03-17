@@ -24,6 +24,8 @@ Before we can actually start building our simulation, we need to first prepare o
 
 ### Choose geometry approach
 
+yadadadada
+
 You have three options from which to choose - **Templates**, **Import CAD** (if you have your own CAD file ready) and **Geometry Editor**.
 
 For this example we will choose **Geometry Editor** and build our folded dipole geometry ourselves.
