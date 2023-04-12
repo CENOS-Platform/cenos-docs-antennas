@@ -4,19 +4,20 @@ title: Release notes
 sidebar_label: v2.x
 ---
 
-## v2.3 (April 5th, 2023)
+## v2.3 (April 14th, 2023)
 
 Features:
 
 * Added an in-built visualization tool for 2D graphs and polar plots called Python Plots
-* Added ability to create custom plots using the Python Plot window
+* Added ability to create custom plots in the Python Plot window
+   * Custom plots can use existing calculated values or calculate completely new values
 * Added a Full Far Field data export in the *results* folder of the case folder
    * Export gets generated automatically for each frequency
    * Contains Far Field data in Theta, Phi, Etheta, Ephi and Directivity
 * Added ability to define a complex port impedance with the discrete and coaxial port definitions
    * The original Impedance definition window is now replaced with Resistance and Reactance (*Z = R + jX*)
    * All existing cases will have their impedance values rewritten in the Resistance field as the real part of the impedance
-   * The default values of these fiels will be 50 Ohms for Resistance and 0 Ohms for Reactance to retain the default 50 Ohm Impedance
+   * The default values of these fields will be 50 Ohms for Resistance and 0 Ohms for Reactance to retain the default 50 Ohm Impedance
 
 Improvements:
 
@@ -24,7 +25,8 @@ Improvements:
    * Existing discrete port definitions will retain their name until new terminals are selected
 * Improved handling of memory intensive cases by allocating more memory if an issue occurs during the calculation
 * Removed ability to renormalize the Touchstone file to a different impedance
-   * This was done due to adding the complex port impedance functionality to the port definition
+   * This was done due to complex port impedance functionality being added to the port definition
+* Updated Yagi-Uda antenna template in Templates section
 
 Bugfixes:
 
