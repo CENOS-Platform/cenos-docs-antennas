@@ -4,7 +4,7 @@ title: Release notes
 sidebar_label: v2.x
 ---
 
-## v2.3 (April 14th, 2023)
+## v2.3 (April 17th, 2023)
 
 Features:
 
@@ -24,6 +24,7 @@ Improvements:
 * Changed name for Port to Discrete Port
    * Existing discrete port definitions will retain their name until new terminals are selected
 * Improved handling of memory intensive cases by allocating more memory if an issue occurs during the calculation
+* Significantly improved simultaneous excitation case calculation speed
 * Removed ability to renormalize the Touchstone file to a different impedance
    * This was done due to complex port impedance functionality being added to the port definition
 * Updated Yagi-Uda antenna template in Templates section
