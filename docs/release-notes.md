@@ -28,6 +28,8 @@ Improvements:
 * Removed ability to renormalize the Touchstone file to a different impedance
    * This was done due to complex port impedance functionality being added to the port definition
 * Updated Yagi-Uda antenna template in Templates section
+* Replaced Simultaneous excitation checkbox with a dropdown below frequency selection
+   * Does not affect single port simulations
 
 Bugfixes:
 
