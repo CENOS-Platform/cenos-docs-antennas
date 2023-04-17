@@ -37,6 +37,7 @@ Bugfixes:
 * Reordered the CSV export data fields so that identical data types are ordered within the same column
    * This issue appeared in sequential excitation cases
 * Fixed multiport cases with real conductors failing due to "ERROR Function 'height' undefined" error
+* Fixed multiple results for the same frequency in the CSV export of simultaneous excitation multiport cases
 
 
 
