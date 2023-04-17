@@ -4,6 +4,43 @@ title: Release notes
 sidebar_label: v2.x
 ---
 
+## v2.3 (April 17th, 2023)
+
+Features:
+
+* Added an in-built visualization tool for 2D graphs and polar plots called Python Plots
+* Added ability to create custom plots in the Python Plot window
+   * Custom plots can use existing calculated values or calculate completely new values
+* Added a Full Far Field data export in the *results* folder of the case folder
+   * Export gets generated automatically for each frequency
+   * Contains Far Field data in Theta, Phi, Etheta, Ephi and Directivity
+* Added ability to define a complex port impedance with the discrete and coaxial port definitions
+   * The original Impedance definition window is now replaced with Resistance and Reactance (*Z = R + jX*)
+   * All existing cases will have their impedance values rewritten in the Resistance field as the real part of the impedance
+   * The default values of these fields will be 50 Ohms for Resistance and 0 Ohms for Reactance to retain the default 50 Ohm Impedance
+
+Improvements:
+
+* Changed name for Port to Discrete Port
+   * Existing discrete port definitions will retain their name until new terminals are selected
+* Improved handling of memory intensive cases by allocating more memory if an issue occurs during the calculation
+* Significantly improved simultaneous excitation case calculation speed
+* Removed ability to renormalize the Touchstone file to a different impedance
+   * This was done due to complex port impedance functionality being added to the port definition
+* Updated Yagi-Uda antenna template in Templates section
+* Replaced Simultaneous excitation checkbox with a dropdown below frequency selection
+   * Does not affect single port simulations
+
+Bugfixes:
+
+* Fixed issue where multiport coax cases produced constant S parameter values
+* Reordered the CSV export data fields so that identical data types are ordered within the same column
+   * This issue appeared in sequential excitation cases
+* Fixed multiport cases with real conductors failing due to "ERROR Function 'height' undefined" error
+* Fixed multiple results for the same frequency in the CSV export of simultaneous excitation multiport cases
+
+
+
 ## v2.2.3 (March 16th, 2023)
 
 Improvements:
