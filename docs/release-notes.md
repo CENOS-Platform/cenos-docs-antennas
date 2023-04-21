@@ -4,6 +4,22 @@ title: Release notes
 sidebar_label: v2.x
 ---
 
+## v2.3.1 (April Xth, 2023)
+
+Features:
+
+* 
+
+Improvements:
+
+* Added title text next to excitation type dropdown
+
+Bugfixes:
+
+* 
+
+
+
 ## v2.3 (April 17th, 2023)
 
 Features:
