@@ -4,7 +4,7 @@ title: Release notes
 sidebar_label: v2.x
 ---
 
-## v2.3.1 (May Xth, 2023)
+## v2.3.1 (May 11th, 2023)
 
 Features:
 
@@ -12,7 +12,7 @@ Features:
 
 Improvements:
 
-* Added title text next to excitation type dropdown
+* Added descriptive labels next to dropdowns where they were missing
 * Hovering over a discrete port or lumped element definition in the Physics section tabs will now make all domains transparent to make it possible to distinguish ports from one another
 
 Bugfixes:
