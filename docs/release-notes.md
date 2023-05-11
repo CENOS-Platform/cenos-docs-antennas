@@ -12,7 +12,7 @@ Features:
 
 Improvements:
 
-* Added descriptive labels next to dropdowns where they were missing
+* Added descriptive labels next to dropdown menus in the Physics section where they were missing
 * Hovering over a discrete port or lumped element definition in the Physics section tabs will now make all domains transparent to make it possible to distinguish ports from one another
 
 Bugfixes:
