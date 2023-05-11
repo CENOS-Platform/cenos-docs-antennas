@@ -4,6 +4,23 @@ title: Release notes
 sidebar_label: v2.x
 ---
 
+## v2.3.1 (May 11th, 2023)
+
+Features:
+
+* Added ability to hide solids when selecting terminals for the discrete port and lumped elements
+
+Improvements:
+
+* Added descriptive labels next to dropdown menus in the Physics section where they were missing
+* Hovering over a discrete port or lumped element definition in the Physics section tabs will now make all domains transparent to make it possible to distinguish ports from one another
+
+Bugfixes:
+
+* Fixed mesh element count value not updating in Submesh Mesh Refinement after regenerating the mesh
+
+
+
 ## v2.3 (April 17th, 2023)
 
 Features:
