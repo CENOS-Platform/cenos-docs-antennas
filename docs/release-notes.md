@@ -4,6 +4,25 @@ title: Release notes
 sidebar_label: v2.x
 ---
 
+
+## v2.3.2 (May 11th, 2023)
+
+Features:
+
+* Added ability to define kHz in Frequency Selection
+  * To select kHz frequencies, add a decimal point and define up to three significant digits
+
+Improvements:
+
+* Added padding from maximum value to the edge of the Polar Plot for better plot readability
+
+Bugfixes:
+
+* Fixed issue where case running was blocked after completing a Parametric Study with FreeCAD open
+* Fixed issue where FreeCAD was not possible to reopen after sending geometry to CENOS from FreeCAD and closing FreeCAD during the "Topology is changed. Replace the previous geometry?" prompt
+
+
+
 ## v2.3.1 (May 11th, 2023)
 
 Features:
