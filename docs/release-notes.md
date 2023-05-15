@@ -20,6 +20,7 @@ Bugfixes:
 
 * Fixed issue where case running was blocked after completing a Parametric Study with FreeCAD open
 * Fixed issue where FreeCAD was not possible to reopen after sending geometry to CENOS from FreeCAD and closing FreeCAD during the "Topology is changed. Replace the previous geometry?" prompt
+* Fixed "Add parameter" tooltip not showing in the Parametric Study setup window
 
 
 
