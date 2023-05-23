@@ -10,17 +10,17 @@ sidebar_label: v2.x
 Features:
 
 * Added ability to define kHz in Frequency Selection
-  * To select kHz frequencies, add a decimal point and define up to three significant digits
+  * To select kHz frequencies, define up to three significant digits after a decimal point, e.g. 13.56 MHz
 
 Improvements:
 
-* Added padding from maximum value to the edge of the Polar Plot for better plot readability
-* Prompt warning user about unsaved changes when trying to close the case now appears over Python Plot window
+* Added padding from maximum value to the edge of the Polar Plot for better plot readability in Python Plots
+* A prompt warning user about unsaved changes when trying to close the case now appears over Python Plot window
 * Significantly improved CAD import and air domain generation time in FromCAD workflow
 
 Bugfixes:
 
-* Fixed issue where Lumped Elements with a defined capacitance and inductance produced incorrect results
+* Fixed issue where Lumped Elements with a defined capacitance and/or inductance produced incorrect results
 * Fixed issue where case running was blocked after completing a Parametric Study with FreeCAD open
 * Fixed issue where FreeCAD was not possible to reopen after sending geometry to CENOS from FreeCAD and closing FreeCAD during the "Topology is changed. Replace the previous geometry?" prompt
 * Fixed "Add parameter" tooltip not showing in the Parametric Study setup window
