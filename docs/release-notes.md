@@ -5,7 +5,7 @@ sidebar_label: v2.x
 ---
 
 
-## v2.3.2 (May 11th, 2023)
+## v2.3.2 (May 23rd, 2023)
 
 Features:
 
@@ -15,9 +15,12 @@ Features:
 Improvements:
 
 * Added padding from maximum value to the edge of the Polar Plot for better plot readability
+* Prompt warning user about unsaved changes when trying to close the case now appears over Python Plot window
+* Significantly improved CAD import and air domain generation time in FromCAD workflow
 
 Bugfixes:
 
+* Fixed issue where Lumped Elements with a defined capacitance and inductance produced incorrect results
 * Fixed issue where case running was blocked after completing a Parametric Study with FreeCAD open
 * Fixed issue where FreeCAD was not possible to reopen after sending geometry to CENOS from FreeCAD and closing FreeCAD during the "Topology is changed. Replace the previous geometry?" prompt
 * Fixed "Add parameter" tooltip not showing in the Parametric Study setup window
@@ -96,7 +99,7 @@ Bugfixes:
 * Fixed Geometry Variables table not updating after a variable change
 * Fixed Compressing with results not including results of the Parametric Study
 * Removed second prompt to create a new document when importing a new .FCStd file in FreeCAD
-* Fixed error that occurred when sending geometry from FreeCAD with a parameter that starts with uppercase “A”
+* Fixed an error that occurred when sending geometry from FreeCAD with a parameter that starts with uppercase “A”
 * Fixed an issue where simulation would produce no results if port terminals overlapped
 * Fixed the Template section not being opened automatically when selecting the Templates workflow
 * Fixed boundary definitions not clearing after changing or deleting the role of a face
