@@ -5,6 +5,21 @@ sidebar_label: v2.x
 ---
 
 
+## v2.3.3 (June Xth, 2023)
+
+Features:
+
+* Added ability to define a custom Far Field resolution in Simulation Control
+
+Improvements:
+
+* Lorem ipsum dolor sit amet
+
+Bugfixes:
+
+* Lorem ipsum dolor sit amet
+
+
 ## v2.3.2 (May 30th, 2023)
 
 Features:
