@@ -5,7 +5,7 @@ sidebar_label: v2.x
 ---
 
 
-## v2.3.3 (June Xth, 2023)
+## v2.3.3 (August 4th, 2023)
 
 Features:
 
@@ -13,11 +13,14 @@ Features:
 
 Improvements:
 
-* Lorem ipsum dolor sit amet
+* Submesh element size now affects the size of elements inside the submesh volume
+ * This change will increase the overall element count in the model, but will produce a more uniform mesh and increase accuracy
+* Added a warning message if the frequency is set incorrectly, e.g., start frequency is larger than end frequency
 
 Bugfixes:
 
-* Lorem ipsum dolor sit amet
+* Fixed incorrect beamwidth value calculation in PDF report if the maximum directivity was pointed in the negative Z axis direction
+* Fixed missing significant digits in the frequency selection of the Polar Plots in 2D results in cases with a start frequency that is lower than 1 GHz
 
 
 ## v2.3.2 (May 30th, 2023)
