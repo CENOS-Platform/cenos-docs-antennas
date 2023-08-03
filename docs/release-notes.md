@@ -14,7 +14,7 @@ Features:
 Improvements:
 
 * Submesh element size now affects the size of elements inside the submesh volume
- * This change will increase the overall element count in the model, but will produce a more uniform mesh and increase accuracy
+  * This change will increase the overall element count in the model, but will produce a more uniform mesh and increase accuracy
 * Added a warning message if the frequency is set incorrectly, e.g., start frequency is larger than end frequency
 
 Bugfixes:
