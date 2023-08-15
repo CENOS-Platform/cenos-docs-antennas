@@ -5,6 +5,13 @@ sidebar_label: v2.x
 ---
 
 
+## v2.3.3 (August Xth, 2023)
+
+Bugfixes:
+
+* Fixed Power Plots not showing the appropriate unit prefix and not matching the shown values
+
+
 ## v2.3.3 (August 4th, 2023)
 
 Features:
