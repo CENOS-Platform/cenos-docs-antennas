@@ -5,7 +5,7 @@ sidebar_label: v2.x
 ---
 
 
-## v2.3.3 (August Xth, 2023)
+## v2.3.4 (August Xth, 2023)
 
 Bugfixes:
 
