@@ -10,6 +10,7 @@ sidebar_label: v2.x
 Bugfixes:
 
 * Fixed Power Plots not showing the appropriate unit prefix and not matching the shown values
+* The log and PDF report now show the same total calculation time
 
 
 ## v2.3.3 (August 4th, 2023)
