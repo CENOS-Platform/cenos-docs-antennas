@@ -5,12 +5,13 @@ sidebar_label: v2.x
 ---
 
 
-## v2.3.4 (August Xth, 2023)
+## v2.3.4 (Spetember Xth, 2023)
 
 Bugfixes:
 
 * Fixed Power Plots not showing the appropriate unit prefix and not matching the shown values
 * The log and PDF report now show the same total calculation time
+* Fixed Radiation Intensity plane cut CSV export not generating in the results folder
 
 
 ## v2.3.3 (August 4th, 2023)
