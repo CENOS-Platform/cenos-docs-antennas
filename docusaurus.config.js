@@ -29,8 +29,8 @@ module.exports = {
       links: [],
       copyright: `Copyright © ${new Date().getFullYear()} CENOS`,
     },
-    gtag: {
-      trackingID: 'G-NZL2ED8GXN',
+    googleTagManager: {
+      containerId: 'GTM-P7SHFH8H',
     },
     algolia: {
       appId: 'TEL58RDMQQ',
