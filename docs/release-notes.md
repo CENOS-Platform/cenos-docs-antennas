@@ -10,7 +10,6 @@ sidebar_label: v2.x
 Features:
 
 * Added Polarization Axial Ratio calculation
-  * Existing cases need to be updated to produce the Axial Ratio plot
 * Added 3D radiation pattern visualization in Python Plots
 * Case setup parameters, such as port impedance and material properties, are now available in Custom Plots
 
