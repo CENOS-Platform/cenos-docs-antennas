@@ -5,23 +5,18 @@ sidebar_label: v2.x
 ---
 
 
-## v2.4.0 (September Xth, 2023)
+## v2.4.0 (September 29th, 2023)
 
 Features:
 
 * Added Polarization Axial Ratio calculation
-* Added new features in Python Plots
- * 3D Radiation Pattern visualization
- * Custom 2D Cut Plane of 3D radiation pattern
- * Axial Ratio calculation point selection
-
-Improvements:
-
-* 
+ * Existing cases need to be updated to produce the Axial Ratio plot
+* Added 3D radiation pattern visualization in Python Plots
+* Case setup parameters, such as port impedance and material properties, are now available in Custom Plots
 
 Bugfixes:
 
-* Fixed Power Plots not showing the appropriate unit prefix and not matching the shown values
+* Fixed Power and other plots not showing the appropriate unit prefix and not matching the shown values
 * The log and PDF report now show the same total calculation time
 * Fixed Radiation Intensity plane cut CSV export not generating in the results folder
 * Fixed PDF report not generating when using the waveguide port in the Other application type
