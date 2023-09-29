@@ -12,6 +12,7 @@ Features:
 * Added Polarization Axial Ratio calculation
 * Added 3D radiation pattern visualization in Python Plots
 * Case setup parameters, such as port impedance and material properties, are now available in Custom Plots
+* Added Mesh Inspection within the Mesh Generation screen
 
 Bugfixes:
 
