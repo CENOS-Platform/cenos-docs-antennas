@@ -13,7 +13,10 @@ In this article, we will learn how to set up the simulation of an IFA antenna us
 
 The initial step and a fundamental aspect of every simulation involves preparing the geometry. Hence, we must commence by readying our geometry for the simulation. 
 
-
+:::tip Files
+Download the **CAD files** used in this tutorial [**here**](assets/example/IFA_model.zip)
+[**here**](assets/shaft-scanning/SplinedShaft.zip)
+:::
 
 ### Import CAD files
 
@@ -88,6 +91,37 @@ This time we are working with a patch antenna, so we will select the *Microstrip
 
 </p>
 
+To assign the substrate role, simply click on it and choose the relevant solid from the geometry. The selected object will be highlighted in blue, and then click on ASSIGN Substrate.
+
+<p align="center">
+
+![antenna substrate](assets/example/96.png)
+
+</p>
+
+Continuing with the patch, since for this example we decided to flatten the thin conductors, it will be necessary to switch to the Faces tab when selecting this role. To continue with the process just click on **ASSIGN Patch.**
+
+<p align="center">
+
+![patch](assets/example/97.png)
+
+</p>
+
+For the ground plane, the procedure will be the same as for the patch! Select the role and switch to the Faces tab. You will be able to choose the corresponding face and then click on **ASSIGN Ground.**
+
+<p align="center">
+
+![ground](assets/example/98.png)
+
+</p>
+
+Finally we need to define the **port.** We will be using a discrete port so it is necessary to select two terminals, one on each conductive surface where you connect the feed in real life.
+
+<p align="center">
+
+![port](assets/example/99.png)
+
+</p>
 
 ### Go to Physics
 
