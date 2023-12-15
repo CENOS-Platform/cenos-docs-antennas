@@ -4,6 +4,36 @@ title: Release notes
 sidebar_label: v2.x
 ---
 
+## v2.5.0 (December 20th, 2023)
+
+Features:
+
+* Added Gain calculation and result visualization
+* It is now possible to view case and geometry setup and meshing during calculation using the new upper bar
+* Added conductive face and solid corner refinements to the advanced meshing settings
+  * Corners get automatically refined with automatic mesh settings
+
+Improvements:
+
+* Reworked upper settings bar for better navigation between case stages
+* Python plots are now full screen within the user interface
+* Mesh inspection is now embedded into the mesh generation section
+* ParaView no longer opens automatically upon calculation finish
+* Reworked application types
+  * Removed Reflector application type, reflector role is now available in other app types
+  * Renamed Waveguide role to Waveguide Cavity for better understandability
+  * Renamed Custom application type to Other
+* Added warning in Mesh Generation about large mesh element counts
+
+Bugfixes:
+
+* Fixed one instance where case would fail with "PETSc error: Error in external library" error
+
+Other:
+
+* Updated [Terms & Conditions](https://www.cenos-platform.com/terms-conditions)
+
+
 
 ## v2.4.0 (September 29th, 2023)
 
