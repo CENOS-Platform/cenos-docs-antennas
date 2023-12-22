@@ -29,6 +29,7 @@ Bugfixes:
 
 * Fixed one instance where case would fail with "PETSc error: Error in external library" error
 * Parametric study no longer requires to generate mesh manually before pressing run
+* Fixed issue in meshing that failed with error "No matching entity found for 'OCCsolid_1'"
 
 Other:
 
