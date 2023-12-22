@@ -4,7 +4,7 @@ title: Release notes
 sidebar_label: v2.x
 ---
 
-## v2.5.0 (December 20th, 2023)
+## v2.5.0 (December 22nd, 2023)
 
 Features:
 
