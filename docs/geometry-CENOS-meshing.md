@@ -16,7 +16,7 @@ When you are in the Mesh Generation section, on the left side you will see the p
 
 </p>
 
-# Automatic Mesh generation
+## Automatic Mesh generation
 
 _CENOS Radio Frequency_ provides you with **automatic mesh creation**, you can choose between 3 mesh densities - _Rough_, _Average_ and _Fine_. To create the mesh just click on _GENERATE MESH_ and **the mesh will be created automatically!**
 
@@ -47,7 +47,7 @@ When the geometry settings are done, you will have two options to continue:
 
 :::
 
-# Manual mesh selection
+## Manual mesh selection
 You can make modifications directly to the mesh of your geometry. After generating the automatic mesh you can enable mesh refinement. Doing so will display a list of the solids in your RF model.
 
 <p align="center">
@@ -70,7 +70,7 @@ To do the **refinement of a face**, just hover over it and you will see how it i
 
 </p>
 
-## More properties
+### More properties
 
 If you want to further refine the mesh you can use the **surface gradient and the volume gradient**. You will find these parameters at the bottom of the window, click on Show and you will find two slider bars. To **refine the mesh use a smaller value of the gradient**. 
 
