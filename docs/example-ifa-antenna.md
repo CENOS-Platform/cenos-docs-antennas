@@ -51,7 +51,7 @@ For this example, we are importing only 1 STEP file (assembly). When working wit
 
 ### Thin PCB conductors
 
-In case you are working with very **thin conductors** (<50um) these will be detected by the software and you will have the option **[to flatten](geometry-overview#thin-pcb-conductor-flattening)** them to work with 2D faces or you can continue without modifying the original geometry at all.
+In case you are working with very **thin conductors** (<50um) these will be detected by the software and you will have the option **[to flatten](geometry-overview#Thin-PCB-conductor-flattening)** them to work with 2D faces or you can continue without modifying the original geometry at all.
 
 In this example our antenna and ground plane have a thickness of 35um and we will select YES to convert these solids to 2D faces.
 
