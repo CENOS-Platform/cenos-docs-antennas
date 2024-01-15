@@ -1,5 +1,5 @@
 ---
-id: example-helical-antenna
+id: example-ifa-antenna
 title: Inverted-F Antenna simulation setup
 sidebar_label: IFA antenna
 ---
