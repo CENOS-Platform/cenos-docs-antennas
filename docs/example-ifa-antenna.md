@@ -22,7 +22,7 @@ Download the **CAD files** used in this tutorial [**here**](assets/example/IFA_m
 First we need to select the method with which we will load our geometry, in this case we will use the *From CAD* approach.
 
 <p align="center">
-  
+
 ![From CAD](assets/example/75.png)
 
 </p>
@@ -30,7 +30,7 @@ First we need to select the method with which we will load our geometry, in this
 Click the blinking **Folder** icon to select the CAD files of your IFA antenna.
 
 <p align="center">
-  
+
 ![Folder icon](assets/example/76.png)
 
 </p>
@@ -38,7 +38,7 @@ Click the blinking **Folder** icon to select the CAD files of your IFA antenna.
 Select **STEP files** of your antenna and click **Open** to import them into CENOS.
 
 <p align="center">
-  
+
 ![Step file](assets/example/77.png)
 
 </p>
@@ -56,7 +56,7 @@ In this example our antenna and ground plane have a thickness of 35um and we wil
 
 
 <p align="center">
-  
+
 ![Thin PCB conductors](assets/example/78.png)
 
 </p>
@@ -68,7 +68,7 @@ In this example our antenna and ground plane have a thickness of 35um and we wil
 Once the CAD files are uploaded, CENOS will ask if you want to automatically generate the air box (ambient environment around your system). If your CAD model does not include the air box click **Yes** on the choice, and then **CONTINUE**.
 
 <p align="center">
-  
+
 ![basic shapes](assets/example/79.png)
 
 </p>
