@@ -102,22 +102,10 @@ The port or feed is one of the most important parts of the assembly, however, yo
 <p align="center">
 
 ![Port simplification](assets/example/1.png)
-
-</p>
-
-<p align="center">
   
 ![Port simplification](assets/example/3.png)
-
-</p>
-
-<p align="center">
   
 ![Port simplification](assets/example/45.png)
-
-</p>
-
-<p align="center">
   
 ![Port simplification](assets/example/30.png)
 
