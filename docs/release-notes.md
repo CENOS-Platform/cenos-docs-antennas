@@ -21,7 +21,7 @@ Improvements:
 
 * Updated Python Plot UI
 * Added new icons to distinguish Python Plots and ParaView
-   * Python Plots are now opened with the right most icon under the Visualization block, using the Eye symbol
+   * Python Plots are now opened with the rightmost icon under the Visualization block, using the Eye symbol
    * ParaView can still be opened using the second icon from the right under the Visualization block, using the ParaView three stripe logo
 * Modifying Geometry Variables in Simulation Control no longer resets the units in FreeCAD CENOS Parameters spreadsheet
 * Added ability to save a screenshot of 3D results directly from Python Plots
