@@ -31,6 +31,7 @@ Bugfixes:
 * Fixed incorrect Directivity and Gain results in multiple port Simultaneous Excitation cases
 * Fixed the simulation STOP button being missing in Parametric Study cases
 * Fixed CAD replacement process in the From CAD workflow
+* Fixed Curvature Safety and Surface Gradient not working in Advanced Meshing Parameters
 * Fixed an issue where the coaxial port would produce "Null determinant" error when placed on the Z axis
 * Fixed Single Port cases not generating Extra Results and PDF report when the user had defined Simultaneous Excitation
    * Existing cases will generate the PDF report, but Extra Results generation will require a recalculation of the case
