@@ -4,7 +4,7 @@ title: Release notes
 sidebar_label: v3.x
 ---
 
-## v3.0.0 (March 1st, 2024)
+## v3.0.0 (March 5th, 2024)
 
 Features:
 
