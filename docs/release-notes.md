@@ -4,6 +4,24 @@ title: Release notes
 sidebar_label: v3.x
 ---
 
+## v3.1.0 (April 11th, 2024)
+
+Features:
+
+* Added Streamline and Vector visualization to Python Plots
+* Implemented variable power input to the Discrete Port and Coaxial Port
+  * Simultaneous excitation has a single input that affects all ports while in Sequential excitation cases each port has its own power input window
+* Added ability to define Port Capacitance instead of reactance to the Discrete Port to allow frequency dependent complex part of port impedance
+  * This allows to define RFID chip resistance and capacitance without the need of a separate lumped element
+
+Bugfixes:
+
+* Current Density now appears in the Result Field dropdown in its own Python Plot tab
+* Fixed negative dielectric losses appearing in cases with a defined port reactance
+* Fixed radiated power being larger than the previous default input power (1 W) in cases with a defined port reactance
+* Fixed the PDF report in multiport sequential excitation cases showing that the case needs to be saved new simulation data even when case was saved
+
+
 ## v3.0.0 (March 5th, 2024)
 
 Features:
