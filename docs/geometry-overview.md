@@ -160,7 +160,7 @@ If you want to **create your own geometry in CENOS**, then the Geometry Editor (
 
 <p align="center">
 
-![freecad](assets/overview/11.png)
+![freecad](assets/overview/12.png)
 
 </p>
 
