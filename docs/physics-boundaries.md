@@ -14,7 +14,7 @@ This a boundary condition that will be automatically assigned to the face that h
 
 <p align="center">
 
-![Tabs](assets/boundaries/1.png)
+![Coaxial port](assets/physics/16.png)
 
 </p>
 
