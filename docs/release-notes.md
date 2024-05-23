@@ -4,6 +4,33 @@ title: Release notes
 sidebar_label: v3.x
 ---
 
+## v3.2.0 (May 24th, 2024)
+
+Features:
+
+* Added peak directivity and gain at each frequency to CSV export and Custom Plots
+ 
+Improvements:
+
+* Unassigned geometry volumes in Geometry section are now highlighted during role selection when all mandatory parts have been assigned
+* Improved accuracy of multiport coaxial port simulations using sequential excitation
+* Improved reliability of PDF report generation
+* Added CAD import quality check that highlights places in the imported model with small gaps that may cause automatic mesh failure
+* General stability improvements
+
+Bugfixes:
+
+* Fixed PDF reports not showing the correct value of total mesh elements
+* Cases made prior to RF v2.5 now show the correct default value of corner mesh refinement modifier
+* Removed misleading message in PDF reports about unsaved changes in sequential excitation multiport cases
+* Current Density scale is now shown in cases where only conductive parts are used whereas previously it was missing
+* Fixed topology change notification appearing in cases where no topology change was introduced when sending the updated geometry from FreeCAD
+* Internet connection disruption during calculation no longer causes CENOS to stop calculation
+* Fixed Geometry section being available in the top bar before sending geometry from the Geometry Editor leading to empty user interface
+* It is now possible to stop mesh troubleshooting
+
+
+
 ## v3.1.0 (April 11th, 2024)
 
 Features:
