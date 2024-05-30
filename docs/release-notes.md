@@ -8,7 +8,7 @@ sidebar_label: v3.x
 
 Bugfixes:
 
-* Fixed error with licenses that blocked functionality of separate features in the software
+* Fixed license-related issue that blocked calculation in specific cases
 
 
 ## v3.2.0 (May 29th, 2024)
