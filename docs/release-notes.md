@@ -4,7 +4,14 @@ title: Release notes
 sidebar_label: v3.x
 ---
 
-## v3.2.0 (May 24th, 2024)
+## v3.2.1 (May 30th, 2024)
+
+Bugfixes:
+
+* Fixed license-related issue that blocked calculation in specific cases
+
+
+## v3.2.0 (May 29th, 2024)
 
 Features:
 
