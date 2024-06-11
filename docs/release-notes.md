@@ -4,6 +4,23 @@ title: Release notes
 sidebar_label: v3.x
 ---
 
+## v3.3.0 (June XXth, 2024)
+
+Features:
+
+* Added Custom Air Domain padding definition in the Physics section
+  * It is now possible to define the padding from the model in all XYZ directions
+  * It is now possible to define a custom frequency at which the necessary padding is added
+
+Bugfixes:
+
+* Fixed issue where CAD reloading would not delete missing solids from selected roles
+* Fixed issue in some cases where a bad automatic mesh caused simulations to fail after calculation (float division by zero)
+* ParaView now works in Template cases
+* Fixed changing role definitions from face to solid not bringing the user back to the main role screen
+* Fixed calculation time increase in some cases introduced in RF v3.2
+
+
 ## v3.2.1 (May 30th, 2024)
 
 Bugfixes:
