@@ -19,6 +19,8 @@ Bugfixes:
 * ParaView now works in Template cases
 * Fixed changing role definitions from face to solid not bringing the user back to the main role screen
 * Fixed calculation time increase in some cases introduced in RF v3.2
+* Parametric studies now work with new versions of FreeCAD
+* Removed the apostrophe that appears before the name of the variables in Geometry Variables
 
 
 ## v3.2.1 (May 30th, 2024)
