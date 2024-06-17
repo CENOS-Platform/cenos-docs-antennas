@@ -4,7 +4,7 @@ title: Release notes
 sidebar_label: v3.x
 ---
 
-## v3.3.0 (June XXth, 2024)
+## v3.3.0 (June 18th, 2024)
 
 Features:
 
@@ -12,15 +12,21 @@ Features:
   * It is now possible to define the padding from the model in all XYZ directions
   * It is now possible to define a custom frequency at which the necessary padding is added
 
+Improvements:
+
+* User now needs to check mesh if physics parameters have changed and has used manual mesh refinements. Otherwise, automatic mesh will be regenerated on pressing RUN.
+
 Bugfixes:
 
 * Fixed issue where CAD reloading would not delete missing solids from selected roles
 * Fixed issue in some cases where a bad automatic mesh caused simulations to fail after calculation (float division by zero)
+* Fixed issue in some cases that caused the Python Plots to not open and the PDF report to not generate
 * ParaView now works in Template cases
 * Fixed changing role definitions from face to solid not bringing the user back to the main role screen
 * Fixed calculation time increase in some cases introduced in RF v3.2
 * Parametric studies now work with new versions of FreeCAD
 * Removed the apostrophe that appears before the name of the variables in Geometry Variables
+* Fixed incorrect power unit scale in Python Plots
 
 
 ## v3.2.1 (May 30th, 2024)
