@@ -27,6 +27,9 @@ Bugfixes:
 * Parametric studies now work with new versions of FreeCAD
 * Removed the apostrophe that appears before the name of the variables in Geometry Variables
 * Fixed incorrect power unit scale in Python Plots
+* Rescaling to custom data range in Python Plots now shows the current scale minimum and maximum values for all result fields
+* There is now a grid line for 0 in Python Plot charts
+* Mesh slicing visualization now updates when the mesh is regenerated
 
 
 ## v3.2.1 (May 30th, 2024)
