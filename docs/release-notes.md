@@ -4,6 +4,68 @@ title: Release notes
 sidebar_label: v3.x
 ---
 
+## v3.3.0 (June 18th, 2024)
+
+Features:
+
+* Added Custom Air Domain padding definition in the Physics section
+  * It is now possible to define the padding from the model in all XYZ directions
+  * It is now possible to define a custom frequency at which the necessary padding is added
+
+Improvements:
+
+* User now needs to check mesh if physics parameters have changed and has used manual mesh refinements. Otherwise, automatic mesh will be regenerated on pressing RUN.
+
+Bugfixes:
+
+* Fixed issue where CAD reloading would not delete missing solids from selected roles
+* Fixed issue in some cases where a bad automatic mesh caused simulations to fail after calculation (float division by zero)
+* Fixed issue in some cases that caused the Python Plots to not open and the PDF report to not generate
+* ParaView now works in Template cases
+* Fixed changing role definitions from face to solid not bringing the user back to the main role screen
+* Fixed calculation time increase in some cases introduced in RF v3.2
+* Parametric studies now work with new versions of FreeCAD
+* Removed the apostrophe that appears before the name of the variables in Geometry Variables
+* Fixed incorrect power unit scale in Python Plots
+* Rescaling to custom data range in Python Plots now shows the current scale minimum and maximum values for all result fields
+* There is now a grid line for 0 in Python Plot charts
+* Mesh slicing visualization now updates when the mesh is regenerated
+
+
+## v3.2.1 (May 30th, 2024)
+
+Bugfixes:
+
+* Fixed license-related issue that blocked calculation in specific cases
+
+
+## v3.2.0 (May 29th, 2024)
+
+Features:
+
+* Added peak directivity and gain at each frequency to CSV export and Custom Plots
+ 
+Improvements:
+
+* Unassigned geometry volumes in Geometry section are now highlighted during role selection when all mandatory parts have been assigned
+* Improved accuracy of multiport coaxial port simulations using sequential excitation
+* Improved reliability of PDF report generation
+* Added CAD import quality check that highlights places in the imported model with small gaps that may cause automatic mesh failure
+* General stability improvements
+
+Bugfixes:
+
+* Fixed PDF reports not showing the correct value of total mesh elements
+* Cases made prior to RF v2.5 now show the correct default value of corner mesh refinement modifier
+* Removed misleading message in PDF reports about unsaved changes in sequential excitation multiport cases
+* Current Density scale is now shown in cases where only conductive parts are used whereas previously it was missing
+* Fixed topology change notification appearing in cases where no topology change was introduced when sending the updated geometry from FreeCAD
+* Internet connection disruption during calculation no longer causes CENOS to stop calculation
+* Fixed Geometry section being available in the top bar before sending geometry from the Geometry Editor leading to empty user interface
+* It is now possible to stop mesh troubleshooting
+
+
+
 ## v3.1.0 (April 11th, 2024)
 
 Features:
