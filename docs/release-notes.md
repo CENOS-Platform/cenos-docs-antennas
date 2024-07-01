@@ -4,6 +4,15 @@ title: Release notes
 sidebar_label: v3.x
 ---
 
+## v3.3.1 (July 2nd, 2024)
+
+Bugfixes:
+
+* Mesh refinements no longer get reset if the user changes a physics parameter
+* Fix opening of cases made prior and including v2.1.1 where the message "Preprocessor key 'geomRoles' not recognized" appeared
+* Fixed case opening made prior to RF v2.1.1 due to missing mesh data
+
+
 ## v3.3.0 (June 18th, 2024)
 
 Features:
