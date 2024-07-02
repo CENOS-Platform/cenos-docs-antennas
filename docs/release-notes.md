@@ -11,7 +11,6 @@ Bugfixes:
 * Mesh refinements no longer get reset if the user changes a physics parameter
 * Fix opening of cases made prior and including v2.1.1 where the message "Preprocessor key 'geomRoles' not recognized" appeared
 * Fixed case opening made prior to RF v2.1.1 due to missing mesh data
-* Fixed error message caused by switching between windows in the Meshing section while mesh is generating
 
 
 ## v3.3.0 (June 18th, 2024)
