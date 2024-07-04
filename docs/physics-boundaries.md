@@ -10,11 +10,11 @@ In this article we will **go over the boundary conditions available** in *CENOS 
 
 ## Coaxial port
 
-This a boundary condition that will be automatically assigned to the face that has been defined with the ***Coaxial*** port role in the Geometry section. Port **Impedance** by default is set to **50 Ohms**, which you can easily adjust for your use case. You can also define a *phase shift* in the corresponding box for the port through which you can change the angle of excitation of the wave at the antenna input.
+This a boundary condition that will be automatically assigned to the face that has been defined with the ***Coaxial*** port role in the Geometry section. Port **Impedance** (Port resistance and reactance) by default is set to **50 Ohms**, which you can easily adjust for your use case. Additionally, you have the option to specify a **phase shift** in the provided box for the port, allowing you to adjust the angle of wave excitation at the antenna input. Furthermore, you can enter the desired **input power** value to tailor the simulation parameters to your needs.
 
 <p align="center">
 
-![Tabs](assets/boundaries/1.png)
+![Coaxial port](assets/physics/16.png)
 
 </p>
 

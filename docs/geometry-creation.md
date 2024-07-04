@@ -501,6 +501,17 @@ Make sure to **constrain your model's sketches** and **check all the values you 
 
 :::
 
+:::warning important
+If you would like to create a variable whose dimension is based on another variable, you need to do this definition in the *Formula Editor*. If you do it directly in the spreadsheet, updating the data will not take effect on the results of the parametric study.
+
+<p align="center">
+
+![Formula_editor](assets/overview/11.png)
+
+</p>
+
+:::
+
 Once you have finished working on your model and assigned all the parameters you are interested in, you can *send the geometry to CENOS*, where in the *Physics* section you will be able to start the parametric study.
 
 

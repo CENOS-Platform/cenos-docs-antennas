@@ -21,6 +21,7 @@ Once the simulation is done, results will be processed and opened in a separate 
 
 To analyze your antenna simulation, you have 4 different options for that:
 
+- **Python plots** (visual results).
 - **ParaView** (visual results).
 - **Spreadsheet** (easy for result analysis in Excel).
 - **Touchstone file** (documenting the n-port network parameter data).
@@ -34,6 +35,174 @@ You can **access these directly** through CENOS Desk view under *Visualization* 
 
 </p>
 
+
+## Python plots
+Upon completing your simulation, you will be able to observe the results within the CENOS interface.
+
+### Charts
+
+#### Frequency charts
+
+You can access the Frequency charts tab, where you will observe information such as *S-parameters, VSWR, Impedance*, or *Power*.
+
+<p align="center">
+
+![S11](assets/results/51.png)
+
+</p>
+
+#### Custom plots
+
+If you would like to create your own plots this is possible from the Custom plots window! You will have access to various simulation data that you can manipulate using Python code.
+
+<p align="center">
+
+![Custom_plots](assets/results/52.png)
+
+</p>
+
+### Radiation  Patterns
+
+If you're interested in visualizing information about your model such as *Directivity, Gain, Radiation Intensity,* or *Far Field*, you can do so in the **Radiation Patterns tab**. CENOS provides various approaches, starting with the visualization of 2D cuts. Once you select the pattern to visualize, you can choose different cutting planes, as well as select the coordinate system to use!
+
+<p align="center">
+
+![2D_Radiation_Pattern](assets/results/53.png)
+
+</p>
+
+If you've run a simulation with multiple frequencies, don't forget that you can review the graphs depending on the selected frequency.
+
+<p align="center">
+
+![Frequency_box](assets/results/54.png)
+
+</p>
+
+If your intention is to create a 2D cut at a specific angle, you can accomplish this within the **Custom Cuts** tab! Begin by selecting the 3D reference pattern. Then, opt for the cutting plane; this can be achieved through two distinct methods:
+
+1. You can adjust the exact values of theta and phi.
+2. If you click and hold the red arrow, you can change its angle.
+
+<p align="center">
+
+![Custom_cuts](assets/results/55.png)
+
+</p>
+
+Once you have selected the appropriate angle, ensure to choose the correct coordinate system, as well as the frequency. Afterward, click on the PLOT CUSTOM CUTS button, and you will be able to observe the corresponding information.
+
+Another common way to visualize radiation patterns is in 3D, and you can find this information in the **3D Radiation Patterns** tab.
+
+<p align="center">
+
+![Radiation_pattern](assets/results/56.png)
+
+</p>
+
+### Polarization
+
+The polarization of an antenna is essential to ensure efficient transmission and reception of electromagnetic signals in various applications. The polarization of an antenna refers to the orientation of the electric field of the electromagnetic waves radiated by the antenna. Common polarizations in antennas include vertical polarization, horizontal polarization, and circular polarization. 
+
+CENOS provides you with the **axial ratio** of your model. Such value serves as a measure of polarization quality and is essential to ensure reliable transmission and reception of signals. This information can be found in the **Polarization** tab. The values can be displayed either in adimensional or logarithmic format.
+
+<p align="center">
+
+![Axial_ratio](assets/results/57.png)
+
+</p>
+
+### Electric Field
+
+Within the results, the distribution of the **Electric Field** is displayed, based on the selected frequency. You will have various tools at your disposal for improved visualization, such as data range rescaling.
+
+<p align="center">
+
+![Axial_ratio](assets/results/58.png)
+
+</p>
+
+<p align="center">
+
+![Toolbar](assets/results/59.png)
+
+</p>
+
+Similarly, you can orient the visualization of your model according to a selected plane. These tools can be found at the top of the window.
+
+<p align="center">
+
+![Toolbar](assets/results/60.png)
+
+</p>
+
+Saving screenshots of the results you are viewing can be very useful for future reference or for sharing with your colleagues. You can save images of your results by clicking on the camera icon displayed at the top of the window.
+
+<p align="center">
+
+![Toolbar](assets/results/61.png)
+
+</p>
+
+Visualizing *streamlines* allows you to observe how energy is distributed along your model. To activate them, you should select the air domain and enable its visualization. Then, in the displayed result, choose **either the imaginary or real part of the Electric Field**. Afterward, in the representation type, select streamlines.
+
+<p align="center">
+
+![EF_representation](assets/results/62.png)
+
+</p>
+
+<p align="center">
+
+![Streamlines](assets/results/63.png)
+
+</p>
+
+In a similar way to streamlines, you can display *stream vectors*. Just follow the same steps and, at the end, change the representation to vectors.
+
+<p align="center">
+
+![Stream vectors](assets/results/64.png)
+
+</p>
+
+### Magnetic Field
+
+Just as it's important to observe the electric field of the simulated model, observing the **magnetic field** helps understand how the model radiates energy in space and interacts with its environment. To access the magnetic field data, navigate to this tab; the window and tools will be very similar to those in the electric field tab.
+
+<p align="center">
+
+![Magnetic_field](assets/results/65.png)
+
+</p>
+
+### Near Field
+
+Examining the **near field** in an RF model simulation is essential for understanding its behavior in close environments, optimizing its design, and ensuring its proper operation in practical applications. You can incorporate this information into the CENOS results!
+
+<p align="center">
+
+![Near_field](assets/results/66.png)
+
+</p>
+
+You can enable the display of the plane to be shown and adjust it as it suits you best!  Placing your cursor on the white part of the red frame will turn it green, thus allowing you to move the plane in the selected axis by clicking and dragging.
+
+<p align="center">
+
+![Cut_plane](assets/results/67.png)
+
+</p>
+
+### Current Density 
+
+If your simulation involves a domain with a real conductor, you will be able to observe the enabled **current density** tab. Current density patterns can unveil coupling issues, electromagnetic interference, or other problems that might impact the model's performance. Identifying these issues during the simulation phase allows for their correction before practical implementation.
+
+<p align="center">
+
+![Current_density](assets/results/68.png)
+
+</p>
 
 ## ParaView
 
@@ -92,7 +261,7 @@ If you used the [Parametric Study](physics-overview#parametric-study) in the sim
 
 <p align="center">
 
-![S11 results](assets/results/31.png)
+![S11 results](assets/results/69.png)
 
 </p>
 
@@ -108,30 +277,21 @@ If you need to see the rest of the results for each case such as the radiation p
 
 <p align="center">
 
-![Parametric study results table](assets/results/33.png)
+![Parametric study results table](assets/results/70.png)
 
 </p>
 
-Once you have the results of the cases you have set up, you may only be interested in the data of some specific cases. For this, there is the possibility to deactivate the graphs shown for specific cases, to do so follow the steps below:
+If you need to see the rest of the results for each case such as the radiation pattern or the electric field it is possible to do so by clicking on the results box of the case of interest! The 3D button will open the results in a Paraview window, the other button will show you the results in Python plots.
 
-1. Open the Paraview window with the **combined results** view. 
-
-2. On the left side you will find the **Python console** with the list of parametric study cases. Delete the cases that are not of interest to you.
-
-<p align="center">
-
-![Python console](assets/results/49.png)
-
-</p>
-
-3. Click out of the Python console and the plots will be updated automatically!
+:::tip
+When simulating numerous cases in the parametric study, it can be challenging to maintain a clear visualization of the combined results as they may appear cluttered. In such instances, it is possible to enable/disable certain graphs by clicking on the legend of each graph. Furthermore, you can double-click on the legend to isolate a trace.
 
 <p align="center">
 
 ![Parametric study results](assets/results/50.png)
 
 </p>
-
+:::
 
 
 ## Spreadsheet
@@ -151,7 +311,7 @@ A very useful feature for reports is CENOS **built-in PDF report generator**. Wi
 
 <p align="center">
 
-![PDF report](assets/results/19.png)
+![PDF report](assets/results/71.png)
 
 </p>
 
@@ -180,7 +340,7 @@ The **Touchstone file** corresponding to your case results for future processing
 
 :::note
 
-Remember that by using the option to **[renormalize the impedance](physics-overview#touchstone-export)** you will have the option to display the results in _dB and angle_ or in _Real and Imaginary_ format. Depending on the option you choose, your data will be displayed. 
+Remember that by using the option **[Real/Imaginary format](physics-overview#touchstone-export)** you will have the option to display the Touchstone file results in _dB and angle_ or in _Real and Imaginary_ format. Depending on the option you choose, your data will be displayed. 
 
 <p align="center">
 

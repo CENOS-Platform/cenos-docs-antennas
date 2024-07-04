@@ -74,7 +74,7 @@ To do the **refinement of a face**, just hover over it and you will see how it i
 
 If you want to further refine the mesh you can use the **surface gradient and the volume gradient**. You will find these parameters at the bottom of the window, click on Show and you will find two slider bars. To **refine the mesh use a smaller value of the gradient**. 
 
-You will find a third slider bar corresponding to the **curvature safety**, which controls the refinement for curved surfaces. This is very useful for manual refinement of the wire antennas mesh!
+You will find a third slider bar corresponding to the **curvature safety**, which controls the refinement for curved surfaces. This is very useful for manual refinement of the wire antennas mesh! Finally, you will see the **corner mesh** refinement which will allow you to refine the corners of conductors. 
 
 <p align="center">
 

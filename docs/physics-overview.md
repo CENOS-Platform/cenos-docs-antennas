@@ -30,11 +30,21 @@ In *Physics* the definitions are quite straightforward.
 
 In **Simulation Control** you need to select the frequency of your model, choose whether you want to enable **Sequential or Simultaneous excitation** of the defined ports and enable the **Parametric Study**. You can set one frequency, or do a **frequency sweep** to test your model for a whole range of frequencies.
 
+In the case that you are using multiple ports, you will also be able to select whether you want to use **sequential** or **simultaneous excitation**.
+
 <p align="center">
 
 ![Frequency Selection](assets/physics/3.png)
 
 </p>
+
+### Computation Settings
+
+You will also find **Computation Settings**, where you can select the **algorithm** to use:
+1. Fast.- It uses 2nd order mesh elements.
+2. Accurate.- It uses 3rd order mesh elements. This algorithm can provide more accurate results but will increase the computation time.
+
+You will find the definition of the **number of processes**. The value determined here defines the number of processes that will be **calculated in parallel**. This will help you to significantly **reduce your calculation time**! Note that this will increase the resource usage of your PC, so try to choose a value that is appropriate for what your computer can handle.
 
 <p align="center">
 
@@ -42,8 +52,11 @@ In **Simulation Control** you need to select the frequency of your model, choose
 
 </p>
 
-## Touchstone export
-You have the option to **renormalize the port impedance**, where you can enter the value of the **resistance** and **reactance**. A **Touchstone file** will be **automatically generated** and you can select to display this data in _Real/imaginary_ format or using _dB_ and _angle_.  
+### Additional Simulation Settings
+Within this section you can customize the **total step count for the far field** generation. Increasing the values will help you to have more values in the far field results and therefore a higher resolution.
+
+You can specify whether you want the results of the **Touchstone file** to be displayed in *real and imaginary* format instead of *dB and angle*.
+
 
 <p align="center">
 
@@ -51,15 +64,14 @@ You have the option to **renormalize the port impedance**, where you can enter t
 
 </p>
 
-You can find the Touchstone file in the folder called _"extra_results"_ located in the general folder of your case  _(case_folder\extra_results)_.
-In this same folder you will find the **Smith Chart** that you can use as a tool for impedance visualization!
+The Touchstone file is saved in the folder called "extra_results" located in the general folder of your case *(case_folder\extra_results)*. In this same folder you will find the **Smith Chart** that you can use as a tool for impedance visualization!
 
 ## [Parametric Study](geometry-creation#geometry-parameters-and-parametric-study)
 With _CENOS RF_ software it is possible to create a **parameterized model** and change the dimensions of your geometry in a simple way.
 
 Without parametric values, each geometry modification requires the creation of a new model **from scratch or going back to previous stages** of the simulation to make the required changes, which can be very **time consuming**. If the model is parameterized, geometry modifications only require changing the required parameter in the _Simulation Control_.
 
-## How to use Parametric Study?
+### How to use Parametric Study?
 
 The _Parametric Study_ feature is available through the Geometry Editor approach. The first step is to **[parametrize your geometry](geometry-creation#geometry-parameters-and-parametric-study)** within _FreeCAD_.
 
@@ -87,7 +99,7 @@ The parameters you have previously defined will appear in a new window, you can 
 
 When you have finished making the necessary adjustments, you just need to close the parametric study window and continue with the usual workflow.
 
-### Limitations
+#### Limitations
 
 **Geometry overlapping**
 
@@ -143,7 +155,7 @@ After you have defined your ports in the *Geometry* section, you can define the 
 
 ### Lumped ports
 
-When using discrete ports you can define the **input impedance** and **phase shift angle**.
+When using a discrete port you can define several of its parameters, one of them is the complex part of the impedance, which can be configured as reactance or frequency-dependent capacitance.
 
 <p align="center">
 
@@ -151,9 +163,11 @@ When using discrete ports you can define the **input impedance** and **phase shi
 
 </p>
 
+You can also define the phase shift angle, as well as the input power of each port when using sequential excitation. 
+
 ### Coaxial port
 
-The coaxial ports in CENOS are defined using one face of the dielectric. You can easily modify the **input impedance** and **phase shift angle**.
+The coaxial ports in CENOS are defined using one face of the dielectric. You can easily modify the **input impedance**, **phase shift angle** and **input power**.
 
 <p align="center">
 
