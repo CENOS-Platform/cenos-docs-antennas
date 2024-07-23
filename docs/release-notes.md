@@ -8,7 +8,7 @@ sidebar_label: v3.x
 
 Features:
 
-* Included Smith Charts in the in-built results section under the Charts tab
+* Included Smith Charts in the built-in results section under the Charts tab
 
 Improvements:
 
@@ -16,7 +16,6 @@ Improvements:
 
 Bugfixes:
 
-* Improved the UI of the Charts section in Python Plots
 * The Smith Chart in the extra_results folder has been removed in favor of the Smith Chart in Python Plots
 * Faces with applied Conductor roles have their edges refined again if there is a face with a Patch role applied in close proximity
 
