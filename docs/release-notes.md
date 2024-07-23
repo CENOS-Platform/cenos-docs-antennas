@@ -4,6 +4,23 @@ title: Release notes
 sidebar_label: v3.x
 ---
 
+## v3.4.0 (July 23rd, 2024)
+
+Features:
+
+* Included Smith Charts in the in-built results section under the Charts tab
+
+Improvements:
+
+* The Charts tab of Python Plots have a new and improved design
+
+Bugfixes:
+
+* Improved the UI of the Charts section in Python Plots
+* The Smith Chart in the extra_results folder has been removed in favor of the Smith Chart in Python Plots
+* Faces with applied Conductor roles have their edges refined again if there is a face with a Patch role applied in close proximity
+
+
 ## v3.3.1 (July 2nd, 2024)
 
 Bugfixes:
@@ -23,7 +40,7 @@ Features:
 
 Improvements:
 
-* User now needs to check mesh if physics parameters have changed and has used manual mesh refinements. Otherwise, automatic mesh will be regenerated on pressing RUN.
+* User now needs to check mesh if physics parameters have changed and has used manual mesh refinements. Otherwise, automatic mesh will be regenerated on pressing RUN
 
 Bugfixes:
 
