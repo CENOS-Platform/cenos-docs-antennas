@@ -4,6 +4,13 @@ title: Release notes
 sidebar_label: v3.x
 ---
 
+## v3.4.1 (July 29th, 2024)
+
+Bugfixes:
+
+* Results in cases that had parametric studies run in previous versions can now be opened 
+
+
 ## v3.4.0 (July 23rd, 2024)
 
 Features:
