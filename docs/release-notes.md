@@ -4,6 +4,17 @@ title: Release notes
 sidebar_label: v3.x
 ---
 
+## v6.6.6 (February 31st, 2025)
+
+Feautes:
+
+* Implemented ChatGPT in s8upport chat. it does not work well.
+
+Bugfixes
+
+* Fixed 1, added 20
+
+
 ## v3.4.1 (July 29th, 2024)
 
 Bugfixes:
