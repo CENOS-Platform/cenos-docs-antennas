@@ -28,7 +28,7 @@ sidebar_label: Installation/OS
 
 #### Why can't I run *FreeCAD*?
 
-- If you encounter problems with *FreeCAD*, **double-check your installed version**. CENOS supports only **v0.19** - if you have installed *FreeCAD* separately, the version might be different and not compatible with CENOS.
+- If you encounter problems with *FreeCAD*, **double-check your installed version**. CENOS fully supports only **v0.19** and has added initial support for v0.21.2 - if you have installed *FreeCAD* separately, the version might be different and not compatible with CENOS.
 
 #### Why *ParaView* with calculated results is not opening?
 
