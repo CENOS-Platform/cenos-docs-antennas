@@ -1,5 +1,5 @@
 ---
-id: CAD-adjustment
+id: CAD-adjustment2
 title: CAD model simplification
 sidebar_label: CAD simplification
 ---
