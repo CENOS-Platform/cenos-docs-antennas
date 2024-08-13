@@ -32,12 +32,12 @@ module.exports = {
     googleTagManager: {
       containerId: 'GTM-P7SHFH8H',
     },
-    algolia: {
-      appId: 'TEL58RDMQQ',
-      apiKey: 'fec7e73e384b37585cf920a8a8281eb4',
-      indexName: 'cenos_docs_antennas',
-      searchParameters: {},
-    },
+    // algolia: {
+    //   appId: 'TEL58RDMQQ',
+    //   apiKey: 'fec7e73e384b37585cf920a8a8281eb4',
+    //   indexName: 'cenos_docs_antennas',
+    //   searchParameters: {},
+    // },
   },
   presets: [
     [
