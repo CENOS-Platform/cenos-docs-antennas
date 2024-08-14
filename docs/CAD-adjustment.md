@@ -1,7 +1,7 @@
 ---
 id: CAD-adjustment
 title: CAD adjustment for simulation purposes
-sidebar_label: CAD simplification
+sidebar_label: CAD adjustment for simulation purposes
 ---
 
 
