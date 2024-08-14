@@ -1,7 +1,7 @@
 ---
 id: CAD-adjustment
-title: CAD model simplification
-sidebar_label: CAD simplification
+title: CAD adjustment for simulation purposes
+sidebar_label: CAD adjustment for simulation purposes
 ---
 
 
@@ -9,9 +9,8 @@ Simplifying a CAD file involves reducing the complexity of CAD models while pres
 
 We have summarized the main aspects for a simulation-friendly CAD file, which should be followed to create simple, trouble-free geometry for your simulation. This procedure includes various techniques to make the models more manageable for simulation purposes. This involves reducing the number of components and removing unnecessary details that do not contribute to the simulation objectives. In this way, it is possible to minimize computing resources and reduce the time required for simulations and analysis.
 
-# CAD simplification
 
-   ## Unnecessary elements
+## Unnecessary elements
 
 Unnecessary elements in a CAD model are features that do not contribute to the simulation’s objectives and can be safely removed without affecting the accuracy of the results. These elements can include fine details that are irrelevant to the simulation context. Parts, such as embedded text can be taken out of your model.
 

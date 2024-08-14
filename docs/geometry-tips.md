@@ -38,7 +38,7 @@ Denominations for used solutions:
 | Pan camera                 | *Left-click*   |
 | Rectangle select objects   | *Shift+B*      |
 | Rectangle select elements  | *Shift+E*      |
-| Import File                | *Drag&drop*    |
+| Import File                | *Drag&Drop*    |
 
 
 ---
