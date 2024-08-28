@@ -50,6 +50,16 @@ Coaxial ports are ports where the connection surface is made by a coaxial connec
 You can create a coaxial connector yourself or use one from the **[Component Library](geometry-creation#component-library)** in *FreeCAD*.
 :::
 
+:::warning important
+Ensure that both the internal conductor of the connector and the dielectric are aligned and terminated in the same plane on the side where you will define the coaxial port. This alignment is crucial for maintaining signal integrity and achieving optimal performance of the coaxial port.
+
+<p align="center">
+
+![Coax connector example image](assets/ports/14.png)
+
+</p>
+:::
+
 Here is a quick video tutorial on setting up a coaxial port and it's necessary roles:
 
 <p align="center">
