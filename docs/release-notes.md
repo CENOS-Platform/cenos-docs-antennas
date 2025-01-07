@@ -12,7 +12,6 @@ Features:
 * Implemented periodic structure support for Phased Array simulations
 * Implemented Fast Frequency Sweep
 
-
 Improvements:
 
 * Changed solver from GetDP to NGsolve for greatly improved stability and simulation speed
@@ -25,7 +24,6 @@ Improvements:
 * Implemented Hard Stop to immediately stop the simulation process
 * Model outline can now be scaled and repositioned in the radiation patterns window
 * Improved error message handling and user experience
-
 
 Bugfixes:
 
