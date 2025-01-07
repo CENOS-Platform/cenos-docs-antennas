@@ -9,34 +9,40 @@ sidebar_label: v4.x
 
 Features:
 
-* Added Periodic Array Analysis
-* Implemented Fast Frequency Sweep for fast result interpolating simulations
-* Added Perfectly Matched Layers
-* Implemented support for coaxial and discrete ports in the same simulation
-* Implemented lumped element losses as a result
-* Added error estimation of calculated results
+* Implemented periodic structure support for Phased Array simulations
+* Implemented Fast Frequency Sweep
+
 
 Improvements:
 
-* Changed solver for discrete and coaxial port from GetDP to NGsolve
-   * NGsolve has improved system resource utilization over GetDP
-   * Calculations perform faster with NGsolve
-   * Removed Parallel Processing as NGsolve utilizes resources better and does not benefit from parallelization of frequency calculation
-* Changed how multiport cases are handled
-   * Removed excitation type selection from Simulation Control
-   * Active S-parameters are now available for all multiport cases
-   * All coaxial and discrete multiport simulations now produce individual and combined electric field from each port
-* It is now possible to force stop simulations in progress
-* Far Field calculation is now an opt-in feature
-   * If the far field information is not calculated during the simulation, the far field can be calculated in Python Plots
+* Changed solver from GetDP to NGsolve for greatly improved stability and simulation speed
+   * Removal of parallel process calculation
+* Updated Thin PCB detection when importing CAD file
+* Excitation type removed
+   * Simultaneous excitation has been eliminated in favor of postprocessing of sequential excitation results, but can now be done in postprocessing
+* Implemented lumped element losses
+* Added active S-parameters charts section in all multiport simulations
+* Implemented Hard Stop to immediately stop the simulation process
+* Model outline can now be scaled and repositioned in the radiation patterns window
+* Improved error message handling and user experience
+
 
 Bugfixes:
 
-* RAM insufficiencies will now produce an understandable error message
-* Fixed message stating case is already open in another instance when it is not
-* Fixed air domain definitions disappearing when resetting the application type after reloading the CAD file
-* Fixed small flicker in inputted values in windows in the Physics section
-* It is now possible to open cases that were not saved properly
-* Fixed "Geometry could not be replaced during variable updating: Unknown exception" error appearing in Geometry Variables and Parametric Study
-* Fixed issue where the Parametric Study would fail due to mesh inconsistency with geometry data
-* Fixed issue where cases could not open due to missing case2.json file
+* Fixed issue with multiple coaxial ports
+* Fixed issue where phase shifting did not work in coaxial port cases
+* Fixed incorrect Gain values in multiple port Simultaneous Excitation cases
+* Fixed issue where airbox domain is eliminated when replacing CAD geometry
+* Compressing the case with results is disabled if they do not exist
+* Fixed issue when sending the geometry from FreeCAD to CENOS if the case has not been saved
+* Improved the case saving process to prevent corrupted files
+* Adjustment in case warning saved when closing case
+* Geometry variables can now be updated in the physics from the first attempt
+* Parametric study now can be stopped
+* Fixed issue where the 'Import CAD' button in CENOS did not work when creating a case using the Geometry Editor approach
+* Combined results of a parametric study can now be opened after deleting a subcase
+* Fixed impedance normalization in Smith Chart
+* The frequency step change no longer affects the mesh
+* Fixed the overlap of scales in the electric/magnetic field
+* Fixed Kernel error due to missing VC++ redistributables
+* Fixed issue where recalculated results would not open correctly when one of the ports was removed
