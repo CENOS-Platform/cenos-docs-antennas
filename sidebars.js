@@ -5,6 +5,6 @@ module.exports = {
     Results: ['results-overview', 'results-advanced'],
     Examples: ['example-ifa-antenna', 'example-patch', 'example-dipole', 'example-helical-antenna'],
     FAQ: ['faq-installation', 'faq-hardware'],
-    'Release notes': ['release-notes', 'release-notes-v2', 'release-notes-v1'],
+    'Release notes': ['release-notes', 'release-notes-v3', 'release-notes-v2', 'release-notes-v1'],
   },
 };
