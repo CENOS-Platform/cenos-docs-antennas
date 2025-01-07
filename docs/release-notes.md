@@ -5,7 +5,7 @@ sidebar_label: v4.x
 ---
 
 
-## v4.0.0 (September Xth, 2024)
+## v4.0.0 (January 7, 2025)
 
 Features:
 
