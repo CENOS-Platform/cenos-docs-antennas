@@ -65,9 +65,10 @@ In PCB design and simulation, vias are essential for establishing electrical con
 To assign PCB vias in a simulation, you need to define the via's geometry, location within the design and material properties. In this guide, we will walk you through the steps to assign and configure PCB vias in CENOS RF, ensuring that your simulation reflects the actual physical layout of your PCB design.
 
 <p align="center">
-  <img src="assets/roles/7_vias.png" width="400" height="300">
-</p>
 
+![PCB-vias](assets/roles/7_vias.png)
+
+</p>
 
 
 #### 2D faces
