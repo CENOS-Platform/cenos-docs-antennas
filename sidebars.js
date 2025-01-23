@@ -1,6 +1,6 @@
 module.exports = {
   someSidebar: {
-    'Geometry Overview': ['geometry-overview'],
+    'CENOS Overview': ['geometry-overview'],
     Geometry: ['CAD-adjustment', 'geometry-good-cad', 'geometry-creation', 'geometry-lumped-ports', 'geometry-roles', 'geometry-CENOS-meshing', 'geometry-meshing', 'geometry-tips'],
     Physics: ['physics-overview', 'physics-boundaries', 'batch-running'],
     Results: ['results-overview', 'results-advanced'],
