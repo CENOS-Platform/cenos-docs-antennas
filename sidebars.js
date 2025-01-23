@@ -1,6 +1,7 @@
 module.exports = {
   someSidebar: {
-    Geometry: ['geometry-overview', 'CAD-adjustment', 'geometry-good-cad', 'geometry-creation', 'geometry-lumped-ports', 'geometry-roles', 'geometry-CENOS-meshing', 'geometry-meshing', 'geometry-tips'],
+    'CENOS Overview': ['geometry-overview'],
+    Geometry: ['CAD-adjustment', 'geometry-good-cad', 'geometry-creation', 'geometry-lumped-ports', 'geometry-roles', 'geometry-CENOS-meshing', 'geometry-meshing', 'geometry-tips'],
     Physics: ['physics-overview', 'physics-boundaries', 'batch-running'],
     Results: ['results-overview', 'results-advanced'],
     Examples: ['example-ifa-antenna', 'example-patch', 'example-dipole', 'example-helical-antenna'],
