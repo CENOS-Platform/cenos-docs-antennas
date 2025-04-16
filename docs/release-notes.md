@@ -4,6 +4,31 @@ title: Release notes
 sidebar_label: v4.x
 ---
 
+## v4.0.1  (April 16, 2025)
+
+Features:
+
+* New button to compress log files added to the File menu.
+  
+Improvements:
+
+* Improved stability of the Preview window interaction.
+* Updated the default values in automatic meshing to better suit wire antenna geometries.
+* Improved validation for input values of passive components.
+* Improved recognition of FreeCad datasheet rows in CENOS.
+* Updated display of wavelength resolution limit.
+  
+Bugfixes:
+
+* Fixed issue with name editing for discrete ports and lumped elements.
+* Fixed irregular meshing in specific geometries.
+* Fixed PDF export issue for single-frequency simulations.
+* Resolved issue with frequency display in 2D graphs where values remained static regardless of the actual data.
+* Fixed issue where periodic array results were not refreshed when reopening a case for the second time.
+* Fixed visualization of Electric Field vectors.
+* Fixed issue with missing prefix in axial ratio results.
+* Fixed automatic meshing update with periodic arrays tool.
+
 
 ## v4.0.0 (January 7, 2025)
 
