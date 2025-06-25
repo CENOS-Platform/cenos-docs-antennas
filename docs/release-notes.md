@@ -4,6 +4,34 @@ title: Release notes
 sidebar_label: v4.x
 ---
 
+## v4.1.0  (June 21, 2025)
+
+Features:
+
+* Added support for parametric study when loading multiple CAD files
+* Implemented support for geometries with floating faces
+* Introduced results renormalization functionality in results viewer
+
+  
+Improvements:
+
+* UI now shows loading progress for large cases
+* Improved error messages during meshing of periodic arrays
+* Added support for FreeCAD 1.0.0, which will be automatically downloaded for new users
+* Added option to save files with or without results
+
+  
+Bugfixes:
+
+* Fixed issue where physics changes triggered mesh update
+* Fixed unexpected closure of results connection
+* Fixed issue where adding lumped elements or discrete ports deleted the existing mesh
+* Fixed case opening failure in CENOS following license data check
+* Current density and electromagnetic fields are now displayed in solids with real conductive materials
+* Fixed incorrect positioning of current density vectors in specific cases
+* Parametric study cases can now be removed after a failure
+
+
 ## v4.0.1  (April 16, 2025)
 
 Features:
