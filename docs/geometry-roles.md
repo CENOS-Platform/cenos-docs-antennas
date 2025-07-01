@@ -4,7 +4,8 @@ title: Geometry roles
 sidebar_label: Geometry roles
 ---
 
-Once you have imported your CAD file and **[sent it to CENOS](geometry-creation#getting-the-geometry-to-cenos)**, you will need to **define volumes and surfaces of your RF model**.
+Once you have imported your CAD file into CENOS, the next step is to **define the volumes and surfaces that will make up your RF model**. A well-defined geometry significantly streamlines the physics setup by ensuring that all relevant domains, boundaries, and roles are correctly identified from the start.
+
 
 **Watch a short video on how to define roles in CENOS Radio Frequency app**:
 
@@ -17,16 +18,16 @@ Once you have imported your CAD file and **[sent it to CENOS](geometry-creation#
 
 
 ## Select the type of your model
-First you need to **select the type of your model** - _Microstrip/PCB, RFID, Wire Antenna, Reflector, Multi-port network, Waveguide_ or _Custom_.
+First you need to **select the type of your model** - _Microstrip/PCB, RFID, Wire Antenna, Multi-port network, Waveguide_ or _Other_.
 
-![assets/overview/Untitled27.png](assets/roles/1.png)
+![Geometryl-types](assets/roles/1_Applications.png)
 
 :::note tip
 If you want to **change selected model type**, click *Reset geometry type*.
 
 <p align="center">
 
-![assets/overview/Untitled27.png](assets/roles/2.png)
+![Reset-geometry-type](assets/roles/2_Reset-application.png)
 
 </p>
 :::
@@ -34,12 +35,21 @@ If you want to **change selected model type**, click *Reset geometry type*.
 
 
 ## Assign roles to your geometry.
+Once you select the most suitable application for your geometry, you will notice that there are a few **predefined roles** available to simplify this process.
+
+<p align="center">
+
+![Predefined-roles](assets/roles/3_Predefined-roles.png)
+
+</p>
+
+To assign each role, simply:
  1. Click *Select...* to **enter role selection**.
  2. Choose if you will define *volume* or *face*.
 
 <p align="center">
 
-![assets/overview/Untitled27.png](assets/roles/3.png)
+![Faces-tab](assets/roles/4_Faces-tab.png)
 
 </p>
 
@@ -47,16 +57,33 @@ If you want to **change selected model type**, click *Reset geometry type*.
 
 <p align="center">
 
-![assets/overview/Untitled27.png](assets/roles/4.png)
+![Assign-button](assets/roles/5_Assign-button.png)
 
 </p>
 
 :::note tip
 You can **rename objects** by simply clicking the edit tool next to the name.
 
-![assets/quickstart/Untitled13.png](assets/quickstart/82.png)
+![Rename-objects](assets/roles/6_Rename-objects.png)
 :::
 
+If your geometry requires more roles than the predefined ones, no worries—you can easily add them! At the bottom, you’ll find a convenient list of available roles. Just click on the one you need, and it will be added to your list.
+
+If you don’t see the role you're looking for, check the *Other* tab—there are more roles available there!
+
+<p align="center">
+
+![Other-roles](assets/roles/Other-roles.gif)
+
+</p>
+
+Roles added by mistake or no longer needed can be easily removed by clicking the icon on the right side of the role you'd like to delete.
+
+<p align="center">
+
+![Delete-roles](assets/roles/7_Delete-role.png)
+
+</p>
 
 
 ### PCB vias in CENOS RF
@@ -66,7 +93,7 @@ To assign PCB vias in a simulation, you need to define the via's geometry, locat
 
 <p align="center">
 
-![PCB-vias](assets/roles/7_vias.png)
+![PCB-vias](assets/roles/8_vias.png)
 
 </p>
 
@@ -80,7 +107,7 @@ When you are in the Geometry section, you can add a *Conductor* role to identify
 
 <p align="center">
 
-![PCB-vias-2D](assets/roles/8_vias_2D.png)
+![PCB-vias-2D](assets/roles/9_vias_2D.png)
 
 </p>
 
@@ -97,7 +124,7 @@ To obtain results that are as close to reality as possible, it is necessary to h
 
 <p align="center">
 
-![PCB-vias-3D](assets/roles/9_vias_3D.png)
+![PCB-vias-3D](assets/roles/10_vias_3D.png)
 
 </p>
 
@@ -105,24 +132,19 @@ Finally, we have a third option that uses cylinders to represent the vias. This 
 
 <p align="center">
 
-![PCB-vias-3D-cylinders](assets/roles/10_vias_cylinders.png)
+![PCB-vias-3D-cylinders](assets/roles/11_vias_cylinders.png)
 
 </p>
 
 
 
-## GO TO PHYSICS
+## Go To Physics
 
-Once all *Roles* are assigned, the **GO TO PHYSICS** button will enable, and you can move on to the physics setup!
+Once all *Roles* are assigned, the **PHYSICS** button will enable, and you can move on to the physics setup!
 
 <p align="center">
 
-![assets/overview/Untitled27.png](assets/roles/5.png)
+![Go-to-physics](assets/roles/12_Go-to-physics.png)
 
 </p>
 
-:::note tip
-You can **add more roles** if for example you created a coaxial connector, then you can add a dielectric, and two more conductors.
-
-![assets/overview/Untitled27.png](assets/roles/6.png)
-:::
